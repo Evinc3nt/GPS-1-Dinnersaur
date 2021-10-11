@@ -7,11 +7,15 @@ public class VelociraptorMovement : MonoBehaviour
     public float VeloSpeed;
     public Transform player;
     private Rigidbody2D rb;
-    private Vector2 movement;
+    private Vector3 movement;
+    private Vector3 startPoint;
+    public bool inRange;
 
+    //TODO: When collide go into interaction mode
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        startPoint = this.transform.position;
     }
 
     void Awake()
@@ -21,19 +25,34 @@ public class VelociraptorMovement : MonoBehaviour
 
     void Update()
     {
-        Vector2 direction = player.position - transform.position;
+    
+        Vector3 direction = player.position - transform.position;
         direction.Normalize();
         movement = direction;
-        //TODO: When collide go into interaction mode
     }
 
-    void FixedUpdate()
-    {
-        moveVelo(movement);
+    void FixedUpdate() 
+    { 
+        if (inRange)
+        {
+            moveVelo(movement);
+        }
+
+
+        else if((transform.position != startPoint) && inRange == false)
+        {
+            //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
+            transform.position = Vector3.MoveTowards(transform.position, startPoint, VeloSpeed * Time.deltaTime);
+        }
+
+        else
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+        }
     }
 
-    void moveVelo(Vector2 direction)
+    void moveVelo(Vector3 direction)
     {
-        rb.MovePosition((Vector2)transform.position + (direction * VeloSpeed * Time.deltaTime));
+        rb.MovePosition((Vector3)transform.position + (direction * VeloSpeed * Time.deltaTime));
     }
 }

@@ -9,11 +9,6 @@ public class PlayerMovement : MonoBehaviour
 
 
     private Vector2 movementDirection;
-    
-    void Awake()
-    {
-        moveSpeed = 10.0f;
-    }
 
     
     void Update() //gets input every frame
