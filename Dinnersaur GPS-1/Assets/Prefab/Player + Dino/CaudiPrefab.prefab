@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2281341803775788893}
   - component: {fileID: 2281341803775788888}
   - component: {fileID: 2281341803775788889}
+  - component: {fileID: 6325954461332020337}
+  - component: {fileID: 6347985961271643978}
   m_Layer: 0
   m_Name: CaudiPrefab
   m_TagString: Untagged
@@ -149,6 +151,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6325954461332020337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281341803775788892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951be9aaf0b41a849a5b33fdca9413df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  background: {fileID: 0}
+  dialogueAnim: {fileID: 0}
+  dialogueInput:
+    sentences: []
+--- !u!114 &6347985961271643978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281341803775788892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloBuff: 0
+  caudiBuff: 1
+  anklyoBuff: 0
+  tRexBuff: 0
+  velo: {fileID: 0}
+  caudi: {fileID: 0}
+  lifeSystem: {fileID: 0}
+  meat: {fileID: 5400903024540728971, guid: dc1f7a98a4de25a45a3f25d00575592a, type: 3}
+  green: {fileID: 0}
+  dropGreen: 0
+  damage: 15
 --- !u!1 &2281341805518663505
 GameObject:
   m_ObjectHideFlags: 0

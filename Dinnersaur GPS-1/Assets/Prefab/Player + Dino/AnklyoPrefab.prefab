@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8007092505985112371}
   - component: {fileID: 8007092505985112380}
   - component: {fileID: 8007092505985112381}
+  - component: {fileID: 4496080716400234103}
+  - component: {fileID: 7873405414424140185}
   m_Layer: 0
   m_Name: AnklyoPrefab
   m_TagString: Untagged
@@ -119,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0126309395, y: -0.0547328}
+  m_Offset: {x: -0.021468163, y: -0.02821827}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,5 +132,40 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5179663, y: 1.0873985}
+  m_Size: {x: 2.3664207, y: 1.4762735}
   m_EdgeRadius: 0
+--- !u!114 &4496080716400234103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007092505985112368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  meat: {fileID: 5400903024540728971, guid: 46d45ed4d3d055f49b76d6a87fb2c801, type: 3}
+  green: {fileID: 0}
+  dropGreen: 0
+  damage: 40
+--- !u!114 &7873405414424140185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007092505985112368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951be9aaf0b41a849a5b33fdca9413df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  background: {fileID: 0}
+  dialogueAnim: {fileID: 0}
+  dialogueInput:
+    sentences: []

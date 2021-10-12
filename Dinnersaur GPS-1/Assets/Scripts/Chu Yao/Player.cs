@@ -4,46 +4,29 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float Speed = 5.0f;
 
-    public KeyCode Up = KeyCode.UpArrow;
-    public KeyCode Down = KeyCode.DownArrow;
-    public KeyCode Left = KeyCode.LeftArrow;
-    public KeyCode Right = KeyCode.RightArrow;
-
-    private int meat = 0;
-
-    public void Update()
-    {
-        PlayerControl();
-    }
-
-    void PlayerControl()
-    {
-        if (Input.GetKey(Up))
-        {
-            transform.Translate(new Vector2(0.0f, 1.0f) * Time.deltaTime * Speed);
-        }
-        if (Input.GetKey(Down))
-        {
-            transform.Translate(new Vector2(0.0f, -1.0f) * Time.deltaTime * Speed);
-        }
-        if (Input.GetKey(Left))
-        {
-            transform.Translate(new Vector2(-1.0f, 0.0f) * Time.deltaTime * Speed);
-        }
-        if (Input.GetKey(Right))
-        {
-            transform.Translate(new Vector2(1.0f, 0.0f) * Time.deltaTime * Speed);
-        }
-    }
+    public int meat = 5;
+    public int green = 5;
 
     public void calculateMeat(int dropMeat)
     {
         meat += dropMeat;
         PlayerPrefs.SetInt("Meat", meat);
-        Debug.Log("+ " + dropMeat);
+        Debug.Log("Meat + " + dropMeat);
         Debug.Log("Meat Counter: "+ meat);
     }
+
+    public void calculateGreen(int dropGreen)
+    {
+        green += dropGreen;
+        PlayerPrefs.SetInt("Green", green);
+        Debug.Log("Green + " + green);
+        Debug.Log("Green Counter: " + green);
+    }
+
+    //public void calculateHealth(int health)
+    //{
+    //    health 
+    //}
 
 }

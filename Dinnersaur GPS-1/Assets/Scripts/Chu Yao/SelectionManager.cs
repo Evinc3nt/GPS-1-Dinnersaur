@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    public Animator animator;
+    public Animator dialogueAnim;
     public GameObject dialogueBox, background;
 
     //Remember put this at the button ON CLICK place
@@ -13,6 +13,8 @@ public class SelectionManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         background.SetActive(false);
-        animator.SetBool("IsOpen", false);
+        dialogueAnim.SetBool("IsOpen", false);
+        Time.timeScale = 1f;
+
     }
 }

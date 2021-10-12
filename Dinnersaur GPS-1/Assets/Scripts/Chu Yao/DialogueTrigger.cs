@@ -5,36 +5,47 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogueText, dialogueBox, background;
-    public Animator animator;
+    public Animator dialogueAnim;
     public Dialogue dialogueInput;
-    
+    public static bool GameIsPaused = false;
+
     //trigger by colliding specific area
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        //Display
-        dialogueBox.SetActive(true);
-        background.SetActive(true);
-        animator.SetBool("IsOpen", true);
-        gameObject.SetActive(false);
-
-        if(dialogueText != null)
+        if (collision.gameObject.tag == "Player")
         {
-            dialogueText.SetActive(true);
+            Time.timeScale = 0f;
+            Debug.Log("Dialogue triggered!");
 
-            //Start dialogue
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogueInput);
+            dialogueAnim.speed = 1;
+            //Display
+            dialogueBox.SetActive(true);
+            background.SetActive(true);
+            dialogueAnim.SetBool("IsOpen", true);
+
+            if (dialogueText != null)
+            {
+                dialogueText.SetActive(true);
+
+                //Start dialogue
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogueInput);
+
+            }
+
 
         }
+
     }
 
     //trigger by clicking button
     public void TriggerDialogue()
     {
+
         //Display
         dialogueBox.SetActive(true);
         dialogueText.SetActive(true);
         background.SetActive(true);
-        animator.SetBool("IsOpen", true);
+        dialogueAnim.SetBool("IsOpen", true);
 
         //Start dialogue
         FindObjectOfType<DialogueManager>().StartDialogue(dialogueInput);

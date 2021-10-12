@@ -85,6 +85,9 @@ GameObject:
   - component: {fileID: 2406695987541894750}
   - component: {fileID: 3294378466671617799}
   - component: {fileID: 1173350978958908444}
+  - component: {fileID: 3415460622983903601}
+  - component: {fileID: 3480710366526198719}
+  - component: {fileID: 1476671470725033455}
   m_Layer: 0
   m_Name: Velociraptor
   m_TagString: Untagged
@@ -220,3 +223,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3115829, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &3415460622983903601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077195270016685073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloBuff: 1
+  caudiBuff: 0
+  anklyoBuff: 0
+  tRexBuff: 0
+  velo: {fileID: 0}
+  caudi: {fileID: 0}
+  lifeSystem: {fileID: 0}
+  meat: {fileID: 5400903024540728971, guid: dc1f7a98a4de25a45a3f25d00575592a, type: 3}
+  green: {fileID: 0}
+  dropGreen: 0
+  damage: 15
+--- !u!114 &3480710366526198719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077195270016685073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951be9aaf0b41a849a5b33fdca9413df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  background: {fileID: 0}
+  dialogueAnim: {fileID: 0}
+  dialogueInput:
+    sentences: []
+--- !u!95 &1476671470725033455
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077195270016685073}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b31d5380ce7581e4babd456db1b6d587, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

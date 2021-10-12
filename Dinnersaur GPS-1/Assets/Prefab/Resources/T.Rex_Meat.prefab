@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7346198920617884326}
   - component: {fileID: 5515726144231917000}
   - component: {fileID: 6142791223190824810}
-  - component: {fileID: 7460882047416331452}
-  - component: {fileID: -6252748007668393308}
+  - component: {fileID: 7688950354981512165}
+  - component: {fileID: 3835889967924191119}
   m_Layer: 0
-  m_Name: Velociraptor_Meat
+  m_Name: T.Rex_Meat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5400903024540728971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -174.12, y: -63.47, z: 48.092487}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -169.7, y: -69.7, z: 48.092487}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,13 +74,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.23097876, b: 0, a: 1}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: 9b750f4a679fd80458687206876d1de4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,20 +99,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.038519382, y: 0.049010575}
+  m_Offset: {x: -0.0010910034, y: 0.0008907318}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.095955, y: 2.2505703}
+  m_Size: {x: 0.3742981, y: 0.35780716}
   m_EdgeRadius: 0
---- !u!95 &7460882047416331452
+--- !u!95 &7688950354981512165
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-6252748007668393308
+--- !u!114 &3835889967924191119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHitPlayer: {fileID: 0}
-  dropMeat: 2
+  dropMeat: 7
