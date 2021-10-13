@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1478782528435869050}
   - component: {fileID: 1478782528435869045}
   - component: {fileID: 6967209203918579080}
-  - component: {fileID: -8635858399292538312}
+  - component: {fileID: -2518248715141593577}
   m_Layer: 6
   m_Name: Mushroom 1
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7050905, y: 0.7273481}
   m_EdgeRadius: 0
---- !u!114 &-8635858399292538312
+--- !u!114 &-2518248715141593577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

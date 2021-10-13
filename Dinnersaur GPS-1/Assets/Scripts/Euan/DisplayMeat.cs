@@ -17,6 +17,6 @@ public class DisplayMeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        meatNum.text = "X " + meat.ToString();
+        meatNum.text = "X " + meat.ToString(); //CHANGE TO CHUYAO MEAT
     }
 }

@@ -40,16 +40,37 @@ public class Inventory : MonoBehaviour
 
   public void ConsumeGreens()
     {
-        //ADD IF GREENS > 0 HERE
-        //ADD GREENS - 1 HERE
-        lifeSystem.lifePts = lifeSystem.lifePts + 15;
+        if (lifeSystem.lifePts < 85 && lifeSystem.lifePts < 100)
+        {
+            //ADD IF GREENS > 0 HERE
+            //ADD GREENS - 1 HERE
+            lifeSystem.lifePts = lifeSystem.lifePts + 15;
+        }
+
+        else if (lifeSystem.lifePts >= 85 && lifeSystem.lifePts < 100)
+        {
+            //ADD IF GREENS > 0 HERE
+            //ADD GREENS - 1 HERE
+            lifeSystem.lifePts = 100;
+        }
     }
 
     public void ConsumeMeat()
     {
-        //ADD IF MEAT > 0 HERE
-        //ADD MEAT - 1 HERE
-        lifeSystem.lifePts = lifeSystem.lifePts + 30;
+        if (lifeSystem.lifePts < 70 && lifeSystem.lifePts < 100)
+        {
+            //ADD IF MEAT > 0 HERE
+            //ADD MEAT - 1 HERE
+            lifeSystem.lifePts = lifeSystem.lifePts + 30;
+        }
+
+        else if (lifeSystem.lifePts >= 70 && lifeSystem.lifePts < 100)
+        {
+            //ADD IF MEAT > 0 HERE
+            //ADD MEAT - 1 HERE
+            lifeSystem.lifePts = 100;
+        }
+
     }
 
 }

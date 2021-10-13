@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3241676281558254553}
   - component: {fileID: 3241676281558254552}
   - component: {fileID: 3241676281558254558}
-  - component: {fileID: 3354851048194171269}
+  - component: {fileID: 6520651659814896087}
   m_Layer: 6
   m_Name: Plant 3
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4975766, y: 0.96976805}
   m_EdgeRadius: 0
---- !u!114 &3354851048194171269
+--- !u!114 &6520651659814896087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -14,7 +14,7 @@ public class Plant : MonoBehaviour
     public void KillSelf()
     {
         Destroy(this.gameObject);
-        //TODO: ADD 1 TO GREENS
+        //Green + 1 over here
     }
 }
 
