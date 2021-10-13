@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
 
     void Awake()
     {
-        InvokeRepeating("TimeChange", 0f, 1.0f);
+        InvokeRepeating("TimeChange", 0f, 0.5f);
         if (cB.caudiBuffOn)
         {
             timerMax = 180f + cB.maxTimerIncrease;
