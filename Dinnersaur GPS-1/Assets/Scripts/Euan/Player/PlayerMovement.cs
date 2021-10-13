@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D player;
+    public Animator animator;
 
 
     private Vector2 movementDirection;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Update() //gets input every frame
     {
+        if (Time.timeScale > 0f)
         InputProcessor();
     }
 
@@ -25,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movementDirection.x);
+        animator.SetFloat("Vertical", movementDirection.y);
+        animator.SetFloat("Speed", movementDirection.sqrMagnitude);
 
         movementDirection = new Vector2(moveX, moveY).normalized;
     }

@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: e8f3677256a641c4097fb6d61833a3b6
+guid: 7d686cebe97f1bc4ba4c7d282120979a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9215640337396932016
-    second: Left Idle_0
+      213: -8918875819403440073
+    second: Walk Right_0
   - first:
-      213: -5950519536965160462
-    second: Left Idle_1
+      213: -5823488193920101352
+    second: Walk Right_1
+  - first:
+      213: 5473156220041046169
+    second: Walk Right_2
+  - first:
+      213: 8116080576104049124
+    second: Walk Right_3
+  - first:
+      213: 3465837829672402237
+    second: Walk Right_4
+  - first:
+      213: 6557018640689142376
+    second: Walk Right_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Left Idle_0
+      name: Walk Right_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 51
-        height: 48
+        width: 22
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052e1bf80f77b1080800000000000000
-      internalID: -9215640337396932016
+      spriteID: 73013ac42b9c93480800000000000000
+      internalID: -8918875819403440073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left Idle_1
+      name: Walk Right_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 26
         y: 0
-        width: 51
-        height: 48
+        width: 22
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +168,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f17b2222028b6da0800000000000000
-      internalID: -5950519536965160462
+      spriteID: 81416bf7750de2fa0800000000000000
+      internalID: -5823488193920101352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Right_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99824c7859e84fb40800000000000000
+      internalID: 5473156220041046169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Right_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9212b784c12a070800000000000000
+      internalID: 8116080576104049124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Right_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dfbbea421291030800000000000000
+      internalID: 3465837829672402237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Right_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a14ef86b53ffa50800000000000000
+      internalID: 6557018640689142376
       vertices: []
       indices: 
       edges: []
