@@ -63,12 +63,21 @@ public class Dino : MonoBehaviour
             if(PlayerPrefs.GetInt("Green") >= 5)
             {
                 PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 5);
+                if (lifeSystem.lifePts >= 80)
+                {
+                    lifeSystem.lifePts = 100;
+                    Debug.Log("Successfully Taming Ankylosaurus");
+                    Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                }
 
-                lifeSystem.lifePts += 20;
-                Debug.Log("Successfully Taming Ankylosaurus");
-                Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                else
+                {
+                    lifeSystem.lifePts = lifeSystem.lifePts + 20;
+                    Debug.Log("Successfully Taming Ankylosaurus");
+                    Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                }
+
                 anklyoBuff = false;
-
                 Destroy(gameObject);
             }
             else

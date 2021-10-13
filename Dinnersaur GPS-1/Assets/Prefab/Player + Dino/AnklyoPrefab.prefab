@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   veloBuff: 0
   caudiBuff: 0
-  anklyoBuff: 0
+  anklyoBuff: 1
   tRexBuff: 0
   velo: {fileID: 0}
   caudi: {fileID: 0}
