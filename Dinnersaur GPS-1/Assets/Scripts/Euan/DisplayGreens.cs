@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DisplayGreens : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int greens; //CHANGE to CHUYAO GREENS
+    private int greens;
     Text greensNum;
 
     void Start()
@@ -17,6 +17,7 @@ public class DisplayGreens : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        greensNum.text = "X " + greens.ToString(); //CHANGE to CHUYAO GREENS
+        greens = PlayerPrefs.GetInt("Green");
+        greensNum.text = "X " + greens.ToString(); 
     }
 }

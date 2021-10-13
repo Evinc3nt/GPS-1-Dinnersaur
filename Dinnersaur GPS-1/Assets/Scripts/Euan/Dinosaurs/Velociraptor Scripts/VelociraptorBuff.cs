@@ -20,7 +20,6 @@ public class VelociraptorBuff : MonoBehaviour
         if (veloBuffOn)
         {
             p.moveSpeed = originalSpeed + speedBuff;
-            Debug.Log("Move Speed: " + p.moveSpeed);
             //TODO: Add the animation change here for the buff
         }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2281341803775788889}
   - component: {fileID: 6325954461332020337}
   - component: {fileID: 6347985961271643978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CaudiPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 2281341805518663506}
   - component: {fileID: 2281341805518663507}
   - component: {fileID: 2281341805518663516}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

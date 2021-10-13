@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3451714718754886035}
   - component: {fileID: 2619913816705422899}
   - component: {fileID: 3052104635086669341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VelociraptorPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3415460622983903601}
   - component: {fileID: 3480710366526198719}
   - component: {fileID: 1476671470725033455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Velociraptor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

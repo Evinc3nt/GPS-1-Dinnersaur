@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1478782528435869050}
   - component: {fileID: 1478782528435869045}
   - component: {fileID: 6967209203918579080}
-  - component: {fileID: -2518248715141593577}
+  - component: {fileID: 4818015258876825716}
   m_Layer: 6
   m_Name: Mushroom 1
   m_TagString: Untagged
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0027823448, y: -0.01391077}
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7050905, y: 0.7273481}
   m_EdgeRadius: 0
---- !u!114 &-2518248715141593577
+--- !u!114 &4818015258876825716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1478782528435869044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d516ed6d41f274d9051c0382e63357, type: 3}
+  m_Script: {fileID: 11500000, guid: b193f2d0adb9f2e4898d8dff8da64459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHitPlayer: {fileID: 0}
+  dropGreen: 1

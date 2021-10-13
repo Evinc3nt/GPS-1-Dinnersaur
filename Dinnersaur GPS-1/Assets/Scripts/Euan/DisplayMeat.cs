@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DisplayMeat : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int meat;
+    private int meat;
     Text meatNum;
 
     void Start()
@@ -17,6 +17,7 @@ public class DisplayMeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        meatNum.text = "X " + meat.ToString(); //CHANGE TO CHUYAO MEAT
+        meat = PlayerPrefs.GetInt("Meat");
+        meatNum.text = "X " + meat.ToString(); 
     }
 }

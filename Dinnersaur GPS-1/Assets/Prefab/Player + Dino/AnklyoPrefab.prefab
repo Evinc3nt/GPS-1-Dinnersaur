@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8007092505985112381}
   - component: {fileID: 4496080716400234103}
   - component: {fileID: 7873405414424140185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnklyoPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
+  veloBuff: 0
+  caudiBuff: 0
+  anklyoBuff: 0
+  tRexBuff: 0
+  velo: {fileID: 0}
+  caudi: {fileID: 0}
+  lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: 46d45ed4d3d055f49b76d6a87fb2c801, type: 3}
   green: {fileID: 0}
   dropGreen: 0

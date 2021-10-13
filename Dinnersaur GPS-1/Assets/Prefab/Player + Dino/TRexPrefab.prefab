@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6576845779707560475}
   - component: {fileID: 6576845779707560474}
   - component: {fileID: 6576845779707560469}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TRexPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6576845780898883517}
   - component: {fileID: 6037132876168891948}
   - component: {fileID: 5544129624585122657}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TRex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
+  veloBuff: 0
+  caudiBuff: 0
+  anklyoBuff: 0
+  tRexBuff: 0
+  velo: {fileID: 0}
+  caudi: {fileID: 0}
+  lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: ad093c6f59c844349b36315e02671c28, type: 3}
   green: {fileID: 0}
   dropGreen: 0

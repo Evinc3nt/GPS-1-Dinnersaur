@@ -32,6 +32,8 @@ public class Timer : MonoBehaviour
         if (timeLeft >= timerMax)
         {
             CancelInvoke("TimeChange");
+            Time.timeScale = 0f;
+            FindObjectOfType<KarmaSystem>().showKarmaBar();
         }
     }
 

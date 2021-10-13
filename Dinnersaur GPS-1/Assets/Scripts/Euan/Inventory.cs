@@ -16,13 +16,13 @@ public class Inventory : MonoBehaviour
             {
                 Resume();
             }
-
             else
             {
                 openInv();
             }
         }
     }
+
     public void openInv()
     {
         inventoryMenu.SetActive(true);
@@ -42,15 +42,19 @@ public class Inventory : MonoBehaviour
     {
         if (lifeSystem.lifePts < 85 && lifeSystem.lifePts < 100)
         {
-            //ADD IF GREENS > 0 HERE
-            //ADD GREENS - 1 HERE
+            if (PlayerPrefs.GetInt("Green") > 0)
+            {
+                PlayerPrefs.SetInt("Green", (PlayerPrefs.GetInt("Green") - 1));
+            }
             lifeSystem.lifePts = lifeSystem.lifePts + 15;
         }
 
         else if (lifeSystem.lifePts >= 85 && lifeSystem.lifePts < 100)
         {
-            //ADD IF GREENS > 0 HERE
-            //ADD GREENS - 1 HERE
+            if (PlayerPrefs.GetInt("Green") > 0)
+            {
+                PlayerPrefs.SetInt("Green", (PlayerPrefs.GetInt("Green") - 1));
+            }
             lifeSystem.lifePts = 100;
         }
     }
@@ -59,19 +63,23 @@ public class Inventory : MonoBehaviour
     {
         if (lifeSystem.lifePts < 70 && lifeSystem.lifePts < 100)
         {
-            //ADD IF MEAT > 0 HERE
-            //ADD MEAT - 1 HERE
+            if (PlayerPrefs.GetInt("Meat") > 0)
+            {
+                PlayerPrefs.SetInt("Meat", (PlayerPrefs.GetInt("Meat") - 1));
+            }
+
             lifeSystem.lifePts = lifeSystem.lifePts + 30;
         }
 
         else if (lifeSystem.lifePts >= 70 && lifeSystem.lifePts < 100)
         {
-            //ADD IF MEAT > 0 HERE
-            //ADD MEAT - 1 HERE
+            if (PlayerPrefs.GetInt("Meat") > 0)
+            {
+                PlayerPrefs.SetInt("Meat", (PlayerPrefs.GetInt("Meat") - 1));
+            }
+
             lifeSystem.lifePts = 100;
         }
-
     }
-
 }
 

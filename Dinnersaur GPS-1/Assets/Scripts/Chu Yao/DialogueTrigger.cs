@@ -9,7 +9,6 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogueInput;
     public static bool GameIsPaused = false;
 
-    //trigger by colliding specific area
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -29,18 +28,13 @@ public class DialogueTrigger : MonoBehaviour
 
                 //Start dialogue
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogueInput);
-
             }
-
-
         }
-
     }
 
     //trigger by clicking button
     public void TriggerDialogue()
     {
-
         //Display
         dialogueBox.SetActive(true);
         dialogueText.SetActive(true);
