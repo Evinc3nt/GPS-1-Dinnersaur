@@ -10,42 +10,55 @@ public class EndingManager : MonoBehaviour
 {
     public int day = 7;
 
+    public GameObject moreDinoEnd, balancedEnd, moreHumanEnd;
     private int moreDino, moreHuman, balanced;
     private int nextScene;
-
     public TextMeshProUGUI ending;
+
 
     // Start is called before the first frame update
     void Start()
     {
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+
+        ending = GetComponent<TextMeshProUGUI>();
+
+    }
+
+    private void Update()
+    {
         moreDino = PlayerPrefs.GetInt("MoreDino");
         moreHuman = PlayerPrefs.GetInt("MoreHuman");
         balanced = PlayerPrefs.GetInt("Balanced");
 
-        ending = GetComponent<TextMeshProUGUI>();
     }
 
-    // Update is called once per frame
     public void loadScene()
     {
-
         if (day == 0)
         {
-            if ((moreDino == moreHuman) || ((balanced > moreDino) && (balanced > moreHuman)))
+            if ((moreDino != 0) && (moreHuman != 0) )
             {
-                ending.text = "Balanced End";
-                //Debug.Log("Balanced End");
+                if((moreDino == moreHuman) || ((balanced > moreDino) && (balanced > moreHuman)))
+                {
+                    ending.text = "Balanced End";
+
+                    Debug.Log("Balanced End");
+
+                }
             }
             else if ((moreDino > moreHuman) && (moreDino > balanced))
             {
-                ending.text = "More Dinos End";
-                //Debug.Log("More Dino End");
+
+                ending.text = "More Dino End";
+
+                Debug.Log("More Dino End");
             }
             else if ((moreHuman > moreDino) && (moreHuman > balanced))
             {
-                ending.text = "More Humans End";
-                //Debug.Log("More Human End");
+                ending.text = "More Human End";
+
+                Debug.Log("More Human End");
             }
         }
         else

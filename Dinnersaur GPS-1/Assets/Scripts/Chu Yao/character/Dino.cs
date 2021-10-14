@@ -10,7 +10,7 @@ public class Dino : MonoBehaviour
     public CaudiBuff caudi;
 
     public LifeSystem lifeSystem;
-    public GameObject meat, green;
+    public GameObject meat, green, warningText;
     public bool dropGreen;
 
     public int damage = 5;
@@ -33,6 +33,7 @@ public class Dino : MonoBehaviour
             else
             {
                 Debug.Log("Insufficient Resources");
+                warningText.SetActive(true);
                 killDino();
             }
 
@@ -54,6 +55,7 @@ public class Dino : MonoBehaviour
             else
             {
                 Debug.Log("Insufficient Resources");
+                warningText.SetActive(true);
                 killDino();
             }
 
@@ -83,6 +85,7 @@ public class Dino : MonoBehaviour
             else
             {
                 Debug.Log("Insufficient Resources");
+                warningText.SetActive(true);
                 killDino();
             }
 
@@ -102,6 +105,7 @@ public class Dino : MonoBehaviour
             else
             {
                 Debug.Log("Insufficient Resources");
+                warningText.SetActive(true);
                 killDino();
             }
 
@@ -128,6 +132,9 @@ public class Dino : MonoBehaviour
         {
             Instantiate(green, transform.position, Quaternion.identity);
         }
+
+        PlayerPrefs.SetInt("Dino", PlayerPrefs.GetInt("Dino") - 1);
+        Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
 
         Instantiate(meat, transform.position, Quaternion.identity);
         Destroy(gameObject);

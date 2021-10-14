@@ -38,42 +38,44 @@ public class KarmaSystem : MonoBehaviour
 
     void Update()
     {
-        dinoResult = PlayerPrefs.GetInt("Dino");
-        humanResult = PlayerPrefs.GetInt("Human");
+        SetKarma(PlayerPrefs.GetInt("Dino"), PlayerPrefs.GetInt("Human"));
+
+        dinoResult = PlayerPrefs.GetInt("MoreDino");
+        humanResult = PlayerPrefs.GetInt("MoreHuman");
         balancedResult = PlayerPrefs.GetInt("Balanced");
 
-        SetKarma(dinoResult, humanResult);
 
         if (loadScene)
         {
-            if (Input.GetKey(KeyCode.Z))
+            if (karmaBar.value < karmaBar.maxValue * 0.4)
             {
-                if (karmaBar.value < karmaBar.maxValue * 0.4)
-                {
-                    PlayerPrefs.SetInt("MoreDino", dinoResult + 1);
-                    result.text = dinoResult.ToString() + " " + balancedResult.ToString() + " " + humanResult.ToString() + " ";
+                PlayerPrefs.SetInt("MoreDino", dinoResult + 1);
+                result.text = dinoResult.ToString() + " : " + balancedResult.ToString() + " : " + humanResult.ToString();
 
-                    //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
-                }
-                else if (karmaBar.value > karmaBar.maxValue * 0.6)
-                {
-                    PlayerPrefs.SetInt("MoreHuman", PlayerPrefs.GetInt("MoreHuman") + 1);
-                    result.text = dinoResult.ToString() + " " + balancedResult.ToString() + " " + humanResult.ToString() + " ";
-
-                    //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
-
-                }
-                else
-                {
-                    PlayerPrefs.SetInt("Balanced", PlayerPrefs.GetInt("Balanced") + 1);
-                    result.text = dinoResult.ToString() + " " + balancedResult.ToString() + " " + humanResult.ToString() + " ";
-
-                    //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
-                }
-
-                FindObjectOfType<EndingManager>().loadScene();
-                loadScene = false;
+                //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
             }
+            else if (karmaBar.value > karmaBar.maxValue * 0.6)
+            {
+                PlayerPrefs.SetInt("MoreHuman", humanResult + 1);
+                result.text = dinoResult.ToString() + " : " + balancedResult.ToString() + " : " + humanResult.ToString();
+
+                //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
+
+            }
+            else if(karmaBar.value == karmaBar.maxValue)
+            {
+                PlayerPrefs.SetInt("Balanced", balancedResult + 1);
+                result.text = dinoResult.ToString() + " : " + balancedResult.ToString() + " : " + humanResult.ToString();
+
+                //Debug.Log("More Dino:More Human:Balanced  =  " + PlayerPrefs.GetInt("MoreDino") + ":" + PlayerPrefs.GetInt("MoreHuman") + ":" + PlayerPrefs.GetInt("Balanced"));
+            }
+
+            FindObjectOfType<EndingManager>().loadScene();
+            loadScene = false;
+
+            //if (Input.GetKey(KeyCode.Z))
+            //{
+            //}
 
         }
 
