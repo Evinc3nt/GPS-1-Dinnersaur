@@ -13,12 +13,12 @@ public class Timer : MonoBehaviour
         InvokeRepeating("TimeChange", 0f, 0.5f);
         if (cB.caudiBuffOn)
         {
-            timerMax = 90f + cB.maxTimerIncrease;
+            timerMax = 180f + cB.maxTimerIncrease;
         }
 
         else
         {
-            timerMax = 90f;
+            timerMax = 180f;
         }
     }
 
