@@ -2,37 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walk,
+    harvest
+}
+
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D player;
     public Animator animator;
+    public PlayerState currentState;
+
 
 
     private Vector2 movementDirection;
 
-    
+
+    private void Start()
+    {
+        currentState = PlayerState.walk;
+    }
+
     void Update() //gets input every frame
     {
         if (Time.timeScale > 0f)
-        InputProcessor();
+        {
+            if (Input.GetKeyDown(KeyCode.Space) && currentState == PlayerState.walk)
+            {
+                StartCoroutine(HarvestDelay());
+            }
+            else if (currentState == PlayerState.walk)
+            {
+                InputProcessor();
+                Movement();
+            }
+        }
     }
 
     void FixedUpdate() //updates movement at a FIXED frame
     {
-        Movement();
+        //Movement();
     }
 
     void InputProcessor() //TO DO: add the animation variables here!!
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        Vector3 move = Vector3.zero;
+        move.x = Input.GetAxisRaw("Horizontal");
+        move.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Horizontal", movementDirection.x);
-        animator.SetFloat("Vertical", movementDirection.y);
+        if(move != Vector3.zero)
+        {
+            animator.SetFloat("Horizontal", move.x);
+            animator.SetFloat("Vertical", move.y);
+        }
+
         animator.SetFloat("Speed", movementDirection.sqrMagnitude);
-
-        movementDirection = new Vector2(moveX, moveY).normalized;
+        movementDirection = new Vector3(move.x, move.y).normalized;
     }
 
     void Movement()
@@ -40,4 +67,14 @@ public class PlayerMovement : MonoBehaviour
         player.velocity = new Vector2(movementDirection.x * moveSpeed, movementDirection.y * moveSpeed);
     }
 
+    IEnumerator HarvestDelay()
+    {
+        player.velocity = new Vector3(0, 0).normalized;
+        animator.SetBool("isHarvest", true);
+        currentState = PlayerState.harvest;
+        yield return null;
+        animator.SetBool("isHarvest", false);
+        yield return new WaitForSeconds(0.7178683f);
+        currentState = PlayerState.walk;
+    }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4818015258876825716}
   m_Layer: 6
   m_Name: Mushroom 1
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b193f2d0adb9f2e4898d8dff8da64459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHitPlayer: {fileID: 0}
+  currentHitPlayer: {fileID: 2389650497526910362, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   dropGreen: 1

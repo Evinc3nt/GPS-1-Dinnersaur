@@ -4,41 +4,14 @@ using UnityEngine;
 
 public class PlayerHarvesting : MonoBehaviour
 {
-    public Animator animator;
-
-    public Transform hitBox;
-    public float hitRange = 0.5f;
-    public LayerMask plantLayer;
-
-    // Update is called once per frame
-    void FixedUpdate()
+    public Player p;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (collision.CompareTag("Plant"))
         {
-            Attack();
+            p.calculateGreen(1);
+            Destroy(collision.gameObject);
         }
-    }
-
-    void Attack()
-    {
-        animator.SetTrigger("Harvest");
-        Collider2D[] hitPlants = Physics2D.OverlapCircleAll(hitBox.position, hitRange, plantLayer);
-
-        foreach (Collider2D plant in hitPlants)
-        {
-            Debug.Log("Harvested " + plant.name);
-            plant.GetComponent<Plant>().KillSelf();
-        }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        if (hitBox == null)
-        {
-            return;
-        }
-
-        Gizmos.DrawWireSphere(hitBox.position, hitRange);
 
     }
 }

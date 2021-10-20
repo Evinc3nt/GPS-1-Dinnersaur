@@ -190,6 +190,7 @@ MonoBehaviour:
   lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: dc1f7a98a4de25a45a3f25d00575592a, type: 3}
   green: {fileID: 0}
+  warningText: {fileID: 0}
   dropGreen: 0
   damage: 15
 --- !u!1 &2281341805518663505
@@ -239,7 +240,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 5
 --- !u!114 &2281341805518663516
 MonoBehaviour:
   m_ObjectHideFlags: 0
