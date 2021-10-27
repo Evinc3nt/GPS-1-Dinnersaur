@@ -35,7 +35,7 @@ public class TRexMovement : MonoBehaviour
         {
             if (idle == true)
             {
-                Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
+                Instantiate(alert, startPoint + new Vector3(0f, 3f), Quaternion.identity);
                 idle = false;
             }
 
