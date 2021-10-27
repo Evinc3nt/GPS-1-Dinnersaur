@@ -197,6 +197,8 @@ MonoBehaviour:
   VeloSpeed: 5
   player: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   inRange: 0
+  animator: {fileID: 1476671470725033455}
+  alert: {fileID: 7699708005393641942, guid: 853746692d6cde148af4e3383aa108ee, type: 3}
 --- !u!61 &1173350978958908444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,6 +246,7 @@ MonoBehaviour:
   lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: dc1f7a98a4de25a45a3f25d00575592a, type: 3}
   green: {fileID: 0}
+  warningText: {fileID: 0}
   dropGreen: 0
   damage: 15
 --- !u!114 &3480710366526198719

@@ -125,6 +125,7 @@ MonoBehaviour:
   CaudiSpeed: 5
   player: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   inRange: 0
+  alert: {fileID: 7699708005393641942, guid: 853746692d6cde148af4e3383aa108ee, type: 3}
 --- !u!61 &2281341803775788889
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,7 +10,10 @@ public class CaudiMovement : MonoBehaviour
     private Vector3 movement;
     private Vector3 startPoint;
     public bool inRange;
+    float delay = 0f;
+    bool idle = true;
 
+    public GameObject alert;
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -35,17 +38,30 @@ public class CaudiMovement : MonoBehaviour
     {
         if (inRange)
         {
-            moveCaudi(movement);
+            if (idle == true && delay == 0)
+            {
+                Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
+                idle = false;
+            }
+             
+            delay += Time.deltaTime;
+            if (delay >= 2.0f)
+            {
+                moveCaudi(movement);
+            }
         }
 
         else if ((transform.position != startPoint) && inRange == false)
         {
+            delay = 0f;
             //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, CaudiSpeed * Time.deltaTime);
         }
 
         else
         {
+            idle = true;
+            delay = 0f;
             rb.velocity = new Vector3(0, 0, 0);
         }
 

@@ -6,20 +6,20 @@ public class TRexMovement : MonoBehaviour
 {
     private float TRexSpeed = 1300f;
     public Transform player;
-    //public GameObject playerTransform;
     private Rigidbody2D rb;
-    //private Vector3 movement;
-    //private Vector3 distance;
     private Vector3 startPoint;
     public bool inRange;
 
-    float interval = 2f;
+    float interval = 2.5f;
     float time = 0f;
+    Vector3 direction;
+
+    public GameObject alert;
+    bool idle = true;
 
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        //InvokeRepeating("MoveEnemy", 2f, 1.5f);
         startPoint = this.transform.position;
     }
 
@@ -33,10 +33,17 @@ public class TRexMovement : MonoBehaviour
     {
         if (inRange)
         {
+            if (idle == true)
+            {
+                Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
+                idle = false;
+            }
+
             time += Time.deltaTime;
             while(time >= interval)
             {
-                MoveEnemy();
+                direction = player.transform.position - transform.position;
+                StartCoroutine(TRexMoveDelay(direction));
                 time -= interval;
             }
         }
@@ -44,30 +51,29 @@ public class TRexMovement : MonoBehaviour
         else if ((transform.position != startPoint) && inRange == false)
         {
             time = 0f;
-            StopCoroutine(TRexMoveDelay());
-            //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
+            StopCoroutine(TRexMoveDelay(direction));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, 2 * Time.deltaTime);
         }
 
         else
         {
             time = 0f;
-            StopCoroutine(TRexMoveDelay());
+            StopCoroutine(TRexMoveDelay(direction));
             rb.velocity = new Vector3(0, 0, 0);
+            idle = true;
         }
     }
 
-    void MoveEnemy()
+    void MoveEnemy(Vector3 direction)
     {
-        var direction = player.transform.position - transform.position;
         rb.AddForce(direction.normalized * TRexSpeed);
         StartCoroutine(EnemyDelay());
     }
 
-    IEnumerator TRexMoveDelay()
+    IEnumerator TRexMoveDelay(Vector3 direction)
     {
-        MoveEnemy();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
+        MoveEnemy(direction);
     }
 
     IEnumerator EnemyDelay()

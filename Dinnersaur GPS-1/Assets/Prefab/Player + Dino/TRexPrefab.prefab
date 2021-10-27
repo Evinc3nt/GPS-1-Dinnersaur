@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   inRange: 0
+  alert: {fileID: 7699708005393641942, guid: 853746692d6cde148af4e3383aa108ee, type: 3}
 --- !u!114 &6037132876168891948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +243,7 @@ MonoBehaviour:
   lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: ad093c6f59c844349b36315e02671c28, type: 3}
   green: {fileID: 0}
+  warningText: {fileID: 0}
   dropGreen: 0
   damage: 60
 --- !u!114 &5544129624585122657

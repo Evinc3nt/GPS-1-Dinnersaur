@@ -10,6 +10,12 @@ public class VelociraptorMovement : MonoBehaviour
     private Vector3 movement;
     private Vector3 startPoint;
     public bool inRange;
+    bool idle = true;
+    float delay = 0f;
+
+    public Animator animator;
+
+    public GameObject alert;
 
     //TODO: When collide go into interaction mode
     void Start()
@@ -35,7 +41,18 @@ public class VelociraptorMovement : MonoBehaviour
     { 
         if (inRange)
         {
-            moveVelo(movement);
+            if (idle == true && delay == 0)
+            {
+                Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
+                idle = false;
+            }
+
+            delay += Time.deltaTime;
+            if (delay >= 2.0f)
+            {
+                moveVelo(movement);
+                animator.SetFloat("Speed", 1);
+            }
         }
 
 
@@ -47,7 +64,10 @@ public class VelociraptorMovement : MonoBehaviour
 
         else
         {
+            delay = 0;
+            idle = true;
             rb.velocity = new Vector3(0, 0, 0);
+            animator.SetFloat("Speed", 0);
         }
     }
 
