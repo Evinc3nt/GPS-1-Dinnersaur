@@ -150,17 +150,19 @@ MonoBehaviour:
   successText: {fileID: 0}
   failText: {fileID: 0}
   superSuccessText: {fileID: 0}
+  feedButton: {fileID: 0}
   velo: 0
   caudi: 0
-  anklyo: 1
+  anklyo: 0
   tRex: 0
+  brachy: 1
   veloBuff: {fileID: 0}
   caudiBuff: {fileID: 0}
   lifeSystem: {fileID: 0}
-  meat: {fileID: 5400903024540728971, guid: 46d45ed4d3d055f49b76d6a87fb2c801, type: 3}
-  green: {fileID: 0}
+  meat: {fileID: 5400903024540728971, guid: bd242721e6932a44a8f1589d79bb50d2, type: 3}
+  green: {fileID: 216738859616208388, guid: 414f1e27869d97646a410f4ae36bc16d, type: 3}
   warningText: {fileID: 0}
-  dropGreen: 0
+  dropGreen: 1
   damage: 40
 --- !u!114 &1551642668163737167
 MonoBehaviour:

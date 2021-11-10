@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Button : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     public Animator transition;
     public float transTime = 1f;

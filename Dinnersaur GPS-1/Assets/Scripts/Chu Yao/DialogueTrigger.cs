@@ -22,6 +22,7 @@ public class DialogueTrigger : MonoBehaviour
             background.SetActive(true);
             dialogueAnim.SetBool("IsOpen", true);
 
+
             if (dialogueText != null)
             {
                 dialogueText.SetActive(true);

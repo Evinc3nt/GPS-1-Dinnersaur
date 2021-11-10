@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
     public GameObject successText, failText, superSuccessText;
-    public bool velo, caudi, anklyo, tRex;
+    public Button feedButton;
+    public bool velo, caudi, anklyo, tRex, brachy;
 
     public VelociraptorBuff veloBuff;
     public CaudiBuff caudiBuff;
@@ -28,6 +30,60 @@ public class Dino : MonoBehaviour
         PlayerPrefs.SetInt("caudiTrust", 0);
         PlayerPrefs.SetInt("anklyoTrust", 0);
         PlayerPrefs.SetInt("tRexTrust", 0);
+        PlayerPrefs.SetInt("brachyTrust", 0);
+    }
+
+    private void Update()
+    {
+        if(velo)
+        {
+            if (PlayerPrefs.GetInt("Meat") >= 2)
+            {
+                feedButton.interactable = true;
+            }
+            else
+            {
+                feedButton.interactable = false;
+            }
+        }
+
+        if (caudi)
+        {
+            if (PlayerPrefs.GetInt("Meat") >= 2 && PlayerPrefs.GetInt("Green") >= 2)
+            {
+                feedButton.interactable = true;
+            }
+            else
+            {
+                feedButton.interactable = false;
+            }
+        }
+
+        if (anklyo || brachy)
+        {
+            if (PlayerPrefs.GetInt("Green") >= 5)
+            {
+                feedButton.interactable = true;
+            }
+            else
+            {
+                feedButton.interactable = false;
+            }
+        }
+
+        if (tRex)
+        {
+            if (PlayerPrefs.GetInt("Meat") >= 10)
+            {
+                feedButton.interactable = true;
+            }
+            else
+            {
+                feedButton.interactable = false;
+            }
+        }
+
+
     }
 
     public void FeedDino()
@@ -59,14 +115,10 @@ public class Dino : MonoBehaviour
 
 
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
-                }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
+
+                    Destroy(gameObject);
                 }
 
-                Destroy(gameObject);
             }
             if (caudi)
             {
@@ -88,18 +140,43 @@ public class Dino : MonoBehaviour
 
 
                     Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
-
+                    Destroy(gameObject);
                 }
-                else
-                {
-                    Debug.Log("Insufficient Resources.");
-                    warningText.SetActive(true);
-                }
-
-                Destroy(gameObject);
 
             }
-            if (anklyo)
+            if (brachy)
+            {
+                if (PlayerPrefs.GetInt("Green") >= 5)
+                {
+                    successText.SetActive(true);
+                    PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 5);
+
+                    Debug.Log("Successfully Feeding Brachiosaurus");
+
+                    if (PlayerPrefs.GetInt("brachyTrust") >= 3)
+                    {
+                        if (lifeSystem.lifePts >= 80)
+                        {
+                            lifeSystem.lifePts = 100;
+                            Debug.Log("Successfully Gained Trust from Brachiosaurus ");
+                            Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                        }
+
+                        else
+                        {
+                            lifeSystem.lifePts = lifeSystem.lifePts + 20;
+                            Debug.Log("Successfully Gained Trust from Brachiosaurus ");
+                            Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                        }
+                    }
+                    else
+                        PlayerPrefs.SetInt("brachyTrust", PlayerPrefs.GetInt("brachyTrust") + 1);
+
+                    Debug.Log("brachy Trust Meter:" + PlayerPrefs.GetInt("brachyTrust", 0));
+                    Destroy(gameObject);
+                }
+            }
+            if(anklyo)
             {
                 if (PlayerPrefs.GetInt("Green") >= 5)
                 {
@@ -110,33 +187,15 @@ public class Dino : MonoBehaviour
 
                     if (PlayerPrefs.GetInt("anklyoTrust") >= 3)
                     {
-                        if (lifeSystem.lifePts >= 80)
-                        {
-                            lifeSystem.lifePts = 100;
-                            Debug.Log("Successfully Gained Trust from Ankylosaurus");
-                            Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
-                        }
-
-                        else
-                        {
-                            lifeSystem.lifePts = lifeSystem.lifePts + 20;
-                            Debug.Log("Successfully Gained Trust from Ankylosaurus");
-                            Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
-                        }
+                        PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") + 2);
                     }
                     else
                         PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
-                   ;
 
                     Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
-                }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
+                    Destroy(gameObject);
                 }
 
-                Destroy(gameObject);
             }
             if (tRex)
             {
@@ -154,17 +213,10 @@ public class Dino : MonoBehaviour
                         PlayerPrefs.SetInt("tRexTrust", PlayerPrefs.GetInt("tRexTrust", 0) + 1);
 
                     Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
+                    Destroy(gameObject);
                 }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
-                }
-
-                Destroy(gameObject);
-
             }
-
+            
         }
         else   //loses resources but does not obtain Trust (dinosaur runs away)
         {
@@ -177,11 +229,6 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
 
                 }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
-                }
 
                 Destroy(gameObject);
             }
@@ -193,26 +240,16 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 2);
 
                 }
-                else
-                {
-                    Debug.Log("Insufficient Resources.");
-                    warningText.SetActive(true);
-                }
 
                 Destroy(gameObject);
 
             }
-            if (anklyo)
+            if (anklyo || brachy)
             {
                 if (PlayerPrefs.GetInt("Green") >= 5)
                 {
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 5);
 
-                }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
                 }
 
                 Destroy(gameObject);
@@ -222,11 +259,6 @@ public class Dino : MonoBehaviour
                 if (PlayerPrefs.GetInt("Meat") >= 10)
                 {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 10);
-                }
-                else
-                {
-                    Debug.Log("Insufficient Resources");
-                    warningText.SetActive(true);
                 }
 
                 Destroy(gameObject);
@@ -282,17 +314,17 @@ public class Dino : MonoBehaviour
         else
         {
             randomNumber -= 60;
-            failText.SetActive(true);
+            
             //fail - no resourse, if carnivore lost hp, else run away
             if (randomNumber <= 30)
             {
+                failText.SetActive(true);
                 Debug.Log("Fail Chance!");
                 if(tRex)
                 {
                     if (tRexBlock)
                     {
                         Debug.Log("Luckily your T-Rex block it and save you. Zero damage.");
-                        Destroy(gameObject);
                         tRexBlock = false;
 
                     }
@@ -305,17 +337,19 @@ public class Dino : MonoBehaviour
                 else
                 {
                     Debug.Log("Unfortunatly! The dinosaur run away!");
-                    Destroy(gameObject);
+                    
                 }
+                Destroy(gameObject);
             }
             else
             {
                 randomNumber -= 30;
-                superSuccessText.SetActive(true);
+                
                 //super success - get resourse without losing hp (T- Rex effect skip)
                 if (randomNumber <= 10)
                 {
                     Debug.Log("Super Success Chance!");
+                    superSuccessText.SetActive(true);
 
                     if (dropGreen)
                     {

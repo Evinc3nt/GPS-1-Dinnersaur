@@ -58,7 +58,6 @@ public class PopulationSystem : MonoBehaviour
                 PlayerPrefs.SetInt("Green", 0);
                 Debug.Log("Green left after subsract to villagers: " + green);
 
-
             }
             else if (meat < green)
             {
