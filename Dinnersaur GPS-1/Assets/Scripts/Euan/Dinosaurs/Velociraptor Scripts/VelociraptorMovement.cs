@@ -17,6 +17,8 @@ public class VelociraptorMovement : MonoBehaviour
 
     public GameObject alert;
 
+    Vector3 direction;
+
     //TODO: When collide go into interaction mode
     void Start()
     {
@@ -31,8 +33,9 @@ public class VelociraptorMovement : MonoBehaviour
 
     void Update()
     {
-    
-        Vector3 direction = player.position - transform.position;
+        //Vector3 direction = player.position - transform.position;
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
         direction.Normalize();
         movement = direction;
     }
@@ -41,6 +44,7 @@ public class VelociraptorMovement : MonoBehaviour
     { 
         if (inRange)
         {
+            direction = player.position - transform.position;
             if (idle == true && delay == 0)
             {
                 Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
@@ -58,6 +62,7 @@ public class VelociraptorMovement : MonoBehaviour
 
         else if((transform.position != startPoint) && inRange == false)
         {
+            direction = startPoint;
             //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, VeloSpeed * Time.deltaTime);
         }

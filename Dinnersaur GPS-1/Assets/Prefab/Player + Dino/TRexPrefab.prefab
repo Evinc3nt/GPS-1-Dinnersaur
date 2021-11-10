@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6576845779707560475}
   - component: {fileID: 6576845779707560474}
   - component: {fileID: 6576845779707560469}
+  - component: {fileID: -909695860958860440}
   m_Layer: 3
   m_Name: TRexPrefab
   m_TagString: Untagged
@@ -72,6 +73,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tRM: {fileID: 6576845780898883517}
+--- !u!95 &-909695860958860440
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6576845779707560468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4c08384637153a4d9f4752f9b0fad40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6576845780898883519
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,6 +107,7 @@ GameObject:
   - component: {fileID: 6576845780898883517}
   - component: {fileID: 6037132876168891948}
   - component: {fileID: 5544129624585122657}
+  - component: {fileID: 3269990990655968624}
   m_Layer: 3
   m_Name: TRex
   m_TagString: Untagged
@@ -149,7 +170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7799292442060347346, guid: 8f93d021f1898024ca755ff7128cdf5b, type: 3}
+  m_Sprite: {fileID: 3639004565400332237, guid: 0367f545111789643ba05a1a4295ccc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -222,6 +243,7 @@ MonoBehaviour:
   player: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   inRange: 0
   alert: {fileID: 7699708005393641942, guid: 853746692d6cde148af4e3383aa108ee, type: 3}
+  animator: {fileID: 3269990990655968624}
 --- !u!114 &6037132876168891948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +286,22 @@ MonoBehaviour:
   dialogueAnim: {fileID: 0}
   dialogueInput:
     sentences: []
+--- !u!95 &3269990990655968624
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6576845780898883519}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4c08384637153a4d9f4752f9b0fad40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

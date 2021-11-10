@@ -12,6 +12,8 @@ public class CaudiMovement : MonoBehaviour
     public bool inRange;
     float delay = 0f;
     bool idle = true;
+    public Animator animator;
+    Vector3 direction;
 
     public GameObject alert;
     void Start()
@@ -28,9 +30,10 @@ public class CaudiMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = player.position - transform.position;
         direction.Normalize();
         movement = direction;
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
         //TODO: When collide go into interaction mode
     }
 
@@ -38,8 +41,10 @@ public class CaudiMovement : MonoBehaviour
     {
         if (inRange)
         {
+            direction = player.position - transform.position;
             if (idle == true && delay == 0)
             {
+                animator.SetBool("isAlert", true);
                 Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
                 idle = false;
             }
@@ -47,12 +52,15 @@ public class CaudiMovement : MonoBehaviour
             delay += Time.deltaTime;
             if (delay >= 2.0f)
             {
+                animator.SetBool("isChasing", true);
                 moveCaudi(movement);
             }
         }
 
         else if ((transform.position != startPoint) && inRange == false)
         {
+            direction = startPoint;
+            animator.SetBool("isAlert", false);
             delay = 0f;
             //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, CaudiSpeed * Time.deltaTime);
@@ -60,6 +68,8 @@ public class CaudiMovement : MonoBehaviour
 
         else
         {
+            animator.SetBool("isAlert", false);
+            animator.SetBool("isChasing", false);
             idle = true;
             delay = 0f;
             rb.velocity = new Vector3(0, 0, 0);

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2281341803775788889}
   - component: {fileID: 6325954461332020337}
   - component: {fileID: 6347985961271643978}
+  - component: {fileID: -5035754989049743690}
   m_Layer: 3
   m_Name: CaudiPrefab
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7853d276cf0ac294da4ac0669b03049b, type: 3}
+  m_Sprite: {fileID: -5302613539011611143, guid: dd6f99c92257aac48960b50b87bd25f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,6 +126,7 @@ MonoBehaviour:
   CaudiSpeed: 5
   player: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   inRange: 0
+  animator: {fileID: -5035754989049743690}
   alert: {fileID: 7699708005393641942, guid: 853746692d6cde148af4e3383aa108ee, type: 3}
 --- !u!61 &2281341803775788889
 BoxCollider2D:
@@ -143,7 +145,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    oldSize: {x: 1.5625, y: 1.5}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -194,6 +196,25 @@ MonoBehaviour:
   warningText: {fileID: 0}
   dropGreen: 0
   damage: 15
+--- !u!95 &-5035754989049743690
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281341803775788892}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f15d3235b6a33c547946386888d4ead5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2281341805518663505
 GameObject:
   m_ObjectHideFlags: 0
