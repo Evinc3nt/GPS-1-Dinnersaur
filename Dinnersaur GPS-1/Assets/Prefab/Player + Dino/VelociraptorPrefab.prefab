@@ -237,12 +237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  veloBuff: 1
-  caudiBuff: 0
-  anklyoBuff: 0
-  tRexBuff: 0
-  velo: {fileID: 0}
-  caudi: {fileID: 0}
+  velo: 1
+  caudi: 0
+  anklyo: 0
+  tRex: 0
+  veloBuff: {fileID: 0}
+  caudiBuff: {fileID: 0}
   lifeSystem: {fileID: 0}
   meat: {fileID: 5400903024540728971, guid: dc1f7a98a4de25a45a3f25d00575592a, type: 3}
   green: {fileID: 0}

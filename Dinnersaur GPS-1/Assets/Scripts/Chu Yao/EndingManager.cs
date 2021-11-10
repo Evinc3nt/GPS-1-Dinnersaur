@@ -10,7 +10,6 @@ public class EndingManager : MonoBehaviour
 {
     public int day = 7;
 
-    public GameObject moreDinoEnd, balancedEnd, moreHumanEnd;
     private int moreDino, moreHuman, balanced;
     private int nextScene;
     public TextMeshProUGUI ending;
@@ -20,21 +19,15 @@ public class EndingManager : MonoBehaviour
     void Start()
     {
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-
-        ending = GetComponent<TextMeshProUGUI>();
-
     }
 
-    private void Update()
+    public void loadScene()
     {
         moreDino = PlayerPrefs.GetInt("MoreDino");
         moreHuman = PlayerPrefs.GetInt("MoreHuman");
         balanced = PlayerPrefs.GetInt("Balanced");
 
-    }
 
-    public void loadScene()
-    {
         if (day == 0)
         {
             if ((moreDino != 0) && (moreHuman != 0) )
