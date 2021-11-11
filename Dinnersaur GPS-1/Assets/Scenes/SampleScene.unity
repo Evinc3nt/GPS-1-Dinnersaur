@@ -418,7 +418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &101393304
 Transform:
   m_ObjectHideFlags: 0
@@ -618,6 +618,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -1880,6 +1888,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: feedButton
       value: 
@@ -3248,6 +3264,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
       objectReference: {fileID: 814097163}
@@ -3700,7 +3724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &602760676
 Transform:
   m_ObjectHideFlags: 0
@@ -35014,6 +35038,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 742139844}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
       objectReference: {fileID: 1365250166}
@@ -36839,6 +36871,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5151370538555518682, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   m_PrefabInstance: {fileID: 5151370538936690833}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &980173691 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2088859238976632231, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
+  m_PrefabInstance: {fileID: 5151370538936690833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980173689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e9df4b6ae2ed146b8465f1197cf691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &980173695
 Animator:
   serializedVersion: 3
@@ -37114,7 +37157,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Super Success Chance!
+  m_text: 'Super Success Chance!
+
+    No Damage Taken'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -37218,6 +37263,14 @@ PrefabInstance:
       propertyPath: tRexBuff
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
@@ -38096,6 +38149,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -39152,6 +39213,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
       objectReference: {fileID: 1116884496}
@@ -39833,6 +39902,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -41172,6 +41249,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 742139844}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
       objectReference: {fileID: 4349885147114228348}
@@ -41414,7 +41499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1895001372
 Transform:
   m_ObjectHideFlags: 0
@@ -41720,6 +41805,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -42555,9 +42648,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 742139844}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: caudiBuff
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -43266,6 +43363,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 742139844}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: feedButton
       value: 
       objectReference: {fileID: 1950917775}
@@ -43427,6 +43532,14 @@ PrefabInstance:
       propertyPath: failText
       value: 
       objectReference: {fileID: 742139844}
+    - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
+      propertyPath: veloBuff
+      value: 
+      objectReference: {fileID: 980173691}
+    - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
+      propertyPath: caudiBuff
+      value: 
+      objectReference: {fileID: 1197659399}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: feedButton
       value: 
