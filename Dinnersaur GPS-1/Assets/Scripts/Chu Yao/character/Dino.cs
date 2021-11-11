@@ -93,12 +93,13 @@ public class Dino : MonoBehaviour
         //success - loses resources and obtains Trust
         if (randomNumber <= 70)
         {
-            Debug.Log("Successfull feeding!");
+            Debug.Log("Success feeding!");
             
             if (velo)
             {
                 if (PlayerPrefs.GetInt("Meat") >= 2)
                 {
+                    PlayerPrefs.SetInt("veloTrust", PlayerPrefs.GetInt("veloTrust", 0) + 1);
                     successText.SetActive(true);
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
 
@@ -108,11 +109,8 @@ public class Dino : MonoBehaviour
                     {
                         veloBuff.veloBuffOn = true;
                         Debug.Log("Successfully Gained Trust from Velociraptor");
-                        
+                        Debug.Log("Velociraptor BUFF ON");
                     }
-                    else
-                        PlayerPrefs.SetInt("veloTrust", PlayerPrefs.GetInt("veloTrust", 0) + 1);
-
 
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
 
@@ -129,17 +127,17 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 2);
 
                     Debug.Log("Successfully Feeding Caudipteryx");
+                    PlayerPrefs.SetInt("caudiTrust", PlayerPrefs.GetInt("caudiTrust", 0) + 1);
+                    Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
+
 
                     if (PlayerPrefs.GetInt("caudiTrust", 0) >= 3)
                     {
                         caudiBuff.caudiBuffOn = true;
                         Debug.Log("Successfully Gained Trust from Caudipteryx");
+                        Debug.Log("Caudipteryx BUFF ON");
                     }
-                    else
-                        PlayerPrefs.SetInt("caudiTrust", PlayerPrefs.GetInt("caudiTrust", 0) + 1);
 
-
-                    Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
                     Destroy(gameObject);
                 }
 
@@ -152,6 +150,8 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 5);
 
                     Debug.Log("Successfully Feeding Brachiosaurus");
+                    PlayerPrefs.SetInt("brachyTrust", PlayerPrefs.GetInt("brachyTrust") + 1);
+                    Debug.Log("brachy Trust Meter:" + PlayerPrefs.GetInt("brachyTrust", 0));
 
                     if (PlayerPrefs.GetInt("brachyTrust") >= 3)
                     {
@@ -169,10 +169,7 @@ public class Dino : MonoBehaviour
                             Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
                         }
                     }
-                    else
-                        PlayerPrefs.SetInt("brachyTrust", PlayerPrefs.GetInt("brachyTrust") + 1);
-
-                    Debug.Log("brachy Trust Meter:" + PlayerPrefs.GetInt("brachyTrust", 0));
+                    
                     Destroy(gameObject);
                 }
             }
@@ -184,15 +181,15 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 5);
 
                     Debug.Log("Successfully Feeding Ankylosaurus");
+                    PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
+                    Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
+
 
                     if (PlayerPrefs.GetInt("anklyoTrust") >= 3)
                     {
                         PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") + 2);
                     }
-                    else
-                        PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
 
-                    Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
                     Destroy(gameObject);
                 }
 
@@ -204,15 +201,16 @@ public class Dino : MonoBehaviour
                     successText.SetActive(true);
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 10);
 
+                    PlayerPrefs.SetInt("tRexTrust", PlayerPrefs.GetInt("tRexTrust", 0) + 1);
+                    Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
+
+
                     if (PlayerPrefs.GetInt("tRexTrust", 0) >= 3)
                     {
                         tRexBlock = true;
                         Debug.Log("Successfully Gained Trust from T-Rex");
                     }
-                    else
-                        PlayerPrefs.SetInt("tRexTrust", PlayerPrefs.GetInt("tRexTrust", 0) + 1);
 
-                    Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
                     Destroy(gameObject);
                 }
             }
