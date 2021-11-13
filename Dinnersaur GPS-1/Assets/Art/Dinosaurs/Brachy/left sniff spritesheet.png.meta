@@ -136,10 +136,10 @@ TextureImporter:
       name: left sniff spritesheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 86
-        height: 95
+        width: 89
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: left sniff spritesheet_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 95
         y: 0
-        width: 96
-        height: 52
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: left sniff spritesheet_2
       rect:
         serializedVersion: 2
-        x: 203
+        x: 201
         y: 0
-        width: 96
-        height: 52
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: left sniff spritesheet_3
       rect:
         serializedVersion: 2
-        x: 309
+        x: 307
         y: 0
-        width: 96
-        height: 52
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: left sniff spritesheet_4
       rect:
         serializedVersion: 2
-        x: 415
+        x: 413
         y: 0
-        width: 96
-        height: 52
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: left sniff spritesheet_5
       rect:
         serializedVersion: 2
-        x: 521
+        x: 519
         y: 0
-        width: 96
-        height: 52
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
