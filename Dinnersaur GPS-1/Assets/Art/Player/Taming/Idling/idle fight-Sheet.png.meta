@@ -1,40 +1,25 @@
 fileFormatVersion: 2
-guid: ad1c3237bdb296544a02cd9dce4cfb22
+guid: 71a2b9ee5d1754c4686551179c5efe17
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -858292884269669837
-    second: death left (4)_0
+      213: -1422502662595943265
+    second: idle fight-Sheet_0
   - first:
-      213: 5017625204912969654
-    second: death left (4)_1
+      213: -1032191926493824919
+    second: idle fight-Sheet_1
   - first:
-      213: -4110778653744322514
-    second: death left (4)_2
+      213: -492257268005635830
+    second: idle fight-Sheet_2
   - first:
-      213: 4942651959683610527
-    second: death left (4)_3
+      213: -7304917162000408318
+    second: idle fight-Sheet_3
   - first:
-      213: 4821425041425716505
-    second: death left (4)_4
+      213: -6758005824507016838
+    second: idle fight-Sheet_4
   - first:
-      213: 4423077268673460823
-    second: death left (4)_5
-  - first:
-      213: 5864615396625526125
-    second: death left (4)_6
-  - first:
-      213: 4752231335309830003
-    second: death left (4)_7
-  - first:
-      213: 2715806006305475828
-    second: death left (4)_8
-  - first:
-      213: 3986529565436338207
-    second: death left (4)_9
-  - first:
-      213: 5390027506170318788
-    second: death left (4)_10
+      213: -2513273786824252397
+    second: idle fight-Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,232 +133,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death left (4)_0
+      name: idle fight-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 42
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3326cdf4b2bb614f0800000000000000
-      internalID: -858292884269669837
+      spriteID: f94ebe77d51424ce0800000000000000
+      internalID: -1422502662595943265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death left (4)_1
+      name: idle fight-Sheet_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 126
         y: 0
-        width: 47
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b752e21a8f22a540800000000000000
-      internalID: 5017625204912969654
+      spriteID: 9683f4169eaeca1f0800000000000000
+      internalID: -1032191926493824919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death left (4)_2
+      name: idle fight-Sheet_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 252
         y: 0
-        width: 47
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28af41289493f6c0800000000000000
-      internalID: -4110778653744322514
+      spriteID: a097b627f962b29f0800000000000000
+      internalID: -492257268005635830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death left (4)_3
+      name: idle fight-Sheet_3
       rect:
         serializedVersion: 2
-        x: 130
+        x: 378
         y: 0
-        width: 47
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97745125c3d79440800000000000000
-      internalID: 4942651959683610527
+      spriteID: 201af455b88bf9a90800000000000000
+      internalID: -7304917162000408318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death left (4)_4
+      name: idle fight-Sheet_4
       rect:
         serializedVersion: 2
-        x: 176
+        x: 504
         y: 0
-        width: 47
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9155a59b78429e240800000000000000
-      internalID: 4821425041425716505
+      spriteID: a790d30128db632a0800000000000000
+      internalID: -6758005824507016838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death left (4)_5
+      name: idle fight-Sheet_5
       rect:
         serializedVersion: 2
-        x: 220
+        x: 630
         y: 0
-        width: 47
-        height: 48
+        width: 126
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75af265675de16d30800000000000000
-      internalID: 4423077268673460823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death left (4)_6
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6da62491ac436150800000000000000
-      internalID: 5864615396625526125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death left (4)_7
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3776f97983153f140800000000000000
-      internalID: 4752231335309830003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death left (4)_8
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fcc5bc7c2b70b520800000000000000
-      internalID: 2715806006305475828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death left (4)_9
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10ec6aa48ff25730800000000000000
-      internalID: 3986529565436338207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death left (4)_10
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 0
-        width: 47
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cfcdd295793dca40800000000000000
-      internalID: 5390027506170318788
+      spriteID: 3142a098ece0f1dd0800000000000000
+      internalID: -2513273786824252397
       vertices: []
       indices: 
       edges: []

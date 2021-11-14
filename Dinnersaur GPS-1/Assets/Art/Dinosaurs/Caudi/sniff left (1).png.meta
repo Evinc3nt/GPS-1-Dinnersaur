@@ -136,9 +136,9 @@ TextureImporter:
       name: sniff left (1)_0
       rect:
         serializedVersion: 2
-        x: 21
+        x: 20
         y: 0
-        width: 46
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -159,7 +159,7 @@ TextureImporter:
         serializedVersion: 2
         x: 72
         y: 0
-        width: 48
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -180,7 +180,7 @@ TextureImporter:
         serializedVersion: 2
         x: 125
         y: 0
-        width: 48
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -201,7 +201,7 @@ TextureImporter:
         serializedVersion: 2
         x: 178
         y: 0
-        width: 48
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -222,7 +222,7 @@ TextureImporter:
         serializedVersion: 2
         x: 231
         y: 0
-        width: 48
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -243,7 +243,7 @@ TextureImporter:
         serializedVersion: 2
         x: 284
         y: 0
-        width: 48
+        width: 50
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
