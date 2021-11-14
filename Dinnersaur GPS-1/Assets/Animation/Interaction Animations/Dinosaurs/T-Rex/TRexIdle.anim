@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BrachyIdle
+  m_Name: TRexIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 3791941513120204850, guid: 9933c4e85c576ee47a947d58bddb4cd3, type: 3}
+      value: {fileID: 3639004565400332237, guid: 0367f545111789643ba05a1a4295ccc6, type: 3}
     - time: 0.25
-      value: {fileID: 8879117620926598994, guid: 9933c4e85c576ee47a947d58bddb4cd3, type: 3}
+      value: {fileID: 6168941621779756047, guid: 0367f545111789643ba05a1a4295ccc6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 3791941513120204850, guid: 9933c4e85c576ee47a947d58bddb4cd3, type: 3}
-    - {fileID: 8879117620926598994, guid: 9933c4e85c576ee47a947d58bddb4cd3, type: 3}
+    - {fileID: 3639004565400332237, guid: 0367f545111789643ba05a1a4295ccc6, type: 3}
+    - {fileID: 6168941621779756047, guid: 0367f545111789643ba05a1a4295ccc6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

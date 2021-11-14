@@ -124,9 +124,9 @@ TextureImporter:
       name: Idle Left (3)_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 94
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

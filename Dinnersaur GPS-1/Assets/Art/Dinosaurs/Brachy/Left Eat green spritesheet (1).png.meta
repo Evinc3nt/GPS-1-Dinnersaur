@@ -141,7 +141,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1
         y: 0
-        width: 87
+        width: 88
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -160,9 +160,9 @@ TextureImporter:
       name: Left Eat green spritesheet (1)_1
       rect:
         serializedVersion: 2
-        x: 90
+        x: 91
         y: 0
-        width: 99
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,7 +183,7 @@ TextureImporter:
         serializedVersion: 2
         x: 191
         y: 0
-        width: 97
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,7 +204,7 @@ TextureImporter:
         serializedVersion: 2
         x: 291
         y: 0
-        width: 97
+        width: 96
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -225,7 +225,7 @@ TextureImporter:
         serializedVersion: 2
         x: 391
         y: 0
-        width: 87
+        width: 88
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -244,9 +244,9 @@ TextureImporter:
       name: Left Eat green spritesheet (1)_5
       rect:
         serializedVersion: 2
-        x: 480
+        x: 481
         y: 0
-        width: 89
+        width: 88
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,7 +267,7 @@ TextureImporter:
         serializedVersion: 2
         x: 571
         y: 0
-        width: 87
+        width: 88
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
