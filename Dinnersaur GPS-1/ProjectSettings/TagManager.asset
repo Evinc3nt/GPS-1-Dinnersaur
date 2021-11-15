@@ -16,8 +16,8 @@ TagManager:
   - Plant
   - Harvest
   - 
-  - 
-  - 
+  - Props
+  - Background
   - 
   - 
   - 
@@ -42,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2412670041
+    locked: 0
+  - name: Props
+    uniqueID: 905714225
     locked: 0
