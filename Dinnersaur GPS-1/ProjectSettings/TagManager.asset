@@ -49,3 +49,6 @@ TagManager:
   - name: Props
     uniqueID: 905714225
     locked: 0
+  - name: Game Objects
+    uniqueID: 2620616175
+    locked: 0
