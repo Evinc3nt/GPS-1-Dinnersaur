@@ -9,11 +9,12 @@ public class Dino : MonoBehaviour
     public Button feedButton;
     public bool velo, caudi, anklyo, tRex, brachy;
 
+    public Animator dinoAnim;
     public VelociraptorBuff veloBuff;
     public CaudiBuff caudiBuff;
 
     public LifeSystem lifeSystem;
-    public GameObject meat, green, warningText;
+    public GameObject meat, green;
     public bool dropGreen;
 
     public int damage = 5;
@@ -35,8 +36,10 @@ public class Dino : MonoBehaviour
 
     private void Update()
     {
-        if(velo)
+
+        if (velo)
         {
+            //unable button while resources not enough
             if (PlayerPrefs.GetInt("Meat") >= 2)
             {
                 feedButton.interactable = true;
@@ -88,11 +91,14 @@ public class Dino : MonoBehaviour
 
     public void FeedDino()
     {
+
         int randomNumber = Random.Range(0, 100);
 
         //success - loses resources and obtains Trust
         if (randomNumber <= 70)
         {
+            dinoAnim.SetTrigger("Success");
+
             Debug.Log("Success feeding!");
             
             if (velo)
@@ -100,7 +106,6 @@ public class Dino : MonoBehaviour
                 if (PlayerPrefs.GetInt("Meat") >= 2)
                 {
                     PlayerPrefs.SetInt("veloTrust", PlayerPrefs.GetInt("veloTrust", 0) + 1);
-                    successText.SetActive(true);
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
 
                     Debug.Log("Successfully Feeding Velociraptor");
@@ -113,8 +118,6 @@ public class Dino : MonoBehaviour
                     }
 
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
-
-                    Destroy(gameObject);
                 }
 
             }
@@ -122,7 +125,6 @@ public class Dino : MonoBehaviour
             {
                 if (PlayerPrefs.GetInt("Meat") >= 2 && PlayerPrefs.GetInt("Green") >= 2)
                 {
-                    successText.SetActive(true);
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 2);
 
@@ -137,8 +139,6 @@ public class Dino : MonoBehaviour
                         Debug.Log("Successfully Gained Trust from Caudipteryx");
                         Debug.Log("Caudipteryx BUFF ON");
                     }
-
-                    Destroy(gameObject);
                 }
 
             }
@@ -170,7 +170,6 @@ public class Dino : MonoBehaviour
                         }
                     }
                     
-                    Destroy(gameObject);
                 }
             }
             if(anklyo)
@@ -190,7 +189,6 @@ public class Dino : MonoBehaviour
                         PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") + 2);
                     }
 
-                    Destroy(gameObject);
                 }
 
             }
@@ -211,24 +209,25 @@ public class Dino : MonoBehaviour
                         Debug.Log("Successfully Gained Trust from T-Rex");
                     }
 
-                    Destroy(gameObject);
                 }
             }
-            
+
+            successText.SetActive(true);
+            Destroy(gameObject);
+
         }
         else   //loses resources but does not obtain Trust (dinosaur runs away)
         {
-            failText.SetActive(true);
-            Debug.Log("Fail feeding");
+
+            dinoAnim.SetTrigger("Fail");
+
             if (velo)
             {
                 if (PlayerPrefs.GetInt("Meat") >= 2)
                 {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
-
                 }
 
-                Destroy(gameObject);
             }
             if (caudi)
             {
@@ -236,10 +235,8 @@ public class Dino : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 2);
-
                 }
 
-                Destroy(gameObject);
 
             }
             if (anklyo || brachy)
@@ -250,7 +247,6 @@ public class Dino : MonoBehaviour
 
                 }
 
-                Destroy(gameObject);
             }
             if (tRex)
             {
@@ -259,10 +255,11 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 10);
                 }
 
-                Destroy(gameObject);
+                
 
             }
-
+            failText.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
@@ -277,12 +274,15 @@ public class Dino : MonoBehaviour
 
     public void KillDino()
     {
+
         int randomNumber = Random.Range(0, 100);
 
         //success - get resourse, lost hp
         if (randomNumber <= 60)
         {
-            successText.SetActive(true);
+            dinoAnim.SetTrigger("Death");
+
+            
             Debug.Log("Success Chance!");
             if (tRexBlock)
             {
@@ -305,6 +305,7 @@ public class Dino : MonoBehaviour
             PlayerPrefs.SetInt("Dino", PlayerPrefs.GetInt("Dino") - 1);
             //Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
 
+            successText.SetActive(true);
             Instantiate(meat, transform.position, Quaternion.identity);
             Destroy(gameObject);
 
@@ -316,8 +317,9 @@ public class Dino : MonoBehaviour
             //fail - no resourse, if carnivore lost hp, else run away
             if (randomNumber <= 30)
             {
-                failText.SetActive(true);
-                Debug.Log("Fail Chance!");
+                //escape animation
+
+
                 if(tRex)
                 {
                     if (tRexBlock)
@@ -335,14 +337,17 @@ public class Dino : MonoBehaviour
                 else
                 {
                     Debug.Log("Unfortunatly! The dinosaur run away!");
-                    
                 }
+
+                failText.SetActive(true);
+
                 Destroy(gameObject);
             }
             else
             {
                 randomNumber -= 30;
-                
+                dinoAnim.SetTrigger("Death");
+
                 //super success - get resourse without losing hp (T- Rex effect skip)
                 if (randomNumber <= 10)
                 {

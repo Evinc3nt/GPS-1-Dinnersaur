@@ -14,14 +14,12 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Time.timeScale = 0f;
-            Debug.Log("Dialogue triggered!");
 
             dialogueAnim.speed = 1;
             //Display
             dialogueBox.SetActive(true);
             background.SetActive(true);
             dialogueAnim.SetBool("IsOpen", true);
-
 
             if (dialogueText != null)
             {
