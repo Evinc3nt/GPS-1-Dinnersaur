@@ -15,8 +15,8 @@ public class RandomSpawn : MonoBehaviour
 
     Vector3 getRandomPos()
     {
-        float _x = Random.Range(-70000, 70000)/10000;
-        float _y = Random.Range(-30000, 30000)/10000;
+        float _x = Random.Range(-8, 8);
+        float _y = Random.Range(-4, 4);
         float _z = 0.5f;
 
         Vector3 newPos = new Vector3(_x, _y, _z);
