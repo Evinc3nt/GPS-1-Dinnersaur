@@ -294,9 +294,7 @@ public class Dino : MonoBehaviour
     public void KillDino()
     {
 
-        int randomNumber = 70;
-
-        // Random.Range(0, 100)
+        int randomNumber = Random.Range(0, 100);
 
         //success - get resourse, lost hp
         if (randomNumber <= 60)
