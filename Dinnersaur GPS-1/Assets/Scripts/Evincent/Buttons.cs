@@ -6,14 +6,20 @@ public class Buttons : MonoBehaviour
 {
     public Animator transition;
     public float transTime = 1f;
+
+    private void Start()
+    {
+        transition.SetBool("Fade", false);
+    }
     public void Quit()
     {
         Application.Quit();
     }
     public void Play()
     {
+        Time.timeScale = 1;
         StartCoroutine(Transitioning());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
         
     }
 
@@ -28,29 +34,7 @@ public class Buttons : MonoBehaviour
     {
         transition.SetBool("Fade", true);
         yield return new WaitForSeconds(transTime);
-        transition.SetBool("Fade", false);
-        //SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 }
-
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
-//public class Button : MonoBehaviour
-//{
-//    public void Play()
-//    {
-//        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-//    }
-
-//    public void Setting()
-//    {
-//        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-//    }
-
-//    public void Quit()
-//    {
-//        Application.Quit();
-//    }
-//}
