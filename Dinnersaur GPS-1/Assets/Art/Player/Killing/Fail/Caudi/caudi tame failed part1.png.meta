@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 065c6e841fcb6234b9c56ef69a7ae8fd
+guid: 91725ba21a46e2a4688c77725310f48f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3522825722081870947
-    second: t-Rex_part_1_0
+      213: 5364073854359253776
+    second: caudi tame failed part1_0
   - first:
-      213: 5253508450638426647
-    second: t-Rex_part_1_1
+      213: -4464211462751960516
+    second: caudi tame failed part1_1
   - first:
-      213: -7739351414846747222
-    second: t-Rex_part_1_2
+      213: -3456968788690842339
+    second: caudi tame failed part1_2
   - first:
-      213: 991835137155416007
-    second: t-Rex_part_1_3
+      213: 4137093540419109855
+    second: caudi tame failed part1_3
   - first:
-      213: 3447357365243017435
-    second: t-Rex_part_1_4
+      213: 4219840867248600825
+    second: caudi tame failed part1_4
+  - first:
+      213: 2006373333720378129
+    second: caudi tame failed part1_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: t-Rex_part_1_0
+      name: caudi tame failed part1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3648c4a545793e030800000000000000
-      internalID: 3522825722081870947
+      spriteID: 0133b0e10c4017a40800000000000000
+      internalID: 5364073854359253776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_1_1
+      name: caudi tame failed part1_1
       rect:
         serializedVersion: 2
         x: 165
@@ -165,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712f0d00a1638e840800000000000000
-      internalID: 5253508450638426647
+      spriteID: c324178b35feb02c0800000000000000
+      internalID: -4464211462751960516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_1_2
+      name: caudi tame failed part1_2
       rect:
         serializedVersion: 2
         x: 330
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad842e94ec489490800000000000000
-      internalID: -7739351414846747222
+      spriteID: d1d4876d3316600d0800000000000000
+      internalID: -3456968788690842339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_1_3
+      name: caudi tame failed part1_3
       rect:
         serializedVersion: 2
         x: 495
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf36e16dc4b3cd00800000000000000
-      internalID: 991835137155416007
+      spriteID: fd38e3fd7a8e96930800000000000000
+      internalID: 4137093540419109855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_1_4
+      name: caudi tame failed part1_4
       rect:
         serializedVersion: 2
         x: 660
@@ -228,8 +231,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd8f221424977df20800000000000000
-      internalID: 3447357365243017435
+      spriteID: 9f6770d39e2ef8a30800000000000000
+      internalID: 4219840867248600825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caudi tame failed part1_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 165
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b2833bae118db10800000000000000
+      internalID: 2006373333720378129
       vertices: []
       indices: 
       edges: []

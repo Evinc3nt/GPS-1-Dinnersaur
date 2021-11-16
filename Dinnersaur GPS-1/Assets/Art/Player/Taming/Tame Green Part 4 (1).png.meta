@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 4fe8e1442406253488a4cd43a9065d76
+guid: 7983d37853be8044383b73c2bfe4f287
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7618802600244168953
-    second: t-Rex_part_2_0
+      213: 4235540758898126732
+    second: Tame Green Part 4 (1)_0
   - first:
-      213: -1568209851397020202
-    second: t-Rex_part_2_1
+      213: 6027154402392267050
+    second: Tame Green Part 4 (1)_1
   - first:
-      213: 2201666176000355270
-    second: t-Rex_part_2_2
+      213: -525749340777029188
+    second: Tame Green Part 4 (1)_2
   - first:
-      213: 1011860953059081247
-    second: t-Rex_part_2_3
+      213: -1135786329964616096
+    second: Tame Green Part 4 (1)_3
   - first:
-      213: 1636310399803870692
-    second: t-Rex_part_2_4
+      213: -5978539638860119478
+    second: Tame Green Part 4 (1)_4
+  - first:
+      213: 8045117885327797077
+    second: Tame Green Part 4 (1)_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: t-Rex_part_2_0
+      name: Tame Green Part 4 (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f84069499c6bb960800000000000000
-      internalID: 7618802600244168953
+      spriteID: c8fafcd11e9a7ca30800000000000000
+      internalID: 4235540758898126732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_2_1
+      name: Tame Green Part 4 (1)_1
       rect:
         serializedVersion: 2
         x: 165
@@ -165,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5663ae2799c3ae0800000000000000
-      internalID: -1568209851397020202
+      spriteID: a29d509eef0c4a350800000000000000
+      internalID: 6027154402392267050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_2_2
+      name: Tame Green Part 4 (1)_2
       rect:
         serializedVersion: 2
         x: 330
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cb6e7ed8b3ed8e10800000000000000
-      internalID: 2201666176000355270
+      spriteID: cb1e61692c924b8f0800000000000000
+      internalID: -525749340777029188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_2_3
+      name: Tame Green Part 4 (1)_3
       rect:
         serializedVersion: 2
         x: 495
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1cbc2dfc2ada0e00800000000000000
-      internalID: 1011860953059081247
+      spriteID: 066e6bdb950ec30f0800000000000000
+      internalID: -1135786329964616096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t-Rex_part_2_4
+      name: Tame Green Part 4 (1)_4
       rect:
         serializedVersion: 2
         x: 660
@@ -228,8 +231,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed469a93a755b610800000000000000
-      internalID: 1636310399803870692
+      spriteID: a428626cfd5f70da0800000000000000
+      internalID: -5978539638860119478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tame Green Part 4 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 165
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bea13871006af60800000000000000
+      internalID: 8045117885327797077
       vertices: []
       indices: 
       edges: []
