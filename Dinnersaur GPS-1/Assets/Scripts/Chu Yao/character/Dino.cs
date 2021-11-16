@@ -286,7 +286,7 @@ public class Dino : MonoBehaviour
 
     /*  Killing Chance
         60   success - get resourse, lost hp
-        30   fail - no resourse, if carnivore lost hp, else run away
+        30   fail - no resourse, lost hp
         10   super success - get resourse without losing hp (T- Rex effect skip)
     */
 
@@ -334,28 +334,20 @@ public class Dino : MonoBehaviour
         {
             randomNumber -= 60;
             
-            //fail - no resourse, if carnivore lost hp, else run away
+            //fail - no resourse, lost hp
             if (randomNumber <= 30)
             {
                 dinoFailKill = true;
 
-                if (tRex)
+                if (tRexBlock)
                 {
-                    if (tRexBlock)
-                    {
-                        Debug.Log("Luckily your T-Rex block it and save you. Zero damage.");
-                        tRexBlock = false;
+                    Debug.Log("Luckily your T-Rex block it and save you. Zero damage.");
+                    tRexBlock = false;
 
-                    }
-                    else
-                    {
-                        Debug.Log("Damage taken from T-Rex: " + damage);
-                        lifeSystem.lifePts -= damage;
-                    }
                 }
                 else
                 {
-                    Debug.Log("Unfortunatly! The dinosaur run away!");
+                    lifeSystem.lifePts -= damage;
                 }
 
                 Destroy(gameObject);
@@ -385,6 +377,7 @@ public class Dino : MonoBehaviour
 
                     Instantiate(meat, transform.position, Quaternion.identity);
                     Destroy(gameObject);
+
 
                 }
             }
