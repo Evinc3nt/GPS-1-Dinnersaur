@@ -52,3 +52,6 @@ TagManager:
   - name: Game Objects
     uniqueID: 2620616175
     locked: 0
+  - name: Inventory
+    uniqueID: 901465375
+    locked: 0

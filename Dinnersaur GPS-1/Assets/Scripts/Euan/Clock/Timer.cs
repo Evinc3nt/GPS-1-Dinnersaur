@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
         {
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
-            FindObjectOfType<KarmaSystem>().showKarmaBar();
+            //FindObjectOfType<KarmaSystem>().showKarmaBar();
             timesUp = true;
         }
     }
