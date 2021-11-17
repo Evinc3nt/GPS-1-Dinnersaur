@@ -1976,6 +1976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DinoSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4779711749746223837, guid: a59ea041e2fff7f4fb60d6dbbd9f61d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a59ea041e2fff7f4fb60d6dbbd9f61d2, type: 3}
 --- !u!1 &176106533
