@@ -306,7 +306,7 @@ public class Dino : MonoBehaviour
         {
             dinoKilled = true;
 
-            playerAnim.SetTrigger("SuperSuccess");
+            playerAnim.SetTrigger("Success");
 
             Debug.Log("Success Chance!");
 
@@ -366,7 +366,7 @@ public class Dino : MonoBehaviour
                 if (randomNumber <= 10)
                 {
 
-                    playerAnim.SetTrigger("SuperSuccess");
+                    playerAnim.SetTrigger("Success");
                     dinoKilled = true;
 
                     Debug.Log("Super Success Chance!");

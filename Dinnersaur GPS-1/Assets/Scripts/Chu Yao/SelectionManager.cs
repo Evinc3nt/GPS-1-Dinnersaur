@@ -18,10 +18,12 @@ public class SelectionManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
 
-        Debug.Log("Player Animation showing");
+        
 
         if (Dino.dinoFailKill)
         {
+            Debug.Log("Player Animation showing");
+
             dino.SetActive(false);
             if (Dino.veloFail)
             {
@@ -52,51 +54,52 @@ public class SelectionManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
             Dino.dinoFailKill = false;
         }
-
-
-        Debug.Log("Dino Animation showing");
-
-        //Taming
-        if (Dino.success)
+        else
         {
-            dinoAnim.SetTrigger("Success");
 
-        }
-        if (Dino.fail)
-        {
-            dinoAnim.SetTrigger("Fail");
+            Debug.Log("Dino Animation showing");
+            //Taming
+            if (Dino.success)
+            {
+                dinoAnim.SetTrigger("Success");
 
-        }
+            }
+            if (Dino.fail)
+            {
+                dinoAnim.SetTrigger("Fail");
 
-        //Kill
-        if (Dino.dinoKilled || Dino.superSuccess)
-        {
-            dinoAnim.SetTrigger("Death");
+            }
 
-        }
+            //Kill
+            if (Dino.dinoKilled || Dino.superSuccess)
+            {
+                dinoAnim.SetTrigger("Death");
+            }
 
 
+            yield return new WaitForSecondsRealtime(dinoAnim.GetCurrentAnimatorStateInfo(0).length * dinoAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
 
-        yield return new WaitForSecondsRealtime(dinoAnim.GetCurrentAnimatorStateInfo(0).length * dinoAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            Debug.Log("Animation Done. Pop up things");
 
-        Debug.Log("Animation Done. Pop up things");
+            if (Dino.success || Dino.dinoKilled)
+            {
+                successText.SetActive(true);
+                Dino.success = false;
+                Dino.dinoKilled = false;
+            }
+            if (Dino.fail || Dino.dinoFailKill)
+            {
+                failText.SetActive(true);
+                Dino.fail = false;
+                Dino.dinoFailKill = false;
+            }
+            if (Dino.superSuccess)
+            {
+                superSuccessText.SetActive(true);
+                Dino.superSuccess = false;
+            }
 
-        if (Dino.success||Dino.dinoKilled)
-        {
-            successText.SetActive(true);
-            Dino.success = false;
-            Dino.dinoKilled = false;
-        }
-        if (Dino.fail||Dino.dinoFailKill)
-        {
-            failText.SetActive(true);
-            Dino.fail = false;
-            Dino.dinoFailKill = false;
-        }
-        if (Dino.superSuccess)
-        {
-            superSuccessText.SetActive(true);
-            Dino.superSuccess = false;
+
         }
 
         dialogueBox.SetActive(false);
