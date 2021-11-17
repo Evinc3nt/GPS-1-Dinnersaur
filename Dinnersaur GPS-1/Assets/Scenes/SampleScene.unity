@@ -128,6 +128,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4349885147107693671, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
   m_PrefabInstance: {fileID: 4349885147114228347}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &16043059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8681658707949902413, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+  m_PrefabInstance: {fileID: 1724747131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &21356840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -524,6 +535,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1630030853}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 480100382}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -754,6 +769,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
   m_PrefabInstance: {fileID: 172991792}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &175346551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8681658707949902413, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+  m_PrefabInstance: {fileID: 911486404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &180554094 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3415609903422288930, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
@@ -825,6 +851,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1996439794636691175, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336740797266917056, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
@@ -885,6 +919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Velo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4422985483905047960, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -932,6 +970,10 @@ PrefabInstance:
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
@@ -1035,6 +1077,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4918090875328365910, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1095,6 +1141,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1396663121}
+    - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
 --- !u!95 &221083612 stripped
@@ -1117,6 +1167,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5905928409179879684, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
   m_PrefabInstance: {fileID: 221083611}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &221083616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4918090875225441758, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+  m_PrefabInstance: {fileID: 221083611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &253165797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,6 +1428,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 423823100}
     m_Modifications:
+    - target: {fileID: 2271148226342743982, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577079047954132157, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
@@ -1497,6 +1566,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7361937202325039149, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
   m_PrefabInstance: {fileID: 279611804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &279611809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2271148226159865638, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+  m_PrefabInstance: {fileID: 279611804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &289728521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1787,10 @@ PrefabInstance:
       propertyPath: playerAnim
       value: 
       objectReference: {fileID: 1647111211}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 501516088}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: successText
       value: 
@@ -2216,6 +2300,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
   m_PrefabInstance: {fileID: 477358667}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &480100382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8681658707949902413, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+  m_PrefabInstance: {fileID: 193734576}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &498218045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5905274601376730947, guid: 1d3ea800b912c3b4d9aab98cb2e8d506, type: 3}
@@ -2288,6 +2383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anklyo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3238076142132745162, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3779167546490711164, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -2303,6 +2402,10 @@ PrefabInstance:
     - target: {fileID: 3801784158217193215, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: KillDino
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110230629947677450, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
@@ -2326,6 +2429,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2142833567126093270, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
   m_PrefabInstance: {fileID: 501516083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &501516088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3238076141949670210, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+  m_PrefabInstance: {fileID: 501516083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +2849,10 @@ PrefabInstance:
       propertyPath: playerAnim
       value: 
       objectReference: {fileID: 1675633992}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 279611809}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: successText
       value: 
@@ -34437,6 +34555,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 272730815}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 175346551}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -35651,6 +35773,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1996439794636691175, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336740797266917056, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349885147107693671, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -35718,6 +35848,10 @@ PrefabInstance:
     - target: {fileID: 4349885147912653743, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422985483905047960, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -36572,6 +36706,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4025312593191973926}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 4025312593191973927}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -36871,6 +37009,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4918090875328365910, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -36931,6 +37073,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1396663121}
+    - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
 --- !u!95 &1216837502 stripped
@@ -36953,6 +37099,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5905928409179879684, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
   m_PrefabInstance: {fileID: 1216837501}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216837506 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4918090875225441758, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+  m_PrefabInstance: {fileID: 1216837501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1217191646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37198,6 +37355,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 271252359}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 1216837506}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -37355,6 +37516,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1326513129415490200, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
   m_PrefabInstance: {fileID: 279611804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336218022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8681658707949902413, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+  m_PrefabInstance: {fileID: 4349885147114228347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1346512583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 599845453479101382, guid: 870080f1cca6d6349941b56d8430db8c, type: 3}
@@ -38067,6 +38239,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1116884495}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 1628297067}
+    - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -38258,6 +38434,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 423823100}
     m_Modifications:
+    - target: {fileID: 2271148226342743982, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577079047954132157, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -38356,6 +38540,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7361937202325039149, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
   m_PrefabInstance: {fileID: 1628297062}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1628297067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2271148226159865638, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+  m_PrefabInstance: {fileID: 1628297062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1630030853 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3415609903422288930, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
@@ -38664,6 +38859,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1803816235}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 16043059}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -38839,6 +39038,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1996439794636691175, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336740797266917056, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349885147107693671, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -38902,6 +39109,10 @@ PrefabInstance:
     - target: {fileID: 4349885147912653743, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_Name
       value: Velo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422985483905047960, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4850295557675927494, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_IsActive
@@ -39762,6 +39973,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 180554094}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 1336218022}
+    - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -40103,6 +40318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 423823100}
     m_Modifications:
+    - target: {fileID: 374421165572425975, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1884647763377014088, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -40179,6 +40398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brachy
       objectReference: {fileID: 0}
+    - target: {fileID: 9006336831338475611, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
 --- !u!4 &1918504159 stripped
@@ -40191,6 +40414,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3982827508825143474, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
   m_PrefabInstance: {fileID: 1918504158}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1918504161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 374421165428148351, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+  m_PrefabInstance: {fileID: 1918504158}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1933219431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8007092505985112370, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
@@ -40349,6 +40583,10 @@ PrefabInstance:
       propertyPath: playerAnim
       value: 
       objectReference: {fileID: 1265297088725281997}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 1265297088725281998}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: successText
       value: 
@@ -41024,6 +41262,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4918090875328365910, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -41084,6 +41326,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1396663121}
+    - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
 --- !u!95 &1265297088725281997 stripped
@@ -41091,6 +41337,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4796410231193900294, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
   m_PrefabInstance: {fileID: 1265297088725281996}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1265297088725281998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4918090875225441758, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+  m_PrefabInstance: {fileID: 1265297088725281996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1478782526805405922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41268,6 +41525,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 161365842}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 221083616}
+    - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -41402,6 +41663,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 423823100}
     m_Modifications:
+    - target: {fileID: 2271148226342743982, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577079047954132157, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -41485,6 +41754,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5862719654621684167, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
   m_PrefabInstance: {fileID: 4025312593191973925}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4025312593191973927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2271148226159865638, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+  m_PrefabInstance: {fileID: 4025312593191973925}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4068097745492710862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41557,6 +41837,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: KillDino
       objectReference: {fileID: 0}
+    - target: {fileID: 1996439794636691175, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336740797266917056, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
@@ -41617,6 +41905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Velo
       objectReference: {fileID: 0}
+    - target: {fileID: 4422985483905047960, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -41640,6 +41932,10 @@ PrefabInstance:
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
@@ -41968,6 +42264,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8808897090556590651}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 8808897090556590652}
+    - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -42146,6 +42446,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1918504160}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
+      propertyPath: trustMeter
+      value: 
+      objectReference: {fileID: 1918504161}
+    - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: successText
       value: 
       objectReference: {fileID: 253165797}
@@ -42226,6 +42530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anklyo
       objectReference: {fileID: 0}
+    - target: {fileID: 3238076142132745162, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3779167546490711164, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -42242,6 +42550,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: KillDino
       objectReference: {fileID: 0}
+    - target: {fileID: 5110230629947677450, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
 --- !u!95 &8808897090556590651 stripped
@@ -42249,3 +42561,14 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5891926122789084240, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
   m_PrefabInstance: {fileID: 8808897090556590650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8808897090556590652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3238076141949670210, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+  m_PrefabInstance: {fileID: 8808897090556590650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2da6385af56b1b4a91edb1c64057fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

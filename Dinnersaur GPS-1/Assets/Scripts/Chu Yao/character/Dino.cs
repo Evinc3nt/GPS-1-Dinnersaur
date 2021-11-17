@@ -14,6 +14,7 @@ public class Dino : MonoBehaviour
     public CaudiBuff caudiBuff;
 
     public LifeSystem lifeSystem;
+    public TrustMeter trustMeter;
     public GameObject meat, green;
     public bool dropGreen;
 
@@ -21,7 +22,6 @@ public class Dino : MonoBehaviour
     private static bool tRexBlock;
     public static bool success, fail, superSuccess, dinoKilled, dinoFailKill;
     public static bool veloFail, caudiFail, anklyoFail, tRexFail, brachyFail;
-
 
     /*  Feeding Chance
     70   success - loses resources and obtains Trust
@@ -44,7 +44,6 @@ public class Dino : MonoBehaviour
 
     private void Update()
     {
-
         if (velo)
         {
             //unable button while resources not enough
@@ -99,7 +98,7 @@ public class Dino : MonoBehaviour
     public void FeedDino()
     {
         Debug.Log("Clicked FEED DINO");
-        int randomNumber = Random.Range(0, 100);
+        int randomNumber = 60; //Random.Range(0, 100)
 
         //success - loses resources and obtains Trust
         if (randomNumber <= 70)
@@ -127,6 +126,7 @@ public class Dino : MonoBehaviour
                     }
 
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust", 0));
                 }
 
             }
@@ -150,6 +150,8 @@ public class Dino : MonoBehaviour
                         Debug.Log("Successfully Gained Trust from Caudipteryx");
                         Debug.Log("Caudipteryx BUFF ON");
                     }
+
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust"));
                 }
 
             }
@@ -164,6 +166,8 @@ public class Dino : MonoBehaviour
                     Debug.Log("Successfully Feeding Brachiosaurus");
                     PlayerPrefs.SetInt("brachyTrust", PlayerPrefs.GetInt("brachyTrust") + 1);
                     Debug.Log("brachy Trust Meter:" + PlayerPrefs.GetInt("brachyTrust", 0));
+
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("brachyTrust"));
 
                     if (PlayerPrefs.GetInt("brachyTrust") >= 3)
                     {
@@ -196,7 +200,7 @@ public class Dino : MonoBehaviour
                     Debug.Log("Successfully Feeding Ankylosaurus");
                     PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
                     Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
-
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust"));
 
                     if (PlayerPrefs.GetInt("anklyoTrust") >= 3)
                     {
@@ -216,6 +220,7 @@ public class Dino : MonoBehaviour
 
                     PlayerPrefs.SetInt("tRexTrust", PlayerPrefs.GetInt("tRexTrust", 0) + 1);
                     Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust"));
 
 
                     if (PlayerPrefs.GetInt("tRexTrust", 0) >= 3)
