@@ -77,7 +77,7 @@ public class PopulationSystem : MonoBehaviour
 
         if (human < 10 || dino < 10)
         {
-            //gameOver
+            FindObjectOfType<LifeSystem>().dead();
         }
     }
 }

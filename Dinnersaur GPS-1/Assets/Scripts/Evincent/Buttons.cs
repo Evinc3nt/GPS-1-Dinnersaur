@@ -18,23 +18,32 @@ public class Buttons : MonoBehaviour
     public void Play()
     {
         Time.timeScale = 1;
-        StartCoroutine(Transitioning());
+        StartCoroutine(Transitioning(1));
         
-        
+
     }
 
     public void Setting()
     {
-        StartCoroutine(Transitioning());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        StartCoroutine(Transitioning(2));
         
     }
+    
+    public void Back()
+    {
+        StartCoroutine(Transitioning(-1));
+    }
 
-    IEnumerator Transitioning()
+    public void Retry()
+    {
+        StartCoroutine(Transitioning(0));
+    }
+    IEnumerator Transitioning(int room)
     {
         transition.SetBool("Fade", true);
         yield return new WaitForSeconds(transTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + room);
+
+
     }
 }
