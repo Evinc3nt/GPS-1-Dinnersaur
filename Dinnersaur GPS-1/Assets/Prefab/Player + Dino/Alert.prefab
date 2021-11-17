@@ -96,3 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfb9a632fecd814f96e37e41b5d1513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killSelfTimer: 0.5
