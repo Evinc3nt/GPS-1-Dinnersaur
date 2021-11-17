@@ -290,8 +290,8 @@ public class Dino : MonoBehaviour
 
 
     /*  Killing Chance
-        60   success - get resourse, lost hp
-        30   fail - no resourse, lost hp
+        60   success - get resource, lost hp
+        30   fail - no resource, lost hp
         10   super success - get resourse without losing hp (T- Rex effect skip)
     */
 

@@ -40681,6 +40681,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4779711749746223837, guid: a59ea041e2fff7f4fb60d6dbbd9f61d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a59ea041e2fff7f4fb60d6dbbd9f61d2, type: 3}
 --- !u!1 &2058747195
@@ -41845,6 +41849,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4349885147107693671, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349885147259792738, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
@@ -41932,6 +41944,10 @@ PrefabInstance:
     - target: {fileID: 7428523946074263242, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889030033994074460, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.y
