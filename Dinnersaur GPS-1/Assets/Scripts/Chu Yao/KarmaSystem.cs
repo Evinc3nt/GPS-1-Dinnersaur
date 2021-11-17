@@ -67,8 +67,6 @@ public class KarmaSystem : MonoBehaviour
 
 
         Debug.Log("More Dino:Balanced:More Human  =  " + PlayerPrefs.GetInt("MoreDino")  + ":" + PlayerPrefs.GetInt("Balanced") + ":" + PlayerPrefs.GetInt("MoreHuman"));
-
-        FindObjectOfType<EndingManager>().loadScene();
     }
 
 

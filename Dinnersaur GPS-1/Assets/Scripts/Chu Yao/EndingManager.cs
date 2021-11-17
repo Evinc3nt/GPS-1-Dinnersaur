@@ -12,6 +12,7 @@ public class EndingManager : MonoBehaviour
 
     private int moreDino, moreHuman, balanced;
     //private int nextScene;
+    public GameObject endingBox;
     public TextMeshProUGUI ending;
 
 
@@ -30,6 +31,8 @@ public class EndingManager : MonoBehaviour
 
         if (day == 0)
         {
+            endingBox.SetActive(true);
+
             if ((moreDino != 0) && (moreHuman != 0) )
             {
                 if((moreDino == moreHuman) || ((balanced > moreDino) && (balanced > moreHuman)))

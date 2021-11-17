@@ -52,7 +52,6 @@ public class SelectionManager : MonoBehaviour
             }
 
             yield return new WaitForSecondsRealtime(4.5f); //playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
-            Dino.dinoFailKill = false;
         }
 
         else
@@ -80,32 +79,37 @@ public class SelectionManager : MonoBehaviour
 
             yield return new WaitForSecondsRealtime(4.5f); //dinoAnim.GetCurrentAnimatorStateInfo(0).length * dinoAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
 
-            Debug.Log("Animation Done. Pop up things");
-
-            if (Dino.success || Dino.dinoKilled)
-            {
-                successText.SetActive(true);
-                Dino.success = false;
-                Dino.dinoKilled = false;
-            }
-            if (Dino.fail || Dino.dinoFailKill)
-            {
-                failText.SetActive(true);
-                Dino.fail = false;
-                Dino.dinoFailKill = false;
-            }
-            if (Dino.superSuccess)
-            {
-                superSuccessText.SetActive(true);
-                Dino.superSuccess = false;
-            }
-
-
         }
+
+        Debug.Log("Animation Done. Pop up things");
+
+        if (Dino.success || Dino.dinoKilled)
+        {
+            successText.SetActive(true);
+            Dino.success = false;
+            Dino.dinoKilled = false;
+        }
+        if (Dino.fail || Dino.dinoFailKill)
+        {
+            failText.SetActive(true);
+            Dino.fail = false;
+            Dino.dinoFailKill = false;
+        }
+        if (Dino.superSuccess)
+        {
+            superSuccessText.SetActive(true);
+            Dino.superSuccess = false;
+        }
+
 
         dialogueBox.SetActive(false);
         background.SetActive(false);
         dialogueAnim.SetBool("IsOpen", false);
-        Time.timeScale = 1f;
     }
+
+    //public void TimeStartMove()
+    //{
+    //    Time.timeScale = 1f;
+    //}
+
 }
