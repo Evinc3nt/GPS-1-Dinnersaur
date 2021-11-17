@@ -16,9 +16,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator WaitAnim()
     {
-        yield return new WaitForSecondsRealtime(playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+        yield return new WaitForSecondsRealtime(2.3f); //playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
 
-        
+
 
         if (Dino.dinoFailKill)
         {
@@ -51,9 +51,10 @@ public class SelectionManager : MonoBehaviour
                 Dino.tRexFail = false;
             }
 
-            yield return new WaitForSecondsRealtime(playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            yield return new WaitForSecondsRealtime(4.5f); //playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
             Dino.dinoFailKill = false;
         }
+
         else
         {
 
@@ -77,7 +78,7 @@ public class SelectionManager : MonoBehaviour
             }
 
 
-            yield return new WaitForSecondsRealtime(dinoAnim.GetCurrentAnimatorStateInfo(0).length * dinoAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            yield return new WaitForSecondsRealtime(4.5f); //dinoAnim.GetCurrentAnimatorStateInfo(0).length * dinoAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
 
             Debug.Log("Animation Done. Pop up things");
 

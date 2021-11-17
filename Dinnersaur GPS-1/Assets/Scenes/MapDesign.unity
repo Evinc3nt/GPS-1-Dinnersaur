@@ -1870,7 +1870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166038697}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2099239286}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: openInv
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &166038697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,11 +2239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717444303836489444, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.2
+      value: 17.22
       objectReference: {fileID: 0}
     - target: {fileID: 1717444303836489444, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.52
+      value: 14.9
       objectReference: {fileID: 0}
     - target: {fileID: 1717444303836489444, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2802,11 +2814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.355988
+      value: -50.94
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.220516
+      value: 25.41
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4791,7 +4803,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 531316865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2099239286}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ConsumeMeat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &531316865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6820,7 +6844,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 720602912}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2099239286}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ConsumeGreens
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &720602912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59549,11 +59585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.847515
+      value: -9.15
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.994213
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60788,11 +60824,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -77.82885
+      value: -76.32
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.341562
+      value: 19.76
       objectReference: {fileID: 0}
     - target: {fileID: 621155098805051750, guid: 5ecb9188aca539947bd38b7ee83ef9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69454,17 +69490,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6576845779707560474, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: m_Size.x
+      value: 11.422718
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576845779707560474, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576845779707560474, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.32229996
+      objectReference: {fileID: 0}
     - target: {fileID: 6576845779707560475, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6576845779707560475, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.4
+      value: -8.89
       objectReference: {fileID: 0}
     - target: {fileID: 6576845779707560475, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.18
+      value: 4.77
       objectReference: {fileID: 0}
     - target: {fileID: 6576845779707560475, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69508,11 +69556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6576845780898883516, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.08
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 6576845780898883516, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -909695860958860440, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
@@ -70409,11 +70457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478782528435869050, guid: 9fd51771a267b394589737ac17c28e0a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.4358
+      value: -50.04
       objectReference: {fileID: 0}
     - target: {fileID: 1478782528435869050, guid: 9fd51771a267b394589737ac17c28e0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5394287
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 1478782528435869050, guid: 9fd51771a267b394589737ac17c28e0a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72636,11 +72684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.00186
+      value: -73.95
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.200863
+      value: 20.16
       objectReference: {fileID: 0}
     - target: {fileID: 3241676281558254553, guid: 076219f6c5c1d2e4f97e3c341546e5db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -75769,7 +75817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2070465410}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2099239286}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2070465410
 MonoBehaviour:
   m_ObjectHideFlags: 0

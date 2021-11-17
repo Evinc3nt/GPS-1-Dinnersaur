@@ -10,7 +10,7 @@ public class ClockTest : MonoBehaviour
 
     public float timeToDegrees; //irrelevant atm but might change based on day length
 
-    float startingTimer = 180f;
+    float startingTimer = 90f;
 
     void Start()
     {
