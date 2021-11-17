@@ -44,6 +44,7 @@ public class Dino : MonoBehaviour
 
     private void Update()
     {
+
         if (velo)
         {
             //unable button while resources not enough
@@ -55,6 +56,8 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
+
+            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust"));
         }
 
         if (caudi)
@@ -67,9 +70,11 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
+
+            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust"));
         }
 
-        if (anklyo || brachy)
+        if (anklyo)
         {
             if (PlayerPrefs.GetInt("Green") >= 5)
             {
@@ -79,8 +84,23 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
+            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust"));
+
         }
 
+        if (brachy)
+        {
+            if (PlayerPrefs.GetInt("Green") >= 5)
+            {
+                feedButton.interactable = true;
+            }
+            else
+            {
+                feedButton.interactable = false;
+            }
+            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("brachyTrust"));
+
+        }
         if (tRex)
         {
             if (PlayerPrefs.GetInt("Meat") >= 10)
@@ -91,14 +111,15 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
+            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust"));
+
         }
 
     }
 
     public void FeedDino()
     {
-        Debug.Log("Clicked FEED DINO");
-        int randomNumber = 60; //Random.Range(0, 100)
+        int randomNumber = Random.Range(0, 100);
 
         //success - loses resources and obtains Trust
         if (randomNumber <= 70)

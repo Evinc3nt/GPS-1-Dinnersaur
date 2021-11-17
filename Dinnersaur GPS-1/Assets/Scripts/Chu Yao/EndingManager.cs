@@ -11,14 +11,14 @@ public class EndingManager : MonoBehaviour
     public int day = 7;
 
     private int moreDino, moreHuman, balanced;
-    private int nextScene;
+    //private int nextScene;
     public TextMeshProUGUI ending;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        //nextScene = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     public void loadScene()
@@ -56,7 +56,7 @@ public class EndingManager : MonoBehaviour
         }
         else
         {
-            //SceneManager.LoadScene(nextScene);
+            SceneManager.LoadScene("MapDesign");
             --day;
             Debug.Log("Day left: " + (day+1));
         }

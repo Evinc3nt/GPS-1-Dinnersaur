@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public float timerMax;
     public CaudiBuff cB;
     private bool timesUp;
+
     void Awake()
     {
         timesUp = false;
@@ -34,7 +35,7 @@ public class Timer : MonoBehaviour
         {
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
-            //FindObjectOfType<KarmaSystem>().showKarmaBar();
+            FindObjectOfType<KarmaSystem>().showKarmaBar();
             timesUp = true;
         }
     }

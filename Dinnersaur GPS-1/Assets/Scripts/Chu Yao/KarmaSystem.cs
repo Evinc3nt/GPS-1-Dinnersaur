@@ -7,14 +7,11 @@ using TMPro;
 
 public class KarmaSystem : MonoBehaviour
 {
-    public GameObject inventory;
+    public GameObject balance,moreHuman,moreDino;
 
     public Slider karmaBar;
     public int maxDino = 25;
     public int maxHuman = 25;
-    private bool loadScene;
-    public TextMeshProUGUI result;
-
     private int dinoResult, humanResult, balancedResult;
 
 
@@ -54,37 +51,29 @@ public class KarmaSystem : MonoBehaviour
         if (karmaBar.value < (karmaBar.maxValue * 0.4))
         {
             PlayerPrefs.SetInt("MoreDino", dinoResult + 1);
-
+            moreDino.SetActive(true);
         }
         else if (karmaBar.value > (karmaBar.maxValue * 0.6))
         {
 
             PlayerPrefs.SetInt("MoreHuman", humanResult + 1);
-
+            moreHuman.SetActive(true);
         }
         else
         {
             PlayerPrefs.SetInt("Balanced", balancedResult + 1);
-
+            balance.SetActive(true);
         }
 
-        result.text = PlayerPrefs.GetInt("MoreDino").ToString() + " : " + PlayerPrefs.GetInt("Balanced").ToString() + " : " + PlayerPrefs.GetInt("MoreHuman").ToString();
 
         Debug.Log("More Dino:Balanced:More Human  =  " + PlayerPrefs.GetInt("MoreDino")  + ":" + PlayerPrefs.GetInt("Balanced") + ":" + PlayerPrefs.GetInt("MoreHuman"));
 
         FindObjectOfType<EndingManager>().loadScene();
-
-        //if (Input.GetKey(KeyCode.Z))
-        //{
-        //}
-
-
     }
 
 
     public void showKarmaBar()
     {
-        //inventory.GetComponent<Inventory>().enabled = false;
         FindObjectOfType<PopulationSystem>().setPopulation();//set population first
 
         for (int i = 0; i < transform.childCount; i++)

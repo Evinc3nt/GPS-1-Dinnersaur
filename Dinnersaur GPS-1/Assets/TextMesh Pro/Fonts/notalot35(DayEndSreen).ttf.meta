@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a6c5418a867a44a4a9be05d5597e1af2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Notalot35
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c4dcb0493736b644896e8a0ea56b1a93, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
