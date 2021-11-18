@@ -10,15 +10,20 @@ public class LifeSystem : MonoBehaviour
     public Animator animator;
     public Animator scene;
     private PlayerMovement move;
+    public Slider hpSlider;
+
     void Start()
     {
         lifePoints = GetComponent<Text>();
         move = FindObjectOfType<PlayerMovement>();
+        hpSlider.maxValue = lifePts;
+        hpSlider.value = lifePts;
     }
 
     // Update is called once per frame
     void Update()
     {
+        hpSlider.value = lifePts;
         lifePoints.text = lifePts.ToString();
         if (lifePts <= 0)
         {

@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
 
         else
         {
-            timerMax = 10f;
+            timerMax = 180f;
         }
     }
 
