@@ -25,17 +25,20 @@ public class Buttons : MonoBehaviour
 
     public void Setting()
     {
+        Time.timeScale = 1;
         StartCoroutine(Transitioning(2));
         
     }
     
     public void Back()
     {
+        Time.timeScale = 1;
         StartCoroutine(Transitioning(-1));
     }
 
     public void Retry()
     {
+        Time.timeScale = 1;
         StartCoroutine(Transitioning(0));
     }
     IEnumerator Transitioning(int room)
