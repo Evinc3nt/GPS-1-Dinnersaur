@@ -39,7 +39,7 @@ public class DisplayGreens : MonoBehaviour
         }
         else
         {
-            greensNum.text = "X " + greens.ToString();
+            greensNum.text = greens.ToString();
         }
     }
 }

@@ -35,7 +35,7 @@ public class DisplayMeat : MonoBehaviour
         }
         else
         {
-            meatNum.text = "X " + meat.ToString();
+            meatNum.text = meat.ToString();
 
         }
     }
