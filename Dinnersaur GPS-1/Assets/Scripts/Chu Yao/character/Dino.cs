@@ -7,8 +7,14 @@ public class Dino : MonoBehaviour
 {
     public Button feedButton;
 
-    public bool velo, caudi, anklyo, tRex, brachy;
+    [Header("Dino Type")]
+    public bool velo;
+    public bool caudi;
+    public bool anklyo;
+    public bool tRex;
+    public bool brachy;
 
+    [Space]
     public Animator playerAnim;
     public VelociraptorBuff veloBuff;
     public CaudiBuff caudiBuff;
@@ -57,7 +63,11 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust"));
+            if(success)
+            {
+                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust"));
+
+            }
         }
 
         if (caudi)
@@ -71,7 +81,11 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust"));
+            if (success)
+            {
+                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust"));
+
+            }
         }
 
         if (anklyo)
@@ -84,8 +98,13 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
-            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust"));
 
+            if (success)
+            {
+                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust"));
+
+
+            }
         }
 
         if (brachy)
@@ -98,7 +117,12 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
-            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("brachyTrust"));
+
+            if (success)
+            {
+                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("brachyTrust"));
+
+            }
 
         }
         if (tRex)
@@ -111,7 +135,12 @@ public class Dino : MonoBehaviour
             {
                 feedButton.interactable = false;
             }
-            trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust"));
+
+            if (success)
+            {
+                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust"));
+
+            }
 
         }
 

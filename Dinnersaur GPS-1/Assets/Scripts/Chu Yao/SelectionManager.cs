@@ -62,6 +62,7 @@ public class SelectionManager : MonoBehaviour
             if (Dino.success)
             {
                 dinoAnim.SetTrigger("Success");
+                //TrustMeter.setMeter = true;
 
             }
             if (Dino.fail)
