@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D player;
     public Animator animator;
     public PlayerState currentState;
+    public AudioSource walkingSounds;
+    bool isMoving = false;
 
 
 
@@ -22,11 +24,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        walkingSounds = GetComponent<AudioSource>();
         currentState = PlayerState.walk;
     }
 
     void Update() //gets input every frame
     {
+
+        if (player.velocity.x != 0 || player.velocity.y != 0)
+            isMoving = true;
+        else
+            isMoving = false;
+
         if (Time.timeScale > 0f)
         {
             if (Input.GetKeyDown(KeyCode.Space) && currentState == PlayerState.walk)
@@ -39,6 +48,18 @@ public class PlayerMovement : MonoBehaviour
                 Movement();
             }
         }
+
+        if (currentState == PlayerState.walk && isMoving)
+        {
+            if (!walkingSounds.isPlaying)
+                walkingSounds.Play();
+        }
+        else if (currentState == PlayerState.harvest)
+        {
+            walkingSounds.Stop();
+        }
+        else
+            walkingSounds.Stop();
     }
 
     void FixedUpdate() //updates movement at a FIXED frame
