@@ -14,10 +14,12 @@ public class CaudiMovement : MonoBehaviour
     bool idle = true;
     public Animator animator;
     Vector3 direction;
+    public AudioSource alertNoise;
 
     public GameObject alert;
     void Start()
     {
+        alertNoise = GetComponent<AudioSource>();
         rb = this.GetComponent<Rigidbody2D>();
         inRange = false;
         startPoint = this.transform.position;
@@ -44,6 +46,7 @@ public class CaudiMovement : MonoBehaviour
             direction = player.position - transform.position;
             if (idle == true && delay == 0)
             {
+                alertNoise.Play();
                 animator.SetBool("isAlert", true);
                 Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
                 idle = false;

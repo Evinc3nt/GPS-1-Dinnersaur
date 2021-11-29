@@ -14,8 +14,12 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D player;
     public Animator animator;
     public PlayerState currentState;
+
     public AudioSource walkingSounds;
+    public AudioSource resourceObtained;
     bool isMoving = false;
+
+    private bool collideWithPlayer = false;
 
 
 
@@ -25,12 +29,12 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         walkingSounds = GetComponent<AudioSource>();
+        resourceObtained = GetComponent<AudioSource>();
         currentState = PlayerState.walk;
     }
 
     void Update() //gets input every frame
     {
-
         if (player.velocity.x != 0 || player.velocity.y != 0)
             isMoving = true;
         else
@@ -49,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (currentState == PlayerState.walk && isMoving)
+        if (currentState == PlayerState.walk && isMoving && Time.timeScale > 0)
         {
             if (!walkingSounds.isPlaying)
                 walkingSounds.Play();
@@ -60,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
             walkingSounds.Stop();
+
+        if (collideWithPlayer == true)
+        {
+            resourceObtained.Play();
+        }
     }
 
     void FixedUpdate() //updates movement at a FIXED frame

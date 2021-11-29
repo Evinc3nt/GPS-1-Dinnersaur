@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6252748007668393308}
   m_Layer: 0
   m_Name: Velo_Caudi_Meat
-  m_TagString: Untagged
+  m_TagString: Meat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHitPlayer: {fileID: 0}
   dropMeat: 2
+  playerPickUp: {fileID: 8300000, guid: 09768b6d20188b047bea7a39d2f1986c, type: 3}

@@ -7,6 +7,7 @@ public class Green : MonoBehaviour
     public Player currentHitPlayer;
     public int dropGreen = 3;
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         /*if (collision.gameObject.tag == "Player")

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Harvest
   - Plant
+  - Meat
   layers:
   - Default
   - TransparentFX
