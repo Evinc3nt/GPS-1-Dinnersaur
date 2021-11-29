@@ -16,9 +16,8 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator WaitAnim()
     {
+
         yield return new WaitForSecondsRealtime(2.3f); //playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime
-
-
 
         if (Dino.dinoFailKill)
         {
@@ -62,7 +61,6 @@ public class SelectionManager : MonoBehaviour
             if (Dino.success)
             {
                 dinoAnim.SetTrigger("Success");
-                //TrustMeter.setMeter = true;
 
             }
             if (Dino.fail)
@@ -102,15 +100,9 @@ public class SelectionManager : MonoBehaviour
             Dino.superSuccess = false;
         }
 
-
         dialogueBox.SetActive(false);
         background.SetActive(false);
         dialogueAnim.SetBool("IsOpen", false);
     }
-
-    //public void TimeStartMove()
-    //{
-    //    Time.timeScale = 1f;
-    //}
 
 }

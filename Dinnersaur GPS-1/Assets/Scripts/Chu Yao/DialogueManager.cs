@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
 
 
-    private void DisplayNextSentence()
+    public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
@@ -85,6 +85,7 @@ public class DialogueManager : MonoBehaviour
         background.SetActive(false);
         dialogueTrigger.SetActive(false);
         animator.SetBool("IsOpen", false);
+        Time.timeScale = 1;
 
     }
 }

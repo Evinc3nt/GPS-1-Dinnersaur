@@ -7,7 +7,6 @@ public class TrustMeter : MonoBehaviour
 {
     public Image fillImage;
     public int maxValue;
-    public static bool setMeter = false;
 
     void Start()
     {
@@ -16,26 +15,12 @@ public class TrustMeter : MonoBehaviour
 
     public void SetTrustMeter(int trustPoint)
     {
-        Debug.Log("Trust point in trust meter: " + trustPoint);
         float val = ((float)trustPoint / maxValue);
+        Debug.Log("Trust point in trust meter: " + val);
 
         fillImage.fillAmount = val;
 
-        //if (setMeter)
-        //{
-        //    StartCoroutine(FillMeter(trustPoint));
-
-        //}
 
     }
 
-    //IEnumerator FillMeter(float amount)
-    //{
-    //    float val = ((float) amount / maxValue);
-
-    //    yield return new WaitForSecondsRealtime(2.5f);
-
-    //    fillImage.fillAmount = val;
-    //    setMeter = false;
-    //}
 }

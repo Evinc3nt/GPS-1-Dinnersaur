@@ -8,7 +8,7 @@ using TMPro;
 
 public class EndingManager : MonoBehaviour
 {
-    public int totalDay = 7;
+    public static int totalDay = 7;
     private int dayCount = 0;
     private int nextDayCount = 1;
 
