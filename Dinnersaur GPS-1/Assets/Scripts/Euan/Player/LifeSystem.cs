@@ -25,6 +25,7 @@ public class LifeSystem : MonoBehaviour
     {
         hpSlider.value = lifePts;
         lifePoints.text = lifePts.ToString();
+
         if (lifePts <= 0)
         {
             dead();

@@ -607,6 +607,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 4.1208496
       objectReference: {fileID: 0}
+    - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
@@ -843,6 +847,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1304342133}
+    - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1213,6 +1221,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2552,6 +2564,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -3561,6 +3577,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: KillDino
       objectReference: {fileID: 0}
+    - target: {fileID: 3721312016430315530, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: failText
       value: 
@@ -3858,6 +3878,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7021,6 +7045,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7097,6 +7125,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 4.1208496
       objectReference: {fileID: 0}
+    - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
@@ -61284,6 +61316,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
 --- !u!95 &964484703 stripped
@@ -61406,6 +61442,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -61828,6 +61868,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: Dino, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
 --- !u!1 &1004132111
@@ -62445,6 +62489,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1304342133}
+    - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -71693,6 +71741,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: KillDino
       objectReference: {fileID: 0}
+    - target: {fileID: 3721312016430315530, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: failText
       value: 
@@ -72446,6 +72498,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
@@ -77152,6 +77208,10 @@ PrefabInstance:
       propertyPath: superSuccessText
       value: 
       objectReference: {fileID: 1304342133}
+    - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -79367,6 +79427,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 4.1208496
       objectReference: {fileID: 0}
+    - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
@@ -79916,6 +79980,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 1991133849}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -81145,6 +81213,10 @@ PrefabInstance:
       propertyPath: scene
       value: 
       objectReference: {fileID: 1053004718}
+    - target: {fileID: 6589456904479908687, guid: ada92478724b2be45ac199ec70446af8, type: 3}
+      propertyPath: notText
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6589456904479908687, guid: ada92478724b2be45ac199ec70446af8, type: 3}
       propertyPath: animator
       value: 
