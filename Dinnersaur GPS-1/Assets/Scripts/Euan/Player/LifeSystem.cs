@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LifeSystem : MonoBehaviour
 {
     public int lifePts = 100;
-    Text lifePoints;
+    public Text lifePoints;
     public Animator animator;
     public Animator scene;
     private PlayerMovement move;
@@ -14,7 +14,7 @@ public class LifeSystem : MonoBehaviour
 
     void Start()
     {
-        lifePoints = GetComponent<Text>();
+        //lifePoints = GetComponent<Text>();
         move = FindObjectOfType<PlayerMovement>();
         hpSlider.maxValue = lifePts;
         hpSlider.value = lifePts;
@@ -41,7 +41,7 @@ public class LifeSystem : MonoBehaviour
     private IEnumerator deadScene()
     {
         animator.SetBool("isDead", true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
         scene.SetBool("isDead", true);
     }
 

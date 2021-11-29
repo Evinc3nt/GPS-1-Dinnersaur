@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
 
         else
         {
-            timerMax = 180f;
+            timerMax = 10f;
         }
     }
 
@@ -35,7 +35,8 @@ public class Timer : MonoBehaviour
         {
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
-            FindObjectOfType<KarmaSystem>().showKarmaBar();
+            FindObjectOfType<PopulationSystem>().setPopulation();
+            FindObjectOfType<EndingManager>().countDay();
             timesUp = true;
         }
     }

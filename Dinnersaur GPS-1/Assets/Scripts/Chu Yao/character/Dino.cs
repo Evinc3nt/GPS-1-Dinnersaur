@@ -16,6 +16,7 @@ public class Dino : MonoBehaviour
 
     [Space]
     public Animator playerAnim;
+
     public VelociraptorBuff veloBuff;
     public CaudiBuff caudiBuff;
 
@@ -63,11 +64,6 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            if(success)
-            {
-                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust"));
-
-            }
         }
 
         if (caudi)
@@ -81,13 +77,7 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            if (success)
-            {
-                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust"));
-
-            }
         }
-
         if (anklyo)
         {
             if (PlayerPrefs.GetInt("Green") >= 5)
@@ -99,12 +89,6 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            if (success)
-            {
-                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust"));
-
-
-            }
         }
 
         if (brachy)
@@ -118,11 +102,6 @@ public class Dino : MonoBehaviour
                 feedButton.interactable = false;
             }
 
-            if (success)
-            {
-                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("brachyTrust"));
-
-            }
 
         }
         if (tRex)
@@ -134,12 +113,6 @@ public class Dino : MonoBehaviour
             else
             {
                 feedButton.interactable = false;
-            }
-
-            if (success)
-            {
-                trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust"));
-
             }
 
         }
@@ -190,6 +163,7 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - 2);
 
                     Debug.Log("Successfully Feeding Caudipteryx");
+
                     PlayerPrefs.SetInt("caudiTrust", PlayerPrefs.GetInt("caudiTrust", 0) + 1);
                     Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
 
@@ -379,7 +353,7 @@ public class Dino : MonoBehaviour
             }
 
             PlayerPrefs.SetInt("Dino", PlayerPrefs.GetInt("Dino") - 1);
-            //Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
+            Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
 
             Instantiate(meat, transform.position, Quaternion.identity);
             Destroy(gameObject);
@@ -428,7 +402,7 @@ public class Dino : MonoBehaviour
                     }
 
                     PlayerPrefs.SetInt("Dino", PlayerPrefs.GetInt("Dino") - 1);
-                    //Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
+                    Debug.Log("Dino Population: " + PlayerPrefs.GetInt("Dino"));
 
                     Instantiate(meat, transform.position, Quaternion.identity);
                     Destroy(gameObject);

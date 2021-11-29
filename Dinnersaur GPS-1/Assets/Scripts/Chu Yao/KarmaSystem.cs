@@ -12,12 +12,12 @@ public class KarmaSystem : MonoBehaviour
     public Slider karmaBar;
     public int maxDino = 25;
     public int maxHuman = 25;
-    private int dinoResult, humanResult, balancedResult;
 
+    private bool isMoreDino, isMoreHuman, isBalanced;
 
     void Start()
     {
-
+        isMoreDino = isMoreHuman = isBalanced = false;
         PlayerPrefs.SetInt("Dino", maxDino);
         PlayerPrefs.SetInt("Human", maxHuman);
 
@@ -27,41 +27,49 @@ public class KarmaSystem : MonoBehaviour
         PlayerPrefs.SetInt("Balanced", 0);
     }
 
-    void Update()
+    public void SetKarma()
     {
-        SetKarma(PlayerPrefs.GetInt("Dino"), PlayerPrefs.GetInt("Human"));
-
-        dinoResult = PlayerPrefs.GetInt("MoreDino");
-        humanResult = PlayerPrefs.GetInt("MoreHuman");
-        balancedResult = PlayerPrefs.GetInt("Balanced");
-
-    }
-
-    public void SetKarma(int dino, int human)
-    {
-
-        int karma;
-        karma = dino + human;
+        int karma = PlayerPrefs.GetInt("Dino") + PlayerPrefs.GetInt("Human");
         karmaBar.maxValue = karma;
-        karmaBar.value = human;
+        karmaBar.value = PlayerPrefs.GetInt("Human");
+
+        
+        if (PlayerPrefs.GetInt("Human") < Mathf.RoundToInt(karma * 40/100))
+        {
+            isMoreDino = true;
+        }
+        else if (PlayerPrefs.GetInt("Human") > Mathf.RoundToInt(karma *60/100))
+        {
+            isMoreHuman = true;
+        }
+        else
+        {
+            isBalanced = true;
+        }
+
+        //Debug.Log("KarmaBar.value || karmaBar.maxValue" + PlayerPrefs.GetInt("Human") + " || " + karma);
+        //Debug.Log("Karma * 0.4: " + Mathf.RoundToInt(karma * 40 / 100));
+        //Debug.Log("Karma * 0.6: " + Mathf.RoundToInt(karma * 60 / 100));
+
     }
 
     public void KarmaCheck()
     {
-        if (karmaBar.value < (karmaBar.maxValue * 0.4))
+
+        if (isMoreDino)
         {
-            PlayerPrefs.SetInt("MoreDino", dinoResult + 1);
+            PlayerPrefs.SetInt("MoreDino", PlayerPrefs.GetInt("MoreDino") + 1);
             moreDino.SetActive(true);
         }
-        else if (karmaBar.value > (karmaBar.maxValue * 0.6))
+        else if (isMoreHuman)
         {
 
-            PlayerPrefs.SetInt("MoreHuman", humanResult + 1);
+            PlayerPrefs.SetInt("MoreHuman", PlayerPrefs.GetInt("MoreHuman") + 1);
             moreHuman.SetActive(true);
         }
-        else
+        else if(isBalanced)
         {
-            PlayerPrefs.SetInt("Balanced", balancedResult + 1);
+            PlayerPrefs.SetInt("Balanced", PlayerPrefs.GetInt("Balanced") + 1);
             balance.SetActive(true);
         }
 
@@ -72,14 +80,15 @@ public class KarmaSystem : MonoBehaviour
 
     public void showKarmaBar()
     {
-        FindObjectOfType<PopulationSystem>().setPopulation();//set population first
+        SetKarma();
+
+        KarmaCheck();
 
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
 
-        KarmaCheck();
     }
 
 }

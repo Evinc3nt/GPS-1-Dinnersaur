@@ -16,6 +16,7 @@ public class TrustMeter : MonoBehaviour
 
     public void SetTrustMeter(int trustPoint)
     {
+        Debug.Log("Trust point in trust meter: " + trustPoint);
         float val = ((float)trustPoint / maxValue);
 
         fillImage.fillAmount = val;

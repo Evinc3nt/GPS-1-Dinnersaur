@@ -4,80 +4,100 @@ using UnityEngine;
 
 public class PopulationSystem : MonoBehaviour
 {
-    int human, dino, meat, green;
-
-    void Update()
-    {
-        human = PlayerPrefs.GetInt("Human");
-        dino = PlayerPrefs.GetInt("Dino");
-        meat = PlayerPrefs.GetInt("Meat");
-        green = PlayerPrefs.GetInt("Green");
-    }
-
-
+    public int populationLimit = 5;
     public void setPopulation()
     {
         int excessGreen, excessMeat, excessHuman;
 
-        if (meat >= human && green >= human)
+        if (PlayerPrefs.GetInt("Meat") >= PlayerPrefs.GetInt("Human") &&  PlayerPrefs.GetInt("Green") >= PlayerPrefs.GetInt("Human"))
         {
 
-            if (green < meat)
+            if ( PlayerPrefs.GetInt("Green") < PlayerPrefs.GetInt("Meat"))
             {
-                excessGreen = green - human;
-                PlayerPrefs.SetInt("Human", human + excessGreen);
-                Debug.Log("Human population: " + human);
+                PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - PlayerPrefs.GetInt("Human"));
+                Debug.Log("Meat left after subsract to villagers: " + PlayerPrefs.GetInt("Meat"));
+
+                excessGreen =  PlayerPrefs.GetInt("Green") - PlayerPrefs.GetInt("Human");
+                PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") + excessGreen);
+                Debug.Log("Human population: " + PlayerPrefs.GetInt("Human"));
+
+                PlayerPrefs.SetInt("Meat", excessGreen);
                 Debug.Log("Green left after subsract to villagers: " + excessGreen);
 
-                PlayerPrefs.SetInt("Meat", meat - human);
-                Debug.Log("Meat left after subsract to villagers: " + meat);
             }
-            else if (meat < green)
+            else
             {
-                excessMeat = meat - human;
-                PlayerPrefs.SetInt("Human", human + excessMeat);
-                Debug.Log("Human population: " + human);
+                PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - PlayerPrefs.GetInt("Human"));
+                Debug.Log("Green left after subsract to villagers: " + PlayerPrefs.GetInt("Green"));
+
+                excessMeat = PlayerPrefs.GetInt("Meat") - PlayerPrefs.GetInt("Human");
+                PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") + excessMeat);
+                Debug.Log("Human population: " + PlayerPrefs.GetInt("Human"));
+
+                PlayerPrefs.SetInt("Meat", excessMeat);
                 Debug.Log("Meat left after subsract to villagers: " + excessMeat);
 
-                PlayerPrefs.SetInt("Green", green - human);
-                Debug.Log("Green left after subsract to villagers: " + green);
             }
-
         }
-        else if (green < human || meat < human)
+        else if ( PlayerPrefs.GetInt("Green") < PlayerPrefs.GetInt("Human") || PlayerPrefs.GetInt("Meat") < PlayerPrefs.GetInt("Human"))
         {
-            if (green < meat)
+            if ( PlayerPrefs.GetInt("Green") < PlayerPrefs.GetInt("Meat"))
             {
-                excessHuman = human - green;
-                PlayerPrefs.SetInt("Human", human - excessHuman);
-                Debug.Log("Human left: " + human);
+                PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - PlayerPrefs.GetInt("Human"));
+                Debug.Log("Meat left after subsract to villagers: " + PlayerPrefs.GetInt("Meat"));
 
-                PlayerPrefs.SetInt("Meat", meat - human);
-                Debug.Log("Meat left after subsract to villagers: " + meat);
+                excessHuman = PlayerPrefs.GetInt("Human") -  PlayerPrefs.GetInt("Green");
+                PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") - excessHuman);
+                Debug.Log("Human left: " + PlayerPrefs.GetInt("Human"));
 
                 PlayerPrefs.SetInt("Green", 0);
-                Debug.Log("Green left after subsract to villagers: " + green);
+                Debug.Log("Green left after subsract to villagers: " + PlayerPrefs.GetInt("Green"));
 
             }
-            else if (meat < green)
+            else
             {
-                excessHuman = human - meat;
-                PlayerPrefs.SetInt("Human", human - excessHuman);
-                Debug.Log("Human left: " + human);
+
+                PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") - PlayerPrefs.GetInt("Human"));
+                Debug.Log("Green left after subsract to villagers: " + PlayerPrefs.GetInt("Green"));
+
+                excessHuman = PlayerPrefs.GetInt("Human") - PlayerPrefs.GetInt("Meat");
+                PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") - excessHuman);
+                Debug.Log("Human left: " + PlayerPrefs.GetInt("Human"));
 
                 PlayerPrefs.SetInt("Meat", 0);
-                Debug.Log("Meat left after subsract to villagers: " + meat);
-
-                PlayerPrefs.SetInt("Green", green - human);
-                Debug.Log("Green left after subsract to villagers: " + green);
+                Debug.Log("Meat left after subsract to villagers: " + PlayerPrefs.GetInt("Meat"));
 
             }
         }
 
-
-        if (human < 10 || dino < 10)
+        if (PlayerPrefs.GetInt("Green") < 0)
         {
-            FindObjectOfType<LifeSystem>().dead();
+            PlayerPrefs.SetInt("Green", 0);
         }
+        if (PlayerPrefs.GetInt("Meat") < 0)
+        {
+            PlayerPrefs.SetInt("Meat", 0);
+
+        }
+
+
+        if (PlayerPrefs.GetInt("Human") < populationLimit)
+        {
+            Time.timeScale = 1f;
+            FindObjectOfType<LifeSystem>().dead();
+            Debug.Log("You lose. Population too unbalance. Dino less than 10");
+        }
+        else if (PlayerPrefs.GetInt("Dino") < populationLimit)
+        {
+            Time.timeScale = 1f;
+            FindObjectOfType<LifeSystem>().dead();
+            Debug.Log("You lose. Population too unbalance. Human less than 10");
+
+        }
+        else
+        {
+            FindObjectOfType<KarmaSystem>().showKarmaBar();
+        }
+  
     }
 }
