@@ -19,10 +19,6 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource resourceObtained;
     bool isMoving = false;
 
-    private bool collideWithPlayer = false;
-
-
-
     private Vector2 movementDirection;
 
 
@@ -64,11 +60,6 @@ public class PlayerMovement : MonoBehaviour
         }
         else
             walkingSounds.Stop();
-
-        if (collideWithPlayer == true)
-        {
-            resourceObtained.Play();
-        }
     }
 
     void FixedUpdate() //updates movement at a FIXED frame

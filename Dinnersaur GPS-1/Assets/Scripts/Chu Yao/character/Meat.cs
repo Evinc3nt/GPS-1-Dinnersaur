@@ -6,29 +6,23 @@ public class Meat : MonoBehaviour
 {
     public Player currentHitPlayer;
     public int dropMeat = 5;
-    public AudioClip playerPickUp;
+    public AudioSource playerPickUp;
 
 
     public void Start()
     {
-        //
+        playerPickUp = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(playerPickUp, transform.position);
+            // AudioSource.PlayClipAtPoint(playerPickUp, transform.position);
+            playerPickUp.Play();
             currentHitPlayer = collision.gameObject.GetComponent<Player>();
             currentHitPlayer.calculateMeat(dropMeat);
-            Destroy(gameObject);
+            Destroy(gameObject, 0.4f);
         }
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    //    if(other.gameObject.tag == "Player")
-    //        AudioSource.PlayClipAtPoint(playerPickUp, transform.position);
-    //}
 
 }
