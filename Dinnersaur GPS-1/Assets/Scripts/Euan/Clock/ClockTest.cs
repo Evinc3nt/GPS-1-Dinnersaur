@@ -32,6 +32,6 @@ public class ClockTest : MonoBehaviour
 
     void FixedUpdate()
     {
-        hand.rotation = Quaternion.Euler(0f, 0f, startingTimer - (tm.timeLeft * timeToDegrees));
+        hand.rotation = Quaternion.Euler(0f, 0f, startingTimer + (tm.timeLeft * timeToDegrees));
     }
 }
