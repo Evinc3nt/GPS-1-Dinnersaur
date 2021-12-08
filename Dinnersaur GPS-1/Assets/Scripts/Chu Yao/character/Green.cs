@@ -16,12 +16,12 @@ public class Green : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        /*if (collision.gameObject.tag == "Player")
         {
             playerPickUp.Play();
             currentHitPlayer = collision.gameObject.GetComponent<Player>();
             currentHitPlayer.calculateGreen(dropGreen);
             Destroy(gameObject,0.4f);
-        }
+        }*/
     }
 }
