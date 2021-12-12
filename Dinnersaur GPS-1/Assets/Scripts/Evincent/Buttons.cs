@@ -49,4 +49,9 @@ public class Buttons : MonoBehaviour
 
 
     }
+
+    public void StartTime()
+    {
+        Time.timeScale = 1;
+    }
 }
