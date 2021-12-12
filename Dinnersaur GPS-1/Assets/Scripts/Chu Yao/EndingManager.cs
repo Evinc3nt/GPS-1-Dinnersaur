@@ -43,7 +43,7 @@ public class EndingManager : MonoBehaviour
         //Debug.Log("Day count: " + dayCount);
         if (totalDay == 0)
         {
-            setEnding();
+            //setEnding();
         }
 
     }

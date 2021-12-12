@@ -407,7 +407,7 @@ public class Dino : MonoBehaviour
                 {
 
                     playerAnim.SetTrigger("Success");
-                    dinoKilled = true;
+                    dinoKilled = true;  /////////////////////////////////////////////////
 
                     Debug.Log("Super Success Chance!");
                     superSuccess = true;

@@ -82,7 +82,12 @@ public class SelectionManager : MonoBehaviour
 
         Debug.Log("Animation Done. Pop up things");
 
-        if (Dino.success || Dino.dinoKilled)
+        if (Dino.superSuccess)
+        {
+            superSuccessText.SetActive(true);
+            Dino.superSuccess = false;
+        }
+        else if (Dino.success || Dino.dinoKilled)
         {
             successText.SetActive(true);
             Dino.success = false;
@@ -93,11 +98,6 @@ public class SelectionManager : MonoBehaviour
             failText.SetActive(true);
             Dino.fail = false;
             Dino.dinoFailKill = false;
-        }
-        if (Dino.superSuccess)
-        {
-            superSuccessText.SetActive(true);
-            Dino.superSuccess = false;
         }
 
         dialogueBox.SetActive(false);

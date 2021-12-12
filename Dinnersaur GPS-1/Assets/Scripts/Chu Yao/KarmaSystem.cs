@@ -59,18 +59,18 @@ public class KarmaSystem : MonoBehaviour
         if (isMoreDino)
         {
             PlayerPrefs.SetInt("MoreDino", PlayerPrefs.GetInt("MoreDino") + 1);
-            //moreDino.SetActive(true);
+            moreDino.SetActive(true);
         }
         else if (isMoreHuman)
         {
 
             PlayerPrefs.SetInt("MoreHuman", PlayerPrefs.GetInt("MoreHuman") + 1);
-            //moreHuman.SetActive(true);
+            moreHuman.SetActive(true);
         }
         else if(isBalanced)
         {
             PlayerPrefs.SetInt("Balanced", PlayerPrefs.GetInt("Balanced") + 1);
-            //balance.SetActive(true);
+            balance.SetActive(true);
         }
 
 
