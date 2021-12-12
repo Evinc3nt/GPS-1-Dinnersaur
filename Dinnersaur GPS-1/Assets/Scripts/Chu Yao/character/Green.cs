@@ -6,12 +6,6 @@ public class Green : MonoBehaviour
 {
     public Player currentHitPlayer;
     public int dropGreen = 3;
-    public AudioSource playerPickUp;
-
-    private void Start()
-    {
-        playerPickUp = GetComponent<AudioSource>();
-    }
 
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -6,21 +6,11 @@ public class VelociraptorDetection : MonoBehaviour
 {
     public VelociraptorMovement vM;
 
-    public AudioSource alertNoise;
-
-    private void Start()
-    {
-        alertNoise = GetComponent<AudioSource>();
-    }
-
     void OnTriggerEnter2D(Collider2D range)
     {
         if (range.gameObject.tag == "Player")
         {
-            if (!alertNoise.isPlaying) ;
-            {
-                alertNoise.Play();
-            }
+            Sound.play_sound("brachy");
             vM.inRange = true;
             Debug.Log("Collision!");
         }

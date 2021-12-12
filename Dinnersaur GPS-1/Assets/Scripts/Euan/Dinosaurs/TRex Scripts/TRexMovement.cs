@@ -9,9 +9,6 @@ public class TRexMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 startPoint;
     public bool inRange = false;
-    public AudioSource alertNoise;
-    public AudioSource trexNoise;
-    public AudioSource stompingSound;
 
     float interval = 2.5f;
     float time = 0f;
@@ -24,9 +21,6 @@ public class TRexMovement : MonoBehaviour
 
     void Start()
     {
-        stompingSound = GetComponent<AudioSource>();
-        alertNoise = GetComponent<AudioSource>();
-        trexNoise = GetComponent<AudioSource>();
         rb = this.GetComponent<Rigidbody2D>();
         startPoint = this.transform.position;
     }
@@ -44,7 +38,6 @@ public class TRexMovement : MonoBehaviour
             animator.SetBool("isAlert", true);
             if (idle == true)
             {
-                alertNoise.Play();
                 Instantiate(alert, startPoint + new Vector3(0f, 2f), Quaternion.identity);
                 idle = false;
             }
@@ -83,12 +76,12 @@ public class TRexMovement : MonoBehaviour
             StopCoroutine(TRexMoveDelay(direction));
             rb.velocity = new Vector3(0, 0, 0);
             idle = true;
-            //stompingSound.Stop();
         }
     }
 
     void MoveEnemy(Vector3 direction)
     {
+        Sound.play_sound("trexstomp");
         rb.AddForce(direction.normalized * TRexSpeed);
         StartCoroutine(EnemyDelay());
         animator.SetFloat("Speed", 0f);

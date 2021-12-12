@@ -14,12 +14,11 @@ public class CaudiMovement : MonoBehaviour
     bool idle = true;
     public Animator animator;
     Vector3 direction;
-    public AudioSource alertNoise;
+    bool hasRoared = false;
 
     public GameObject alert;
     void Start()
     {
-        alertNoise = GetComponent<AudioSource>();
         rb = this.GetComponent<Rigidbody2D>();
         inRange = false;
         startPoint = this.transform.position;
@@ -36,7 +35,6 @@ public class CaudiMovement : MonoBehaviour
         movement = direction;
         animator.SetFloat("Horizontal", direction.x);
         animator.SetFloat("Vertical", direction.y);
-        //TODO: When collide go into interaction mode
     }
 
     void FixedUpdate()
@@ -46,10 +44,14 @@ public class CaudiMovement : MonoBehaviour
             direction = player.position - transform.position;
             if (idle == true && delay == 0)
             {
-                alertNoise.Play();
                 animator.SetBool("isAlert", true);
                 Instantiate(alert, startPoint + new Vector3(0f, 1.5f), Quaternion.identity);
                 idle = false;
+                if(hasRoared == false)
+                {
+                    Sound.play_sound("caudi"); 
+                    hasRoared = true;
+                }
             }
              
             delay += Time.deltaTime;
@@ -67,6 +69,7 @@ public class CaudiMovement : MonoBehaviour
             delay = 0f;
             //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, CaudiSpeed * Time.deltaTime);
+            hasRoared = false;
         }
 
         else
@@ -76,6 +79,7 @@ public class CaudiMovement : MonoBehaviour
             idle = true;
             delay = 0f;
             rb.velocity = new Vector3(0, 0, 0);
+            hasRoared = false;
         }
 
 

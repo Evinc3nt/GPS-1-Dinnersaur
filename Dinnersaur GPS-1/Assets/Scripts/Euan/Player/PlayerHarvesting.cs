@@ -10,6 +10,7 @@ public class PlayerHarvesting : MonoBehaviour
     {
         if (collision.CompareTag("Plant"))
         {
+            Sound.play_sound("harvest");
             p.calculateGreen(1);
             Destroy(collision.gameObject);
         }

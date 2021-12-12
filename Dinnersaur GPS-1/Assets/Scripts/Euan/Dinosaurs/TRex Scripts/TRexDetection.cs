@@ -10,6 +10,7 @@ public class TRexDetection : MonoBehaviour
     {
         if (range.gameObject.tag == "Player")
         {
+            Sound.play_sound("trex");
             tRM.inRange = true;
             Debug.Log("Collision!");
         }

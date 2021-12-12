@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerNoticed : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     public float killSelfTimer; 
     void Awake()
     {
         StartCoroutine(KillSelf());
     }
 
-    // Update is called once per frame
     IEnumerator KillSelf()
     {
+        Sound.play_sound("alert");
         yield return new WaitForSeconds(killSelfTimer);
         Destroy(this.gameObject);
     }
