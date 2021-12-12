@@ -28,7 +28,6 @@ public class Dino : MonoBehaviour
     public int damage = 5;
     private static bool tRexBlock;
     public static bool success, fail, superSuccess, dinoKilled, dinoFailKill;
-    public static bool veloFail, caudiFail, anklyoFail, tRexFail, brachyFail;
 
     /*  Feeding Chance
     70   success - loses resources and obtains Trust
@@ -44,9 +43,6 @@ public class Dino : MonoBehaviour
         PlayerPrefs.SetInt("brachyTrust", 0);
 
         success = fail = superSuccess = dinoKilled = false;
-
-
-        dinoFailKill = veloFail = caudiFail = anklyoFail = tRexFail = brachyFail = false;
     }
 
     private void Update()
@@ -127,12 +123,12 @@ public class Dino : MonoBehaviour
         if (randomNumber <= 70)
         {
             success = true;
+            playerAnim.SetTrigger("SuccessTame");
 
             Debug.Log("Success feeding!");
             
             if (velo)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 2)
                 {
@@ -157,7 +153,6 @@ public class Dino : MonoBehaviour
             }
             if (caudi)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 2 && PlayerPrefs.GetInt("Green") >= 2)
                 {
@@ -185,7 +180,6 @@ public class Dino : MonoBehaviour
             }
             if (brachy)
             {
-                playerAnim.SetTrigger("Green");
 
                 if (PlayerPrefs.GetInt("Green") >= 5)
                 {
@@ -222,7 +216,6 @@ public class Dino : MonoBehaviour
             }
             if(anklyo)
             {
-                playerAnim.SetTrigger("Green");
 
                 if (PlayerPrefs.GetInt("Green") >= 5)
                 {
@@ -248,7 +241,6 @@ public class Dino : MonoBehaviour
             }
             if (tRex)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 10)
                 {               
@@ -277,9 +269,10 @@ public class Dino : MonoBehaviour
 
             fail = true;
 
+            playerAnim.SetTrigger("FailTame");
+
             if (velo)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 2)
                 {
@@ -289,7 +282,6 @@ public class Dino : MonoBehaviour
             }
             if (caudi)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 2 && PlayerPrefs.GetInt("Green") >= 2)
                 {
@@ -301,7 +293,6 @@ public class Dino : MonoBehaviour
             }
             if (anklyo || brachy)
             {
-                playerAnim.SetTrigger("Green");
 
                 if (PlayerPrefs.GetInt("Green") >= 5)
                 {
@@ -312,7 +303,6 @@ public class Dino : MonoBehaviour
             }
             if (tRex)
             {
-                playerAnim.SetTrigger("Meat");
 
                 if (PlayerPrefs.GetInt("Meat") >= 10)
                 {
@@ -346,7 +336,7 @@ public class Dino : MonoBehaviour
         {
             dinoKilled = true;
 
-            playerAnim.SetTrigger("Success");
+            playerAnim.SetTrigger("SuccessKill");
 
             Debug.Log("Success Chance!");
 
@@ -378,7 +368,9 @@ public class Dino : MonoBehaviour
         else
         {
             randomNumber -= 60;
-            
+
+            playerAnim.SetTrigger("FailKill");
+
             //fail - no resourse, lost hp
             if (randomNumber <= 30)
             {
@@ -406,8 +398,8 @@ public class Dino : MonoBehaviour
                 if (randomNumber <= 10)
                 {
 
-                    playerAnim.SetTrigger("Success");
-                    dinoKilled = true;  /////////////////////////////////////////////////
+                    playerAnim.SetTrigger("SuccessKill");
+
 
                     Debug.Log("Super Success Chance!");
                     superSuccess = true;
@@ -428,34 +420,6 @@ public class Dino : MonoBehaviour
             }
         }
 
-        if (dinoFailKill)
-        {
-            if (velo)
-            {
-                veloFail = true;
-            }
-
-            if (caudi)
-            {
-                caudiFail = true;
-            }
-
-            if (anklyo)
-            {
-                anklyoFail = true;
-            }
-
-            if (brachy)
-            {
-                brachyFail = true;
-            }
-
-            if (tRex)
-            {
-                tRexFail = true;
-            }
-
-        }
 
     }
 

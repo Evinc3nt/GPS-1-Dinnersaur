@@ -13,7 +13,8 @@ public class PlayerNoticed : MonoBehaviour
 
     IEnumerator KillSelf()
     {
-        Sound.play_sound("alert");
+        //!MISSING SOUND FOR HERE!
+        //Sound.play_sound("alert");
         yield return new WaitForSeconds(killSelfTimer);
         Destroy(this.gameObject);
     }
