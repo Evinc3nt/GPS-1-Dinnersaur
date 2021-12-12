@@ -62,7 +62,7 @@ public class VelociraptorMovement : MonoBehaviour
 
         else if((transform.position != startPoint) && inRange == false)
         {
-            direction = startPoint;
+            direction = startPoint - transform.position;
             //rb.MovePosition(transform.position + (startPoint * CaudiSpeed * Time.deltaTime));
             transform.position = Vector3.MoveTowards(transform.position, startPoint, VeloSpeed * Time.deltaTime);
         }
