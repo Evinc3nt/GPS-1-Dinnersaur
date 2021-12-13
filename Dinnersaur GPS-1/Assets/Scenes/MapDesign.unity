@@ -1118,6 +1118,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
+      propertyPath: dino
+      value: 
+      objectReference: {fileID: 1204136807}
+    - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
       objectReference: {fileID: 397383388}
@@ -2758,7 +2762,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
   m_PrefabInstance: {fileID: 796276522}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1204136807}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a7574aaacef0f74a9722319c2a5b37f, type: 3}
@@ -3552,6 +3556,14 @@ PrefabInstance:
     - target: {fileID: 374421165572425975, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798945780457198961, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 62666058}
+    - target: {fileID: 1798945780457198961, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: FeedDino
       objectReference: {fileID: 0}
     - target: {fileID: 1884647763377014088, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -64086,6 +64098,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1204136807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9077195270016685073, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
+  m_PrefabInstance: {fileID: 796276522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1209122627 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4349885148522742846, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
@@ -71867,6 +71884,14 @@ PrefabInstance:
     - target: {fileID: 374421165572425975, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798945780457198961, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 343235236}
+    - target: {fileID: 1798945780457198961, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: FeedDino
       objectReference: {fileID: 0}
     - target: {fileID: 1884647763377014088, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target

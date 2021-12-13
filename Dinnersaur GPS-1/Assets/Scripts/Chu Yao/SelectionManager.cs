@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    public Animator dialogueAnim,dinoAnim,playerAnim;
+    public Animator dialogueAnim,dinoAnim;
     public GameObject dialogueBox, background;
 
     public GameObject successText, failText, superSuccessText;
@@ -16,6 +16,7 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator WaitAnim()
     {
+
         Debug.Log("Animation Start.");
 
         yield return new WaitForSecondsRealtime(5f); //playerAnim.GetCurrentAnimatorStateInfo(0).length * playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime

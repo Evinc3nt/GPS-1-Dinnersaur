@@ -2099,10 +2099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAnim: {fileID: 5905928409179879686}
   dinoAnim: {fileID: 2371192785848669096}
-  playerAnim: {fileID: 4796410231193900294}
   dialogueBox: {fileID: 5905928409179879684}
   background: {fileID: 5905928408964857857}
-  dino: {fileID: 8671595136811964609}
   successText: {fileID: 3456092665358794224, guid: 6a4e84eb098f039498cdb18dc38cbe5c, type: 3}
   failText: {fileID: 6237925262634642421, guid: bce153569f795ef43b9b4edd5aeb549b, type: 3}
   superSuccessText: {fileID: 6653546609773463021, guid: 02c8bddb524f61f4899d9d2e640605ad, type: 3}
@@ -3382,11 +3380,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5900938603930904341, guid: 6e9cb8eed18454a4193c8ac06be39883, type: 3}
   m_PrefabInstance: {fileID: 1401778180589384210}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &4796410231193900294 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5900938603930904340, guid: 6e9cb8eed18454a4193c8ac06be39883, type: 3}
-  m_PrefabInstance: {fileID: 1401778180589384210}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3313672838369210330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3700,11 +3693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 087ad75321139454ea41bb349ad4cc88, type: 3}
---- !u!1 &8671595136811964609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4256591099480987163, guid: 087ad75321139454ea41bb349ad4cc88, type: 3}
-  m_PrefabInstance: {fileID: 4847494808027647706}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2371192785848669096 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7182653848986803570, guid: 087ad75321139454ea41bb349ad4cc88, type: 3}

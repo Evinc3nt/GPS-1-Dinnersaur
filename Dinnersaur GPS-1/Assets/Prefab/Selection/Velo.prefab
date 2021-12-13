@@ -1843,10 +1843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAnim: {fileID: 4349885147259792736}
   dinoAnim: {fileID: 3415609903422288930}
-  playerAnim: {fileID: 3415609903422288930}
   dialogueBox: {fileID: 4349885147259792738}
   background: {fileID: 4349885147107693671}
-  dino: {fileID: 0}
   successText: {fileID: 0}
   failText: {fileID: 0}
   superSuccessText: {fileID: 0}
