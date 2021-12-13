@@ -45,6 +45,7 @@ public class Dino : MonoBehaviour
         success = fail = superSuccess = dinoKilled = false;
     }
 
+
     private void Update()
     {
 
@@ -126,7 +127,7 @@ public class Dino : MonoBehaviour
             playerAnim.SetTrigger("SuccessTame");
 
             Debug.Log("Success feeding!");
-            
+
             if (velo)
             {
 
@@ -149,6 +150,7 @@ public class Dino : MonoBehaviour
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
                     trustMeter.SetTrustMeter(PlayerPrefs.GetInt("veloTrust", 0));
                 }
+                Destroy(transform.parent.gameObject); //to avoid sound from repeating
 
             }
             if (caudi)
@@ -174,9 +176,9 @@ public class Dino : MonoBehaviour
                         PlayerPrefs.SetInt("caudiTrust", PlayerPrefs.GetInt("caudiTrust", 0) + 1);
                     }
                     Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
-                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust",0));
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust", 0));
                 }
-
+                Sound.play_sound("trustup");
             }
             if (brachy)
             {
@@ -214,7 +216,8 @@ public class Dino : MonoBehaviour
                     Debug.Log("brachy Trust Meter:" + PlayerPrefs.GetInt("brachyTrust", 0));
                 }
             }
-            if(anklyo)
+
+            if (anklyo)
             {
 
                 if (PlayerPrefs.GetInt("Green") >= 5)
@@ -234,7 +237,7 @@ public class Dino : MonoBehaviour
                     }
 
                     Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
-                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust",0));
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("anklyoTrust", 0));
 
                 }
 
@@ -243,7 +246,7 @@ public class Dino : MonoBehaviour
             {
 
                 if (PlayerPrefs.GetInt("Meat") >= 10)
-                {               
+                {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 10);
 
                     Debug.Log("Successfully Feeding T-Rex");
@@ -259,11 +262,14 @@ public class Dino : MonoBehaviour
                     }
 
                     Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
-                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust",0));
+                    trustMeter.SetTrustMeter(PlayerPrefs.GetInt("tRexTrust", 0));
 
                 }
+                Destroy(transform.parent.gameObject); //to avoid sound from repeating
             }
         }
+
+
         else   //loses resources but does not obtain Trust (dinosaur runs away)
         {
 
@@ -278,6 +284,7 @@ public class Dino : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
                 }
+                Destroy(transform.parent.gameObject); //to avoid sound from repeating
 
             }
             if (caudi)
@@ -307,11 +314,11 @@ public class Dino : MonoBehaviour
                 if (PlayerPrefs.GetInt("Meat") >= 10)
                 {
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 10);
-                }                
-
+                }
+                Destroy(transform.parent.gameObject); //to avoid sound from repeating
             }
 
-            
+
 
         }
         Destroy(gameObject);
@@ -342,10 +349,10 @@ public class Dino : MonoBehaviour
 
             if (tRexBlock)
             {
-                Debug.Log("Luckily your T-Rex block it and save you. Zero damage.");
+                Debug.Log("Luckily your T-Rex blocked it and saved you! Zero damage.");
                 Destroy(gameObject);
                 tRexBlock = false;
-
+                Destroy(transform.parent.gameObject);
             }
             else
             {
@@ -389,6 +396,7 @@ public class Dino : MonoBehaviour
 
                 Destroy(gameObject);
 
+
             }
             else
             {
@@ -414,6 +422,7 @@ public class Dino : MonoBehaviour
 
                     Instantiate(meat, transform.position, Quaternion.identity);
                     Destroy(gameObject);
+
 
 
                 }

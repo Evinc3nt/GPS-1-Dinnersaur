@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerNoticed : MonoBehaviour
+public class KillPopulationPopup : MonoBehaviour
 {
-
-    public float killSelfTimer; 
+    float killSelfTimer = 2f;
     void Awake()
     {
         StartCoroutine(KillSelf());
@@ -13,7 +12,6 @@ public class PlayerNoticed : MonoBehaviour
 
     IEnumerator KillSelf()
     {
-        Sound.play_sound("alert");
         yield return new WaitForSeconds(killSelfTimer);
         Destroy(this.gameObject);
     }

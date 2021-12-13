@@ -14,27 +14,19 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D player;
     public Animator animator;
     public PlayerState currentState;
-
-    public AudioSource walkingSounds;
-    public AudioSource resourceObtained;
-    bool isMoving = false;
+    AudioSource audioSrc;
 
     private Vector2 movementDirection;
-
+    bool isMoving = false;
 
     private void Start()
-    {
-        walkingSounds = GetComponent<AudioSource>();
-        resourceObtained = GetComponent<AudioSource>();
+    { 
         currentState = PlayerState.walk;
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update() //gets input every frame
     {
-        if (player.velocity.x != 0 || player.velocity.y != 0)
-            isMoving = true;
-        else
-            isMoving = false;
 
         if (Time.timeScale > 0f)
         {
@@ -47,19 +39,26 @@ public class PlayerMovement : MonoBehaviour
                 InputProcessor();
                 Movement();
             }
-        }
 
-        if (currentState == PlayerState.walk && isMoving && Time.timeScale > 0)
-        {
-            if (!walkingSounds.isPlaying)
-                walkingSounds.Play();
+            if(player.velocity.x == 0 && player.velocity.y == 0)
+            {
+                isMoving = false;
+            }
+
+            else
+            {
+                isMoving = true;
+            }
+
+            if (isMoving)
+            {
+                if (!audioSrc.isPlaying)
+                    audioSrc.Play();
+            }
+
+            else
+                audioSrc.Stop();
         }
-        else if (currentState == PlayerState.harvest)
-        {
-            walkingSounds.Stop();
-        }
-        else
-            walkingSounds.Stop();
     }
 
     void FixedUpdate() //updates movement at a FIXED frame
@@ -73,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
 
-        if(move != Vector3.zero)
+        if (move != Vector3.zero)
         {
             animator.SetFloat("Horizontal", move.x);
             animator.SetFloat("Vertical", move.y);
@@ -98,4 +97,6 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.7178683f);
         currentState = PlayerState.walk;
     }
+
+    
 }
