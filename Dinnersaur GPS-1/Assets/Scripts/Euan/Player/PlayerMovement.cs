@@ -59,6 +59,11 @@ public class PlayerMovement : MonoBehaviour
             else
                 audioSrc.Stop();
         }
+
+        else
+        {
+            audioSrc.Stop();
+        }
     }
 
     void FixedUpdate() //updates movement at a FIXED frame
