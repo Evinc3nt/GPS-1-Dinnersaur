@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
+    const int MAX_TRUST = 1;
+
     public Button feedButton;
 
     [Header("Dino Type")]
@@ -13,6 +15,13 @@ public class Dino : MonoBehaviour
     public bool anklyo;
     public bool tRex;
     public bool brachy;
+
+    [Header("Dino Perks")]
+    public GameObject speedUp;
+    public GameObject shield;
+    public GameObject hpUp;
+    public GameObject harvestUp;
+    public GameObject extendDay;
 
     [Space]
     public Animator playerAnim;
@@ -36,6 +45,11 @@ public class Dino : MonoBehaviour
 
     private void Start()
     {
+        shield.SetActive(false);
+        hpUp.SetActive(false);
+        harvestUp.SetActive(false);
+        extendDay.SetActive(false);
+
         PlayerPrefs.SetInt("veloTrust", 0);
         PlayerPrefs.SetInt("caudiTrust", 0);
         PlayerPrefs.SetInt("anklyoTrust", 0);
@@ -51,8 +65,8 @@ public class Dino : MonoBehaviour
 
         if (velo)
         {
-            //unable button while resources not enough
-            if (PlayerPrefs.GetInt("Meat") >= 2)
+                //unable button while resources not enough
+                if (PlayerPrefs.GetInt("Meat") >= 2)
             {
                 feedButton.interactable = true;
             }
@@ -136,7 +150,7 @@ public class Dino : MonoBehaviour
                     PlayerPrefs.SetInt("Meat", PlayerPrefs.GetInt("Meat") - 2);
                     Debug.Log("Successfully Feeding Velociraptor");
 
-                    if (PlayerPrefs.GetInt("veloTrust", 0) >= 3)
+                    if (PlayerPrefs.GetInt("veloTrust", 0) >= MAX_TRUST)
                     {
                         veloBuff.veloBuffOn = true;
                         Debug.Log("Successfully Gained Trust from Velociraptor");
@@ -145,6 +159,14 @@ public class Dino : MonoBehaviour
                     else
                     {
                         PlayerPrefs.SetInt("veloTrust", PlayerPrefs.GetInt("veloTrust", 0) + 1);
+
+                        if (PlayerPrefs.GetInt("veloTrust", 0) >= MAX_TRUST)
+                        {
+                            veloBuff.veloBuffOn = true;
+                            Debug.Log("Successfully Gained Trust from Velociraptor");
+                            Debug.Log("Velociraptor BUFF ON");
+                        }
+
                     }
 
                     Debug.Log("Velo Trust Meter:" + PlayerPrefs.GetInt("veloTrust", 0));
@@ -165,7 +187,7 @@ public class Dino : MonoBehaviour
 
 
 
-                    if (PlayerPrefs.GetInt("caudiTrust", 0) >= 3)
+                    if (PlayerPrefs.GetInt("caudiTrust", 0) >= MAX_TRUST)
                     {
                         caudiBuff.caudiBuffOn = true;
                         Debug.Log("Successfully Gained Trust from Caudipteryx");
@@ -174,6 +196,15 @@ public class Dino : MonoBehaviour
                     else
                     {
                         PlayerPrefs.SetInt("caudiTrust", PlayerPrefs.GetInt("caudiTrust", 0) + 1);
+
+
+                        if (PlayerPrefs.GetInt("caudiTrust", 0) >= MAX_TRUST)
+                        {
+                            caudiBuff.caudiBuffOn = true;
+                            Debug.Log("Successfully Gained Trust from Caudipteryx");
+                            Debug.Log("Caudipteryx BUFF ON");
+                        }
+
                     }
                     Debug.Log("Caudi Trust Meter:" + PlayerPrefs.GetInt("caudiTrust", 0));
                     trustMeter.SetTrustMeter(PlayerPrefs.GetInt("caudiTrust", 0));
@@ -190,7 +221,7 @@ public class Dino : MonoBehaviour
                     Debug.Log("Successfully Feeding Brachiosaurus");
 
 
-                    if (PlayerPrefs.GetInt("brachyTrust") >= 3)
+                    if (PlayerPrefs.GetInt("brachyTrust") >= MAX_TRUST)
                     {
                         if (lifeSystem.lifePts >= 80)
                         {
@@ -201,7 +232,7 @@ public class Dino : MonoBehaviour
 
                         else
                         {
-                            lifeSystem.lifePts = lifeSystem.lifePts + 20;
+                            lifeSystem.lifePts = lifeSystem.lifePts + 30;
                             Debug.Log("Successfully Gained Trust from Brachiosaurus ");
                             Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
                         }
@@ -209,6 +240,24 @@ public class Dino : MonoBehaviour
                     else
                     {
                         PlayerPrefs.SetInt("brachyTrust", PlayerPrefs.GetInt("brachyTrust") + 1);
+
+                        if (PlayerPrefs.GetInt("brachyTrust") >= MAX_TRUST)
+                        {
+                            if (lifeSystem.lifePts >= 80)
+                            {
+                                lifeSystem.lifePts = 100;
+                                Debug.Log("Successfully Gained Trust from Brachiosaurus ");
+                                Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                            }
+
+                            else
+                            {
+                                lifeSystem.lifePts = lifeSystem.lifePts + 30;
+                                Debug.Log("Successfully Gained Trust from Brachiosaurus ");
+                                Debug.Log("HP + 20. HP for now is" + lifeSystem.lifePts);
+                            }
+                        }
+
 
                     }
 
@@ -227,13 +276,20 @@ public class Dino : MonoBehaviour
 
                     Debug.Log("Successfully Feeding Ankylosaurus");
 
-                    if (PlayerPrefs.GetInt("anklyoTrust") >= 3)
+                    if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
                     {
-                        PlayerPrefs.SetInt("Green", PlayerPrefs.GetInt("Green") + 2);
+                       //Harvest double up boolean
                     }
                     else
                     {
                         PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
+
+                        
+                        if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
+                        {
+                            //Harvest double up boolean
+                        }
+
                     }
 
                     Debug.Log("Ankylo Trust Meter:" + PlayerPrefs.GetInt("anklyoTrust", 0));
@@ -251,7 +307,7 @@ public class Dino : MonoBehaviour
 
                     Debug.Log("Successfully Feeding T-Rex");
 
-                    if (PlayerPrefs.GetInt("tRexTrust", 0) >= 3)
+                    if (PlayerPrefs.GetInt("tRexTrust", 0) >= MAX_TRUST)
                     {
                         tRexBlock = true;
                         Debug.Log("Successfully Gained Trust from T-Rex");
@@ -259,6 +315,13 @@ public class Dino : MonoBehaviour
                     else
                     {
                         PlayerPrefs.SetInt("tRexTrust", PlayerPrefs.GetInt("tRexTrust", 0) + 1);
+
+                        if (PlayerPrefs.GetInt("tRexTrust", 0) >= MAX_TRUST)
+                        {
+                            tRexBlock = true;
+                            Debug.Log("Successfully Gained Trust from T-Rex");
+                        }
+
                     }
 
                     Debug.Log("T-Rex Trust Meter:" + PlayerPrefs.GetInt("tRexTrust", 0));
