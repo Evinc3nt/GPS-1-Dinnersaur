@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
-    const int MAX_TRUST = 1;
+    const int MAX_TRUST = 4;
 
     public Button feedButton;
 
