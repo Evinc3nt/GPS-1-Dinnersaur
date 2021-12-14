@@ -45,6 +45,7 @@ public class Dino : MonoBehaviour
 
     private void Start()
     {
+        speedUp.SetActive(false);
         shield.SetActive(false);
         hpUp.SetActive(false);
         harvestUp.SetActive(false);

@@ -685,22 +685,22 @@ PrefabInstance:
     - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_LocalPosition.x
@@ -860,7 +860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -913,19 +913,19 @@ PrefabInstance:
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1188,18 +1188,18 @@ PrefabInstance:
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1292,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1397,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: caudi
       value: 1
@@ -1405,7 +1405,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: greenUp
       value: 
@@ -1413,7 +1413,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -1433,11 +1433,11 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -1632,7 +1632,7 @@ RectTransform:
   m_Children:
   - {fileID: 121017537}
   m_Father: {fileID: 1513666699}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2039,7 +2039,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2135170392}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: StartTime
         m_Mode: 1
@@ -2230,6 +2230,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &132333610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6589456904479908687, guid: ada92478724b2be45ac199ec70446af8, type: 3}
+  m_PrefabInstance: {fileID: 915532188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4f639d4235f8e4fbc007ee02c68045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &136366796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,11 +2824,11 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: greenUp
       value: 
@@ -2825,7 +2836,7 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -2845,11 +2856,11 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: feedButton
       value: 
@@ -54052,11 +54063,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: greenUp
       value: 
@@ -54064,7 +54075,7 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -54084,11 +54095,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: feedButton
       value: 
@@ -54253,7 +54264,7 @@ PrefabInstance:
     - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -54280,7 +54291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54325,15 +54336,15 @@ PrefabInstance:
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
 --- !u!1001 &257151751
@@ -54414,11 +54425,11 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: greenUp
       value: 
@@ -54426,7 +54437,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: veloBuff
       value: 
@@ -54438,11 +54449,11 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -55019,6 +55030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 645670693}
     m_Modifications:
+    - target: {fileID: 3721312016430315530, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: lifeSystem
+      value: 
+      objectReference: {fileID: 132333610}
     - target: {fileID: 4147782541849948216, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -55026,18 +55041,18 @@ PrefabInstance:
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 6808154642597770158, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6808154642597770158, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55156,7 +55171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55209,15 +55224,15 @@ PrefabInstance:
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 5905928408964857857, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -55225,7 +55240,7 @@ PrefabInstance:
     - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -55681,11 +55696,11 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: greenUp
       value: 
@@ -55693,7 +55708,7 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: veloBuff
       value: 
@@ -55705,11 +55720,11 @@ PrefabInstance:
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 5093069648176050593, guid: ffde0f1667afc1a429668a25128166c3, type: 3}
       propertyPath: feedButton
       value: 
@@ -56841,11 +56856,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: greenUp
       value: 
@@ -56853,7 +56868,7 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: veloBuff
       value: 
@@ -56865,11 +56880,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: feedButton
       value: 
@@ -57258,9 +57273,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 2135170392}
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57270,7 +57285,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1671117488}
         m_TargetAssemblyTypeName: LevelSFX, Assembly-CSharp
         m_MethodName: ButtonClick
         m_Mode: 1
@@ -57903,18 +57918,18 @@ PrefabInstance:
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58019,7 +58034,7 @@ PrefabInstance:
     - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -58099,22 +58114,22 @@ PrefabInstance:
     - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58217,7 +58232,6 @@ Transform:
   m_LocalPosition: {x: 33.663662, y: 9.205184, z: -8.9256935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 966755162}
   - {fileID: 1974019833}
   - {fileID: 45548672}
   - {fileID: 356945940}
@@ -58236,7 +58250,7 @@ Transform:
   - {fileID: 630639912}
   - {fileID: 1759146888}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646976593
 GameObject:
@@ -59207,7 +59221,7 @@ PrefabInstance:
       objectReference: {fileID: 739170182}
     - target: {fileID: 4978360369185460295, guid: c4a8a1c8c6590e54589d4e049fadb3fc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4978360369185460295, guid: c4a8a1c8c6590e54589d4e049fadb3fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59392,11 +59406,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: greenUp
       value: 
@@ -59404,7 +59418,7 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -59428,11 +59442,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
@@ -59623,7 +59637,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2099239286}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: openInv
         m_Mode: 1
@@ -59635,7 +59649,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1671117488}
         m_TargetAssemblyTypeName: LevelSFX, Assembly-CSharp
         m_MethodName: ButtonClick
         m_Mode: 1
@@ -59869,7 +59883,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: velo
       value: 1
@@ -59877,7 +59891,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: greenUp
       value: 
@@ -59885,7 +59899,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -59905,11 +59919,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -60133,11 +60147,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: greenUp
       value: 
@@ -60145,7 +60159,7 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -60169,11 +60183,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
@@ -61551,18 +61565,18 @@ PrefabInstance:
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61675,7 +61689,7 @@ PrefabInstance:
     - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
 --- !u!95 &964484703 stripped
@@ -61683,106 +61697,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: -6363494375205168661, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
   m_PrefabInstance: {fileID: 1568685619}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &966755161
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 966755162}
-  - component: {fileID: 966755165}
-  - component: {fileID: 966755164}
-  - component: {fileID: 966755163}
-  m_Layer: 5
-  m_Name: GAMEUI (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &966755162
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966755161}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1952615729}
-  m_Father: {fileID: 645670693}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &966755163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966755161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &966755164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966755161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &966755165
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966755161}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -1674351121
-  m_SortingOrder: 5
-  m_TargetDisplay: 0
 --- !u!1001 &970989359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61801,7 +61715,7 @@ PrefabInstance:
     - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -61828,7 +61742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61873,15 +61787,15 @@ PrefabInstance:
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
 --- !u!1 &983267367
@@ -62182,18 +62096,18 @@ PrefabInstance:
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62302,7 +62216,7 @@ PrefabInstance:
     - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
 --- !u!1 &1004132111
@@ -62858,7 +62772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62911,19 +62825,19 @@ PrefabInstance:
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -64551,22 +64465,22 @@ PrefabInstance:
     - target: {fileID: 3721312016430315530, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 6808154642597770158, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6808154642597770158, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64804,7 +64718,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: velo
       value: 1
@@ -64812,7 +64726,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: greenUp
       value: 
@@ -64820,7 +64734,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -64840,11 +64754,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -64977,11 +64891,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: greenUp
       value: 
@@ -64989,7 +64903,7 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -65013,11 +64927,11 @@ PrefabInstance:
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6037132876168891948, guid: 05dcc199e9b2e3a44acc9ed9ad18ce4e, type: 3}
       propertyPath: feedButton
       value: 
@@ -65437,7 +65351,7 @@ PrefabInstance:
     - target: {fileID: 4274826604313369832, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 4561412790401001086, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
@@ -65496,7 +65410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7361937201806905057, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65541,15 +65455,15 @@ PrefabInstance:
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 7361937201806905058, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
 --- !u!1 &1275382065
@@ -65964,7 +65878,7 @@ RectTransform:
   m_Children:
   - {fileID: 1436043796}
   m_Father: {fileID: 1513666699}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -66298,9 +66212,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Resume
+      - m_Target: {fileID: 2135170392}
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -66310,7 +66224,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1671117488}
         m_TargetAssemblyTypeName: LevelSFX, Assembly-CSharp
         m_MethodName: ButtonClick
         m_Mode: 1
@@ -67293,11 +67207,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: greenUp
       value: 
@@ -67305,7 +67219,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: veloBuff
       value: 
@@ -67317,11 +67231,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -67537,7 +67451,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2135170392}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: StartTime
         m_Mode: 1
@@ -68272,12 +68186,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1732502490}
   - {fileID: 85773458}
   - {fileID: 1329486008}
+  - {fileID: 1732502490}
   - {fileID: 1367923112}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -68837,7 +68751,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2099239286}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: openInv
         m_Mode: 1
@@ -68849,7 +68763,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1671117488}
         m_TargetAssemblyTypeName: LevelSFX, Assembly-CSharp
         m_MethodName: ButtonClick
         m_Mode: 1
@@ -68949,7 +68863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70079,7 +69993,7 @@ RectTransform:
   m_Children:
   - {fileID: 1785374272}
   m_Father: {fileID: 1513666699}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -78484,7 +78398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5905928407622082504, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78537,19 +78451,19 @@ PrefabInstance:
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 5905928407622082507, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 8499158434599037729, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8945098748779135004, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -78979,11 +78893,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: greenUp
       value: 
@@ -78991,7 +78905,7 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -79011,11 +78925,11 @@ PrefabInstance:
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 4496080716400234103, guid: 3e15f6470f35c6541977b28c20537887, type: 3}
       propertyPath: feedButton
       value: 
@@ -79392,7 +79306,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2135170392}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: StartTime
         m_Mode: 1
@@ -79465,7 +79379,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: velo
       value: 1
@@ -79473,7 +79387,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: greenUp
       value: 
@@ -79481,7 +79395,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -79501,11 +79415,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 
@@ -80156,7 +80070,7 @@ MonoBehaviour:
   dayEnd: {fileID: 1627803550}
   nextDay: {fileID: 429690504}
   dead: {fileID: 815560611}
-  pause: {fileID: 0}
+  pause: {fileID: 591189780}
 --- !u!114 &1862494152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80395,7 +80309,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: caudi
       value: 1
@@ -80403,7 +80317,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: greenUp
       value: 
@@ -80411,7 +80325,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -80431,11 +80345,11 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -80651,9 +80565,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: RetryLevel
+      - m_Target: {fileID: 2135170392}
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -80663,7 +80577,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1671117488}
         m_TargetAssemblyTypeName: LevelSFX, Assembly-CSharp
         m_MethodName: ButtonClick
         m_Mode: 1
@@ -80713,11 +80627,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945913885}
   m_CullTransparentMesh: 1
---- !u!224 &1952615729 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-  m_PrefabInstance: {fileID: 1996918246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1968468299
 GameObject:
   m_ObjectHideFlags: 0
@@ -80925,7 +80834,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: caudi
       value: 1
@@ -80933,7 +80842,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: greenUp
       value: 
@@ -80941,7 +80850,7 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -80961,11 +80870,11 @@ PrefabInstance:
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 6347985961271643978, guid: dc0661883c41c3d45b835b863e76b39c, type: 3}
       propertyPath: feedButton
       value: 
@@ -81113,7 +81022,7 @@ Transform:
   - {fileID: 1419485248}
   - {fileID: 257151752}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1989836144
 PrefabInstance:
@@ -81133,22 +81042,22 @@ PrefabInstance:
     - target: {fileID: 657474128799395971, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 2142833567614065433, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2142833567614065434, guid: 618ab3fd6fbe8d84a9f78efb71e95418, type: 3}
       propertyPath: m_LocalPosition.x
@@ -81229,127 +81138,15 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4796410231193900294, guid: 4f883735aad4bc44086f5581d53af09c, type: 3}
   m_PrefabInstance: {fileID: 48685859}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1996918246
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 966755162}
-    m_Modifications:
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5242588875721946536, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6589456903897920995, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6589456903897920995, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6589456904103169489, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6589456904479908687, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: scene
-      value: 
-      objectReference: {fileID: 1053004718}
-    - target: {fileID: 6589456904479908687, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 964484703}
-    - target: {fileID: 7024274236500371765, guid: ada92478724b2be45ac199ec70446af8, type: 3}
-      propertyPath: m_Name
-      value: PlayerHealth
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ada92478724b2be45ac199ec70446af8, type: 3}
 --- !u!95 &1998631653 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6976518100399208196, guid: 61e8e0d478a326241b2a916956a2ed9a, type: 3}
   m_PrefabInstance: {fileID: 1271851127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1998681659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5151370538555518656, guid: 1a82748fe0e746c4794f184ec4b8fe83, type: 3}
+  m_PrefabInstance: {fileID: 1568685619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2011202797
 PrefabInstance:
@@ -81417,18 +81214,18 @@ PrefabInstance:
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: failText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85773457}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: successText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1329486007}
     - target: {fileID: 4349885147912653741, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: superSuccessText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732502489}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4349885147912653742, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_LocalPosition.x
@@ -81541,7 +81338,7 @@ PrefabInstance:
     - target: {fileID: 8464453335568777827, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: lifeSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132333610}
     - target: {fileID: 8681658708132453061, guid: 85dfd314342004b4e885eefae2c21237, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -81963,7 +81760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168c3b8cd86e8264cb635d60dd910ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1998681659}
   camMovement: 0.05
   minPos: {x: 0, y: 0}
   maxPos: {x: 0, y: 0}
@@ -82207,7 +82004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryMenu: {fileID: 2099239285}
-  lifeSystem: {fileID: 0}
+  lifeSystem: {fileID: 132333610}
 --- !u!114 &2099239287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82315,7 +82112,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: hpUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 696358186}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: velo
       value: 1
@@ -82323,7 +82120,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: shield
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 85844593}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: greenUp
       value: 
@@ -82331,7 +82128,7 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: speedUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1840592321}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: dinoAnim
       value: 
@@ -82351,11 +82148,11 @@ PrefabInstance:
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: extendDay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1644755388}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: harvestUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391215591}
     - target: {fileID: 3415460622983903601, guid: a90277a21bb07d143889cfb65bd6314c, type: 3}
       propertyPath: feedButton
       value: 

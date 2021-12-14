@@ -39,11 +39,11 @@ public class EndingManager : MonoBehaviour
         ++dayCount;
         ++nextDayCount;
 
-        //Debug.Log("Day left: " + totalDay);
-        //Debug.Log("Day count: " + dayCount);
+        Debug.Log("Day left: " + totalDay);
+        Debug.Log("Day count: " + dayCount);
         if (totalDay == 0)
         {
-            //setEnding();
+            setEnding();
         }
 
     }
