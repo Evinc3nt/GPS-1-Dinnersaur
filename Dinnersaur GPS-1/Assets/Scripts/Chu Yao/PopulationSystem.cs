@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PopulationSystem : MonoBehaviour
 {
-    public int populationLimit = 5;
+    public GameObject humanEnd, dinoEnd;
+
+    const int populationLimit = 3;
     public void setPopulation()
     {
         int excessGreen, excessMeat, excessHuman;
@@ -84,13 +88,13 @@ public class PopulationSystem : MonoBehaviour
         if (PlayerPrefs.GetInt("Human") < populationLimit)
         {
             Time.timeScale = 1f;
-            //Human end
+            humanEnd.SetActive(true);
             Debug.Log("You lose. Population too unbalance. Dino less than 10");
         }
         else if (PlayerPrefs.GetInt("Dino") < populationLimit)
         {
             Time.timeScale = 1f;
-            //Dino end
+            dinoEnd.SetActive(true);
             Debug.Log("You lose. Population too unbalance. Human less than 10");
 
         }

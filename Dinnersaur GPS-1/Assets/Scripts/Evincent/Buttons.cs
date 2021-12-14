@@ -62,4 +62,24 @@ public class Buttons : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void LoadDinoEnd()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(11);
+    }
+    public void LoadHumanEnd()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(12);
+    }
+    public void LoadBalancedEnd()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(13);
+    }
+
 }

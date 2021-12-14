@@ -3413,6 +3413,7 @@ GameObject:
   - component: {fileID: 1036647088}
   - component: {fileID: 1036647087}
   - component: {fileID: 1036647086}
+  - component: {fileID: 1036647089}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -3507,6 +3508,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1036647089}
+        m_TargetAssemblyTypeName: EndingManager, Assembly-CSharp
+        m_MethodName: SetDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1036647087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,6 +3558,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036647084}
   m_CullTransparentMesh: 1
+--- !u!114 &1036647089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036647084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa415c53e447cbf459021dd0025da1b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dinoEnd: {fileID: 0}
+  humanEnd: {fileID: 0}
+  balancedEnd: {fileID: 0}
+  dayEnd: {fileID: 0}
+  nextDay: {fileID: 0}
+  dead: {fileID: 0}
+  pause: {fileID: 0}
 --- !u!1 &1145116876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,6 +4417,7 @@ GameObject:
   - component: {fileID: 1458407269}
   - component: {fileID: 1458407268}
   - component: {fileID: 1458407267}
+  - component: {fileID: 1458407270}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -4529,6 +4562,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458407265}
   m_CullTransparentMesh: 1
+--- !u!114 &1458407270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458407265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa415c53e447cbf459021dd0025da1b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dinoEnd: {fileID: 0}
+  humanEnd: {fileID: 0}
+  balancedEnd: {fileID: 0}
+  dayEnd: {fileID: 0}
+  nextDay: {fileID: 0}
+  dead: {fileID: 0}
+  pause: {fileID: 0}
 --- !u!1 &1474494963
 GameObject:
   m_ObjectHideFlags: 0

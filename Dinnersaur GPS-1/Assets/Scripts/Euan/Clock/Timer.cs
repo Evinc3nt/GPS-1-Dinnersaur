@@ -36,7 +36,6 @@ public class Timer : MonoBehaviour
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
             FindObjectOfType<PopulationSystem>().setPopulation();
-            FindObjectOfType<EndingManager>().countDay();
             timesUp = true;
         }
     }

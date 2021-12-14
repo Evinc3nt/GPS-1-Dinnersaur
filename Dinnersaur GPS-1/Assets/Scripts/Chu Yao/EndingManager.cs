@@ -2,79 +2,84 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 
 public class EndingManager : MonoBehaviour
 {
-    public static int totalDay = 7;
-    private int dayCount = 0;
-    private int nextDayCount = 1;
+    const int TOTAL_DAY = 7;
 
     private int moreDino, moreHuman, balanced;
-    //private int nextScene;
-    public GameObject endingBox;
-    public TextMeshProUGUI ending,dayEnd,nextDay;
+    public GameObject dinoEnd,humanEnd,balancedEnd;
+    public TextMeshProUGUI dayEnd,nextDay;
     public Text dead, pause;
 
-
-    // Start is called before the first frame update
-    void Start()
+    public void SetDay()
     {
-        //nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        PlayerPrefs.SetInt("TotalDay", TOTAL_DAY);
+        PlayerPrefs.SetInt("DayCount", 1);
+        PlayerPrefs.SetInt("NextDayCount", 2);
+
+        Debug.Log("TotalDay: " + PlayerPrefs.GetInt("TotalDay", 0));
+        Debug.Log("DayCount: " + PlayerPrefs.GetInt("DayCount", 0));
+        Debug.Log("NextDayCount: " + PlayerPrefs.GetInt("NextDayCount", 0));
+
+
     }
 
     private void Update()
     {
-        dead.text = dayCount.ToString();
-        pause.text = dayCount.ToString();
-        dayEnd.text = dayCount.ToString();
-        nextDay.text = nextDayCount.ToString();
-    }
-
-    public void countDay()
-    {
-        --totalDay;
-        ++dayCount;
-        ++nextDayCount;
-
-        Debug.Log("Day left: " + totalDay);
-        Debug.Log("Day count: " + dayCount);
-        if (totalDay == 0)
+        if(dayEnd != null)
         {
-            setEnding();
+            dead.text = PlayerPrefs.GetInt("DayCount").ToString();
+            pause.text = PlayerPrefs.GetInt("DayCount").ToString();
+            dayEnd.text = PlayerPrefs.GetInt("DayCount").ToString();
+            nextDay.text = PlayerPrefs.GetInt("NextDayCount").ToString();
+
+        }
+
+        if (PlayerPrefs.GetInt("TotalDay") == 0)
+        {
+            SetEnding();
         }
 
     }
 
-    public void setEnding()
+    public void CountDay()
+    {
+
+        PlayerPrefs.SetInt("TotalDay", PlayerPrefs.GetInt("TotalDay") - 1);
+        PlayerPrefs.SetInt("DayCount", PlayerPrefs.GetInt("DayCount") + 1);
+        PlayerPrefs.SetInt("NextDayCount", PlayerPrefs.GetInt("NextDayCount") + 1);
+
+        Debug.Log("Day left: " + PlayerPrefs.GetInt("TotalDay"));
+        Debug.Log("Day count: " + PlayerPrefs.GetInt("DayCount"));
+    }
+
+    public void SetEnding()
     {
         moreDino = PlayerPrefs.GetInt("MoreDino");
         moreHuman = PlayerPrefs.GetInt("MoreHuman");
         balanced = PlayerPrefs.GetInt("Balanced");
 
-        endingBox.SetActive(true);
 
         if ((moreDino != 0) && (moreHuman != 0))
         {
             if ((moreDino == moreHuman) || ((balanced > moreDino) && (balanced > moreHuman)))
             {
-                ending.text = "Balanced End";
-
+                balancedEnd.SetActive(true);
 
             }
         }
         else if ((moreDino > moreHuman) && (moreDino > balanced))
         {
 
-            ending.text = "More Dino End";
+            dinoEnd.SetActive(true);
 
         }
         else if ((moreHuman > moreDino) && (moreHuman > balanced))
         {
-            ending.text = "More Human End";
-
+            humanEnd.SetActive(true);
         }
 
     }
