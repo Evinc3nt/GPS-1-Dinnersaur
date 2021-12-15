@@ -141,6 +141,9 @@ public class Dino : MonoBehaviour
             success = true;
             playerAnim.SetTrigger("SuccessTame");
 
+            //dino population increase
+            PlayerPrefs.SetInt("Dino", PlayerPrefs.GetInt("Dino") + 1);
+
             Debug.Log("Success feeding!");
 
             if (velo)

@@ -8,8 +8,8 @@ using TMPro;
 public class EndingManager : MonoBehaviour
 {
     const int TOTAL_DAY = 7;
-    private int meat = 5;
-    private int green = 5;
+    private int meat = 10;
+    private int green = 10;
 
 
     public GameObject dinoEnd,humanEnd,balancedEnd;
@@ -32,6 +32,8 @@ public class EndingManager : MonoBehaviour
 
         PlayerPrefs.SetInt("Meat", meat);
         PlayerPrefs.SetInt("Green", green);
+
+        PlayerPrefs.SetInt("Human", 17);
 
     }
 

@@ -9,16 +9,15 @@ public class KarmaSystem : MonoBehaviour
     public GameObject balance,moreHuman,moreDino;
 
     public Slider karmaBar;
-    public int maxDino = 25;
-    public int maxHuman = 25;
-
     private bool isMoreDino, isMoreHuman, isBalanced;
 
     void Start()
     {
         isMoreDino = isMoreHuman = isBalanced = false;
-        PlayerPrefs.SetInt("Dino", maxDino);
-        PlayerPrefs.SetInt("Human", maxHuman);
+
+        PlayerPrefs.SetInt("Dino", 17);
+        PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") + 1);
+
     }
 
     public void SetKarma()

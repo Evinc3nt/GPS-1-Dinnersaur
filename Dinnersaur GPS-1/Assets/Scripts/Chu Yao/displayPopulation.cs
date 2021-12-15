@@ -19,7 +19,6 @@ public class displayPopulation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        human = PlayerPrefs.GetInt("Human");
-        humanPopu.text = human.ToString();
+        humanPopu.text = PlayerPrefs.GetInt("Human").ToString();
     }
 }
