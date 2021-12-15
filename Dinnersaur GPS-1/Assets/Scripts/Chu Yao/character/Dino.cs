@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
-    const int MAX_TRUST = 4;
+    const int MAX_TRUST = 1;
 
     public Button feedButton;
 
@@ -279,16 +279,15 @@ public class Dino : MonoBehaviour
 
                     if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
                     {
-                       //Harvest double up boolean
+                        PlayerHarvesting.anklyoBuff = true;
                     }
                     else
                     {
                         PlayerPrefs.SetInt("anklyoTrust", PlayerPrefs.GetInt("anklyoTrust") + 1);
-
                         
                         if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
                         {
-                            //Harvest double up boolean
+                            PlayerHarvesting.anklyoBuff = true;
                         }
 
                     }
@@ -440,11 +439,12 @@ public class Dino : MonoBehaviour
         {
             randomNumber -= 60;
 
-            playerAnim.SetTrigger("FailKill");
 
             //fail - no resourse, lost hp
             if (randomNumber <= 30)
             {
+                playerAnim.SetTrigger("FailKill");
+
                 dinoFailKill = true;
 
                 if (tRexBlock)

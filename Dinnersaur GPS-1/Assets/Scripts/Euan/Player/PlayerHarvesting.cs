@@ -5,13 +5,22 @@ using UnityEngine;
 public class PlayerHarvesting : MonoBehaviour
 {
     public Player p;
-    
+    public static bool anklyoBuff;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Plant"))
         {
             Sound.play_sound("harvest");
-            p.calculateGreen(1);
+            if(anklyoBuff)
+            {
+                p.calculateGreen(2);
+
+            }
+            else
+            {
+                p.calculateGreen(1);
+            }
             Destroy(collision.gameObject);
         }
 
