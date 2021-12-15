@@ -44,6 +44,7 @@ public class Buttons : MonoBehaviour
         StartCoroutine(Transitioning(-1));
     }
 
+
     public void Retry()
     {
         Time.timeScale = 1;

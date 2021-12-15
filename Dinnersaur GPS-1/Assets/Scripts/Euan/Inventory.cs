@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] GameObject inventoryMenu;
-    public static bool invIsOpen = false;
+    public bool invIsOpen = false;
     public LifeSystem lifeSystem;
 
     void Update()
