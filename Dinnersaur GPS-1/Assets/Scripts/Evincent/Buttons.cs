@@ -28,6 +28,7 @@ public class Buttons : MonoBehaviour
         Time.timeScale = 1;
 
         SceneManager.LoadScene(0);
+
     }
 
 
@@ -49,6 +50,10 @@ public class Buttons : MonoBehaviour
     {
         Time.timeScale = 1;
         StartCoroutine(Transitioning(0));
+
+        PlayerPrefs.SetInt("Meat", 5);
+        PlayerPrefs.SetInt("Green", 5);
+
     }
     IEnumerator Transitioning(int room)
     {
@@ -57,6 +62,12 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + room);
 
 
+    }
+
+    public void FirstLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(2);
     }
 
     public void StartTime()

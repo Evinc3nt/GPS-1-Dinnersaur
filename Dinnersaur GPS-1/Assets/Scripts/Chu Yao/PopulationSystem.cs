@@ -89,13 +89,13 @@ public class PopulationSystem : MonoBehaviour
         {
             Time.timeScale = 1f;
             humanEnd.SetActive(true);
-            Debug.Log("You lose. Population too unbalance. Dino less than 10");
+            Debug.Log("You lose. Population too unbalance. Dino less than 3");
         }
         else if (PlayerPrefs.GetInt("Dino") < populationLimit)
         {
             Time.timeScale = 1f;
             dinoEnd.SetActive(true);
-            Debug.Log("You lose. Population too unbalance. Human less than 10");
+            Debug.Log("You lose. Population too unbalance. Human less than 3");
 
         }
         else

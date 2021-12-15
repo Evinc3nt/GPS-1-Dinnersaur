@@ -46,10 +46,4 @@ public class LifeSystem : MonoBehaviour
         scene.SetBool("isDead", true);
     }
 
-    //TODO: 
-    /*if (lifePoints <= 0)
-     * {
-     * GAMEOVER
-     * }
-     */
 }

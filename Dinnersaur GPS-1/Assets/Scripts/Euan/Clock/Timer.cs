@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if ((timeLeft >= timerMax)&& !timesUp) //I use bool to make it run once only in update()
+        if ((timeLeft >= timerMax)&& !timesUp)
         {
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
