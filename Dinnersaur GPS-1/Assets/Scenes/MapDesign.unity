@@ -80110,7 +80110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd5590400eaf954cad023f027949084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  populationLimit: 5
+  humanEnd: {fileID: 0}
+  dinoEnd: {fileID: 0}
 --- !u!114 &1862494151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80123,8 +80124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa415c53e447cbf459021dd0025da1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endingBox: {fileID: 380037576}
-  ending: {fileID: 1339201197}
+  dinoEnd: {fileID: 0}
+  humanEnd: {fileID: 0}
+  balancedEnd: {fileID: 0}
   dayEnd: {fileID: 1627803550}
   nextDay: {fileID: 429690504}
   dead: {fileID: 815560611}
