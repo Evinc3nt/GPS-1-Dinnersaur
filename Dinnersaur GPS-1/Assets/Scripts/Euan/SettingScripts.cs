@@ -5,7 +5,8 @@ using UnityEngine;
 public class SettingScripts : MonoBehaviour
 {
     public GameObject settingScreen;
-    
+    public GameObject creditScreen;
+
     public void OpenSettings()
     {
         settingScreen.SetActive(true);
@@ -15,4 +16,16 @@ public class SettingScripts : MonoBehaviour
     {
         settingScreen.SetActive(false);
     }    
+
+    public void OpenCredits()
+    {
+        creditScreen.SetActive(true);
+        settingScreen.SetActive(false);
+    }
+
+    public void CloseCredits()
+    {
+        settingScreen.SetActive(true);
+        creditScreen.SetActive(false);
+    }
 }
