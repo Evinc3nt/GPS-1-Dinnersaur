@@ -301,18 +301,18 @@ Transform:
   - {fileID: 76630109}
   - {fileID: 1479739854}
   - {fileID: 615813646}
-  - {fileID: 1391551984}
-  - {fileID: 704844169}
-  - {fileID: 185563803}
-  - {fileID: 1641641495}
   - {fileID: 2095879001}
   - {fileID: 1768151124}
   - {fileID: 636260386}
+  - {fileID: 1391551984}
+  - {fileID: 704844169}
+  - {fileID: 185563803}
   - {fileID: 1349651518}
   - {fileID: 1770749887}
   - {fileID: 1943501311}
   - {fileID: 764980352}
   - {fileID: 1461793391}
+  - {fileID: 1641641495}
   - {fileID: 12821976}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -56451,7 +56451,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 586327636}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadDinoEnd
         m_Mode: 1
@@ -59813,7 +59813,7 @@ Transform:
   m_Children:
   - {fileID: 1409583512}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &644078904
 PrefabInstance:
@@ -61333,7 +61333,7 @@ Transform:
   m_Children:
   - {fileID: 1020074317}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772118090
 GameObject:
@@ -67780,7 +67780,7 @@ Transform:
   m_Children:
   - {fileID: 811038532}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359771968
 GameObject:
@@ -69081,7 +69081,7 @@ Transform:
   m_Children:
   - {fileID: 1741425003}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1469340829
 GameObject:
@@ -70256,7 +70256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 586327636}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadHumanEnd
         m_Mode: 1
@@ -80568,7 +80568,7 @@ Transform:
   m_Children:
   - {fileID: 690922000}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1769977861
 PrefabInstance:
@@ -80661,7 +80661,7 @@ Transform:
   m_Children:
   - {fileID: 1976327038}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1779326218
 GameObject:
@@ -80817,7 +80817,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 586327636}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadBalancedEnd
         m_Mode: 1
@@ -82234,7 +82234,7 @@ Transform:
   m_Children:
   - {fileID: 1321673141}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948628158
 GameObject:
@@ -83872,7 +83872,7 @@ Transform:
   m_Children:
   - {fileID: 127815489}
   m_Father: {fileID: 8180123}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099608163
 GameObject:

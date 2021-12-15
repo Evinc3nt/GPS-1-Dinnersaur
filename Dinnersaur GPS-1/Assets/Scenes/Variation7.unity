@@ -302,7 +302,7 @@ Transform:
   m_Children:
   - {fileID: 2093249235}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &38046769
 GameObject:
@@ -2659,7 +2659,7 @@ Transform:
   m_Children:
   - {fileID: 1743425059}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261441039
 GameObject:
@@ -14471,7 +14471,7 @@ Transform:
   m_Children:
   - {fileID: 1334186299}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582100460
 GameObject:
@@ -14649,7 +14649,7 @@ Transform:
   m_Children:
   - {fileID: 2027254188}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585526238
 GameObject:
@@ -16667,7 +16667,7 @@ Transform:
   m_Children:
   - {fileID: 2104054502}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &874388592
 GameObject:
@@ -69049,18 +69049,18 @@ Transform:
   - {fileID: 338625057}
   - {fileID: 312407639}
   - {fileID: 1142701725}
-  - {fileID: 1701786184}
-  - {fileID: 2118860281}
-  - {fileID: 455951653}
-  - {fileID: 1228124959}
   - {fileID: 1018651291}
   - {fileID: 1884846021}
   - {fileID: 820418136}
+  - {fileID: 1701786184}
+  - {fileID: 2118860281}
+  - {fileID: 455951653}
   - {fileID: 19829640}
   - {fileID: 569746478}
   - {fileID: 261017631}
   - {fileID: 582208983}
   - {fileID: 1375679180}
+  - {fileID: 1228124959}
   - {fileID: 1995715978}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -69094,7 +69094,7 @@ Transform:
   m_Children:
   - {fileID: 595694610}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018778311
 GameObject:
@@ -70864,7 +70864,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 449735195}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadBalancedEnd
         m_Mode: 1
@@ -71423,7 +71423,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 449735195}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadDinoEnd
         m_Mode: 1
@@ -74159,7 +74159,7 @@ Transform:
   m_Children:
   - {fileID: 919925890}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1379602012
 GameObject:
@@ -78889,7 +78889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 449735195}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadHumanEnd
         m_Mode: 1
@@ -81279,7 +81279,7 @@ Transform:
   m_Children:
   - {fileID: 1707185810}
   m_Father: {fileID: 998305967}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889867817
 GameObject:

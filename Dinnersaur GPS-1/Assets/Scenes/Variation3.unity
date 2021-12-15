@@ -3349,8 +3349,8 @@ Transform:
   - {fileID: 974940262}
   - {fileID: 728136525}
   - {fileID: 2019253102}
-  - {fileID: 736073726}
   - {fileID: 1280148688}
+  - {fileID: 736073726}
   - {fileID: 334307755}
   - {fileID: 541811684}
   - {fileID: 1533059827}
@@ -3520,7 +3520,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 308350071}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadHumanEnd
         m_Mode: 1
@@ -14443,7 +14443,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 308350071}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadDinoEnd
         m_Mode: 1
@@ -66901,7 +66901,7 @@ Transform:
   m_Children:
   - {fileID: 1063318673}
   m_Father: {fileID: 306950860}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283505940
 GameObject:
@@ -80540,7 +80540,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 308350071}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: LoadBalancedEnd
         m_Mode: 1
