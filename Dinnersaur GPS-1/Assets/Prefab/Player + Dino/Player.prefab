@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c9a8c910995ea42953ae63cc058a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   player: {fileID: 5151370538555518687}
   animator: {fileID: -6363494375205168661}
   currentState: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e9df4b6ae2ed146b8465f1197cf691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedBuff: 10
+  speedBuff: 7
   veloBuffOn: 0
   p: {fileID: 5151370538555518686}
 --- !u!114 &2389650497526910362
@@ -264,8 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f6646f93960554da02b00a3c787cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meat: 5
-  green: 5
 --- !u!95 &-6363494375205168661
 Animator:
   serializedVersion: 3

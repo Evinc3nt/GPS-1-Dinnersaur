@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementDirection;
     bool isMoving = false;
 
+
     private void Start()
     { 
         currentState = PlayerState.walk;
@@ -27,43 +28,42 @@ public class PlayerMovement : MonoBehaviour
 
     void Update() //gets input every frame
     {
+            if (Time.timeScale > 0f)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) && currentState == PlayerState.walk)
+                {
+                    StartCoroutine(HarvestDelay());
+                }
+                else if (currentState == PlayerState.walk)
+                {
+                    InputProcessor();
+                    Movement();
+                }
 
-        if (Time.timeScale > 0f)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && currentState == PlayerState.walk)
-            {
-                StartCoroutine(HarvestDelay());
-            }
-            else if (currentState == PlayerState.walk)
-            {
-                InputProcessor();
-                Movement();
-            }
+                if (player.velocity.x == 0 && player.velocity.y == 0)
+                {
+                    isMoving = false;
+                }
 
-            if(player.velocity.x == 0 && player.velocity.y == 0)
-            {
-                isMoving = false;
+                else
+                {
+                    isMoving = true;
+                }
+
+                if (isMoving)
+                {
+                    if (!audioSrc.isPlaying)
+                        audioSrc.Play();
+                }
+
+                else
+                    audioSrc.Stop();
             }
 
             else
             {
-                isMoving = true;
-            }
-
-            if (isMoving)
-            {
-                if (!audioSrc.isPlaying)
-                    audioSrc.Play();
-            }
-
-            else
                 audioSrc.Stop();
-        }
-
-        else
-        {
-            audioSrc.Stop();
-        }
+            }
     }
 
     void FixedUpdate() //updates movement at a FIXED frame
