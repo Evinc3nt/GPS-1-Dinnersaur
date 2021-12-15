@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
-    const int MAX_TRUST = 1;
+    const int MAX_TRUST = 4;
 
     public Button feedButton;
 
@@ -433,6 +433,7 @@ public class Dino : MonoBehaviour
 
             Instantiate(meat, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
 
         }
         else
@@ -459,6 +460,7 @@ public class Dino : MonoBehaviour
                 }
 
                 Destroy(gameObject);
+                Destroy(transform.parent.gameObject);
 
 
             }
@@ -486,6 +488,7 @@ public class Dino : MonoBehaviour
 
                     Instantiate(meat, transform.position, Quaternion.identity);
                     Destroy(gameObject);
+                    Destroy(transform.parent.gameObject);
 
 
 
