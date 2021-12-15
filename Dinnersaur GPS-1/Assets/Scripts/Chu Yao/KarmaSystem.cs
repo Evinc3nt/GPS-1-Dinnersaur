@@ -16,7 +16,10 @@ public class KarmaSystem : MonoBehaviour
         isMoreDino = isMoreHuman = isBalanced = false;
 
         PlayerPrefs.SetInt("Dino", 17);
-        PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") + 1);
+
+        Debug.Log("Human population: "+ PlayerPrefs.GetInt("Human"));
+        Debug.Log("Dino population: " + PlayerPrefs.GetInt("Dino"));
+
 
     }
 
@@ -81,6 +84,8 @@ public class KarmaSystem : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
+
+        PlayerPrefs.SetInt("Human", PlayerPrefs.GetInt("Human") + 1);
 
     }
 
