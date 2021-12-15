@@ -33,7 +33,7 @@ public class EndingManager : MonoBehaviour
         PlayerPrefs.SetInt("Meat", meat);
         PlayerPrefs.SetInt("Green", green);
 
-        PlayerPrefs.SetInt("Human", 12);
+        PlayerPrefs.SetInt("Human", 13);
 
     }
 
