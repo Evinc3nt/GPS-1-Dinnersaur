@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Dino : MonoBehaviour
 {
-    const int MAX_TRUST = 4;
+    const int MAX_TRUST = 2;
 
     public Button feedButton;
 
@@ -154,6 +154,7 @@ public class Dino : MonoBehaviour
                     if (PlayerPrefs.GetInt("veloTrust", 0) >= MAX_TRUST)
                     {
                         veloBuff.veloBuffOn = true;
+                        speedUp.SetActive(true);
                         Debug.Log("Successfully Gained Trust from Velociraptor");
                         Debug.Log("Velociraptor BUFF ON");
                     }
@@ -164,6 +165,8 @@ public class Dino : MonoBehaviour
                         if (PlayerPrefs.GetInt("veloTrust", 0) >= MAX_TRUST)
                         {
                             veloBuff.veloBuffOn = true;
+                            speedUp.SetActive(true);
+
                             Debug.Log("Successfully Gained Trust from Velociraptor");
                             Debug.Log("Velociraptor BUFF ON");
                         }
@@ -191,6 +194,7 @@ public class Dino : MonoBehaviour
                     if (PlayerPrefs.GetInt("caudiTrust", 0) >= MAX_TRUST)
                     {
                         caudiBuff.caudiBuffOn = true;
+                        extendDay.SetActive(true);
                         Debug.Log("Successfully Gained Trust from Caudipteryx");
                         Debug.Log("Caudipteryx BUFF ON");
                     }
@@ -202,6 +206,7 @@ public class Dino : MonoBehaviour
                         if (PlayerPrefs.GetInt("caudiTrust", 0) >= MAX_TRUST)
                         {
                             caudiBuff.caudiBuffOn = true;
+                            extendDay.SetActive(true);
                             Debug.Log("Successfully Gained Trust from Caudipteryx");
                             Debug.Log("Caudipteryx BUFF ON");
                         }
@@ -224,6 +229,9 @@ public class Dino : MonoBehaviour
 
                     if (PlayerPrefs.GetInt("brachyTrust") >= MAX_TRUST)
                     {
+
+                        hpUp.SetActive(true);
+
                         if (lifeSystem.lifePts >= 80)
                         {
                             lifeSystem.lifePts = 100;
@@ -244,6 +252,9 @@ public class Dino : MonoBehaviour
 
                         if (PlayerPrefs.GetInt("brachyTrust") >= MAX_TRUST)
                         {
+
+                            hpUp.SetActive(true);
+
                             if (lifeSystem.lifePts >= 80)
                             {
                                 lifeSystem.lifePts = 100;
@@ -280,6 +291,7 @@ public class Dino : MonoBehaviour
                     if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
                     {
                         PlayerHarvesting.anklyoBuff = true;
+                        harvestUp.SetActive(true);
                     }
                     else
                     {
@@ -288,6 +300,8 @@ public class Dino : MonoBehaviour
                         if (PlayerPrefs.GetInt("anklyoTrust") >= MAX_TRUST)
                         {
                             PlayerHarvesting.anklyoBuff = true;
+                            harvestUp.SetActive(true);
+
                         }
 
                     }
@@ -309,6 +323,7 @@ public class Dino : MonoBehaviour
 
                     if (PlayerPrefs.GetInt("tRexTrust", 0) >= MAX_TRUST)
                     {
+                        shield.SetActive(true);
                         tRexBlock = true;
                         Debug.Log("Successfully Gained Trust from T-Rex");
                     }
@@ -318,6 +333,7 @@ public class Dino : MonoBehaviour
 
                         if (PlayerPrefs.GetInt("tRexTrust", 0) >= MAX_TRUST)
                         {
+                            shield.SetActive(true);
                             tRexBlock = true;
                             Debug.Log("Successfully Gained Trust from T-Rex");
                         }
@@ -452,6 +468,7 @@ public class Dino : MonoBehaviour
                 {
                     Debug.Log("Luckily your T-Rex block it and save you. Zero damage.");
                     tRexBlock = false;
+                    shield.SetActive(false);
 
                 }
                 else

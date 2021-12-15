@@ -8,8 +8,10 @@ using TMPro;
 public class EndingManager : MonoBehaviour
 {
     const int TOTAL_DAY = 7;
+    private int meat = 5;
+    private int green = 5;
 
-    private int moreDino, moreHuman, balanced;
+
     public GameObject dinoEnd,humanEnd,balancedEnd;
     public TextMeshProUGUI dayEnd,nextDay;
     public Text dead, pause;
@@ -24,6 +26,12 @@ public class EndingManager : MonoBehaviour
         Debug.Log("DayCount: " + PlayerPrefs.GetInt("DayCount", 0));
         Debug.Log("NextDayCount: " + PlayerPrefs.GetInt("NextDayCount", 0));
 
+        PlayerPrefs.SetInt("MoreDino", 0);
+        PlayerPrefs.SetInt("MoreHuman", 0);
+        PlayerPrefs.SetInt("Balanced", 0);
+
+        PlayerPrefs.SetInt("Meat", meat);
+        PlayerPrefs.SetInt("Green", green);
 
     }
 
@@ -58,26 +66,21 @@ public class EndingManager : MonoBehaviour
 
     public void SetEnding()
     {
-        moreDino = PlayerPrefs.GetInt("MoreDino");
-        moreHuman = PlayerPrefs.GetInt("MoreHuman");
-        balanced = PlayerPrefs.GetInt("Balanced");
-
-
-        if ((moreDino != 0) && (moreHuman != 0))
+        if ((PlayerPrefs.GetInt("MoreDino") != 0) && (PlayerPrefs.GetInt("MoreHuman") != 0))
         {
-            if ((moreDino == moreHuman) || ((balanced > moreDino) && (balanced > moreHuman)))
+            if ((PlayerPrefs.GetInt("MoreDino") == PlayerPrefs.GetInt("MoreHuman")) || ((PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreDino")) && (PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreHuman"))))
             {
                 balancedEnd.SetActive(true);
 
             }
         }
-        else if ((moreDino > moreHuman) && (moreDino > balanced))
+        else if ((PlayerPrefs.GetInt("MoreDino") > PlayerPrefs.GetInt("MoreHuman")) && (PlayerPrefs.GetInt("MoreDino") > PlayerPrefs.GetInt("Balanced")))
         {
 
             dinoEnd.SetActive(true);
 
         }
-        else if ((moreHuman > moreDino) && (moreHuman > balanced))
+        else if ((PlayerPrefs.GetInt("MoreHuman") > PlayerPrefs.GetInt("MoreDino")) && (PlayerPrefs.GetInt("MoreHuman") > PlayerPrefs.GetInt("Balanced")))
         {
             humanEnd.SetActive(true);
         }

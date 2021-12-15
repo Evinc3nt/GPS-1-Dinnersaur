@@ -19,11 +19,6 @@ public class KarmaSystem : MonoBehaviour
         isMoreDino = isMoreHuman = isBalanced = false;
         PlayerPrefs.SetInt("Dino", maxDino);
         PlayerPrefs.SetInt("Human", maxHuman);
-
-        //REMEMBER to remove below when make full game unless it'll reset everyday
-        PlayerPrefs.SetInt("MoreDino", 0);
-        PlayerPrefs.SetInt("MoreHuman", 0);
-        PlayerPrefs.SetInt("Balanced", 0);
     }
 
     public void SetKarma()
