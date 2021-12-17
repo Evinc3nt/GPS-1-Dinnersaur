@@ -69328,6 +69328,10 @@ PrefabInstance:
       propertyPath: lifeSystem
       value: 
       objectReference: {fileID: 1964990630}
+    - target: {fileID: 4147782541849948216, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6808154642597770157, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: failText
       value: 
@@ -69391,6 +69395,14 @@ PrefabInstance:
     - target: {fileID: 6808154642597770159, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808154643940093031, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157566850641060731, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7161896200920067881, guid: 1d705e83d212dd54297f1392b92c00f1, type: 3}
       propertyPath: m_AnchoredPosition.x
