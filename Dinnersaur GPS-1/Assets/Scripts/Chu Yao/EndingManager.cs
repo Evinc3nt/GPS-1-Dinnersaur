@@ -48,10 +48,6 @@ public class EndingManager : MonoBehaviour
 
         }
 
-        if (PlayerPrefs.GetInt("TotalDay") == 0)
-        {
-            SetEnding();
-        }
 
     }
 
@@ -64,17 +60,26 @@ public class EndingManager : MonoBehaviour
 
         Debug.Log("Day left: " + PlayerPrefs.GetInt("TotalDay"));
         Debug.Log("Day count: " + PlayerPrefs.GetInt("DayCount"));
+
+        if (PlayerPrefs.GetInt("TotalDay") == 0)
+        {
+           Time.timeScale = 1;
+           SetEnding();
+        }
+        else
+        {
+            FindObjectOfType<Level>().LoadVariationScene();
+        }
     }
 
     public void SetEnding()
     {
-        if ((PlayerPrefs.GetInt("MoreDino") != 0) && (PlayerPrefs.GetInt("MoreHuman") != 0))
-        {
-            if ((PlayerPrefs.GetInt("MoreDino") == PlayerPrefs.GetInt("MoreHuman")) || ((PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreDino")) && (PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreHuman"))))
-            {
-                balancedEnd.SetActive(true);
 
-            }
+        if ((PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreDino")) && (PlayerPrefs.GetInt("Balanced") > PlayerPrefs.GetInt("MoreHuman")))
+        {
+            balancedEnd.SetActive(true);
+            Debug.Log("Balanced end");
+
         }
         else if ((PlayerPrefs.GetInt("MoreDino") > PlayerPrefs.GetInt("MoreHuman")) && (PlayerPrefs.GetInt("MoreDino") > PlayerPrefs.GetInt("Balanced")))
         {

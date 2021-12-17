@@ -23,7 +23,6 @@ public class Level : MonoBehaviour
 
     public void LoadVariationScene()
     {
-
         Time.timeScale = 1;
 
         //int index = Random.Range(0, list.Count - 1);
@@ -33,6 +32,8 @@ public class Level : MonoBehaviour
         SceneManager.LoadScene(index);
 
         //list.RemoveAt(index);
+
+
     }
 
 

@@ -6,8 +6,6 @@ using TMPro;
 
 public class displayPopulation : MonoBehaviour
 {
-    private int human;
-
     TextMeshProUGUI humanPopu;
 
     // Start is called before the first frame update

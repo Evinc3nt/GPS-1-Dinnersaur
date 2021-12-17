@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BalanceEnding
       objectReference: {fileID: 0}
+    - target: {fileID: 4157130473691149983, guid: 885ae144aceb3084484dd4166939bda9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885ae144aceb3084484dd4166939bda9, type: 3}
 --- !u!1 &1310571323

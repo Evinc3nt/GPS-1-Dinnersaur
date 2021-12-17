@@ -35,7 +35,13 @@ public class Timer : MonoBehaviour
         {
             CancelInvoke("TimeChange");
             Time.timeScale = 0f;
-            FindObjectOfType<PopulationSystem>().setPopulation();
+
+            if (PlayerPrefs.GetInt("TotalDay") != 0)
+            {
+                FindObjectOfType<PopulationSystem>().setPopulation();
+
+            }
+
             timesUp = true;
         }
     }

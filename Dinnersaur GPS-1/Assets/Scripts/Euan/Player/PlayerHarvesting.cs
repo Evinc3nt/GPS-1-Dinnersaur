@@ -7,6 +7,12 @@ public class PlayerHarvesting : MonoBehaviour
     public Player p;
     public static bool anklyoBuff;
 
+
+    private void Start()
+    {
+        anklyoBuff = false;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Plant"))

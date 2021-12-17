@@ -50,11 +50,11 @@ public class Buttons : MonoBehaviour
     {
         Time.timeScale = 1;
         StartCoroutine(Transitioning(0));
+        FindObjectOfType<EndingManager>().SetDay();
 
-        PlayerPrefs.SetInt("Meat", 5);
-        PlayerPrefs.SetInt("Green", 5);
-
+        SceneManager.LoadScene(2);
     }
+
     IEnumerator Transitioning(int room)
     {
         transition.SetBool("Fade", true);
